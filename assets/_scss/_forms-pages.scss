@@ -1,0 +1,148 @@
+div.forms-page {
+	font-size: 1.1rem;
+}
+
+div.forms-page li p {
+	line-height: 1.75;
+	margin-bottom: .75rem;
+}
+figure.forms-figure {
+	font-size: 1rem;
+	background-color: $white;
+	padding: .75rem;
+	border: 3px solid $primary;
+	max-width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure.forms-figure.hide {
+	display: none;
+}
+
+div.forms-page button#speaker-example-toggle {
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {	
+	figure.forms-figure {
+		display: flex;
+		align-items: center;
+		max-width: 768px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	figure.forms-figure.hide {
+		display: flex;
+	}
+	div.forms-page button#speaker-example-toggle {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 992px) {	
+	figure.forms-figure {
+		float: left;
+		margin-right: 1rem;
+		display: block;
+		max-width: 300px;
+	}
+	figure.forms-figure.hide {
+		display: block;
+	}
+}
+
+figure.forms-figure img {
+	border: 1px solid $primary;
+	max-width: 250px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
+figure.forms-figure figcaption {
+	margin-left: 0.75rem;
+}
+
+figure.forms-figure figcaption p,
+figure.forms-figure figcaption blockquote
+{
+	margin: .5em 0 0;
+	line-height: 1.375em;
+}
+figure.forms-figure figcaption blockquote {
+	margin: .5em 1em;
+	font-style: italic;
+}
+
+.forms-page .alert-warning {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	max-width: fit-content;
+	text-decoration: underline;
+}
+
+.forms-page ul {
+	width: auto;
+	overflow: hidden;
+}
+
+.forms-page ul li + li {
+	margin-top: 0.25em;
+}
+
+.forms-page .ff-form {
+	margin: 0;
+}
+
+.forms-page #form-container {
+	padding: .75rem;
+	border: 3px solid $primary;	
+	margin-bottom: 2rem;
+	text-align: right;
+}
+
+h3#ff-title-root {
+	@extend .h2;
+}
+
+.ff-form h4.ff-section-header {
+	@extend .h3;
+	font-size: 1.1rem;
+	padding: 0;
+}
+
+.forms-page form.ff-layout-default {
+	max-width: none;
+	text-align: left;
+}
+.forms-page .ff-form .ff-button-bar {
+	display: flex;
+	justify-content: space-between;
+}
+.forms-page .ff-form a.ff-powered-img {
+	width: auto;
+	float: none;
+	padding: 0;
+}
+
+.forms-page br + br {
+	display: none;
+}
+
+.ff-form .ff-description {
+	padding-bottom: 0;
+}
+
+.ff-form .form-control:focus {
+	border-color: $primary;
+	box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+}

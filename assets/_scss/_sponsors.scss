@@ -1,0 +1,244 @@
+// ---------
+// Sponsors
+// ---------
+
+.sponsor-plate {
+  margin: 2rem 0 1rem;
+  padding: 1rem;
+}
+
+.sponsor-plate h2 {
+  font-size: 2em;
+}
+
+.sponsor-name-only {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.sponsor-annotation, .sponsor-diversity {
+  border-top: 1px solid $gray-lighter;
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 1em 2em -.8em;
+  padding: 5px;
+}
+
+.sponsor-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sponsor-card {
+  align-self: center;
+  background: $white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  display: inline-block;
+  margin: 1rem;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+  width: 15em;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  // specificity problem, can't find an elegant way to override this rule in _sections.scss
+  // section .general-info a:not(.thumbnail):not(.btn)
+  a {
+    background: none !important;
+    border: 0 !important;
+  }
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+  }
+
+  &.contributor {
+    width: 20em;
+  }
+
+  &.bronze {
+    width: 27em;
+  }
+
+  &.silver {
+    width: 35em;
+  }
+
+  &.gold {
+    width: 50em;
+  }
+
+  &.platinum {
+    width: 65em;
+  }
+
+  &.diamond {
+    width: 80em;
+  }
+
+  &.adamantium {
+    width: 100em;
+  }
+}
+
+#targetedSponsorship div:nth-child(even) .thumbnail {
+  background-color: lighten($accent-light, 30%);
+}
+
+#sponsorships .thumbnail {
+  background-color: #313d38;
+  padding: 10px;
+}
+
+#sponsorships .thumbnail img {
+  width: 500px;
+}
+
+#prospectus a {
+  &:not(.btn) {
+    @include link-styles;
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include link-styles-states;
+    }
+  }
+
+}
+
+@media(max-width: 992px) {
+  .prospectus-padder {
+    padding-left: 35px;
+  }
+}
+
+.prospectus-padder .thumbnail,
+.childcare-faqs {
+  background-color: $white;
+  color: $gray-darker;
+  margin: 10px;
+  padding: 10px 20px !important;
+}
+
+.prospectus-padder .thumbnail a {
+  @include link-styles;
+}
+
+.prospectus-padder .thumbnail a:hover,
+.prospectus-padder .thumbnail a:focus,
+.prospectus-padder .thumbnail a:active {
+  @include link-styles-states;
+}
+
+.past-slides {
+  display: block;
+  font-size: 2em;
+}
+
+// "contact" slide out on prospectus page
+#contact {
+  -moz-border-radius: 0 5px 5px 0;
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  -webkit-border-radius: 0 5px 5px 0;
+  -webkit-transition-duration: .3s;
+  background-color: $accent-light;
+  border-radius: 0 5px 5px 0;
+  left: 0;
+  padding: 30px 0;
+  position: fixed;
+  text-align: center;
+  top: 50px;
+  transition-duration: .3s;
+  width: 40px;
+
+  &:hover {
+    left: 300px;
+  }
+
+  &:hover #contact_inner {
+    left: 0;
+  }
+
+  .thumbnail {
+    -moz-border-radius: 0 0 5px 0;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -webkit-border-radius: 0 0 5px 0;
+    -webkit-transition-duration: .3s;
+    background-color: $accent-light;
+    border-radius: 0 0 5px;
+    color: $black;
+    padding: 20px;
+    text-align: left;
+    transition-duration: .3s;
+  }
+
+  a {
+    @include link-styles;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    @include link-styles-states;
+  }
+}
+
+.contact-tab {
+  transform: rotate(90deg);
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+#contact_inner {
+  -moz-border-radius: 0 0 5px 0;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  -webkit-border-radius: 0 0 5px 0;
+  -webkit-transition: all .3s;
+  background-color: $accent-light;
+  border-radius: 0 0 5px;
+  left: -300px;
+  margin: 0;
+  padding: 25px;
+  position: fixed;
+  text-align: left;
+  top: 50px;
+  transition: all .3s;
+  width: 300px;
+}
+
+.sponsor-badge {
+  --primary-color: #{$sponsor-badge-primary};
+  --secondary-color: #{$sponsor-badge-secondary};
+  --background-color:#{$sponsor-badge-bg};
+  --tertiary-color: #{$sponsor-badge-tertiary};
+  --ribbon-color: #{$sponsor-badge-ribbon};
+  --highlight-color:#{$sponsor-badge-bg};
+}
+
+.sponsor-badge.gold {
+  --highlight-color: #ffedb3
+}
+.sponsor-badge.silver {
+  --highlight-color: #dedede
+}
+.sponsor-badge.bronze {
+  --highlight-color: #f2c6a5
+}
+
+@media (min-width: 768px) {
+  .sponsor-plate h2 {
+    font-size: 3.5em;
+  }
+}

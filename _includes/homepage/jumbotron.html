@@ -1,0 +1,70 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+
+    <div class="hero-image">
+        <picture>
+            {% if site.data.conf.hero-image-filename-webp != nil %}
+            <source srcset="/assets/img/theme-images/{{ site.data.conf.hero-image-filename-webp }}" type="image/webp">
+            {% endif %}
+            <img src="/assets/img/theme-images/{{ site.data.conf.hero-image-filename | site.data.conf.hero-image-source }}" alt="{{ site.data.conf.hero-image-alt }}">
+        </picture>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12" id="conferenceInfo">
+
+                <h1 class="text-right">
+                    <span class="sr-only">code for lib {{site.data.conf.year}}</span>
+                    {{site.data.conf.location}}
+                    {% if site.data.conf.online-only-conference %}
+                        <small>{{site.data.conf.days[0].date-data | date: "%B %-d"}} - {{site.data.conf.days.last.date-data | date: "%-d"}} &#8226; Online</small>
+                    {% else %}
+                        <small>{{site.data.conf.days[0].date-data | date: "%B %-d"}} - {{site.data.conf.days.last.date-data | date: "%-d"}} {{site.data.conf.year}}</small>
+                    {% endif %}
+                </h1>
+
+                <div id="conferenceActions">
+                    {% if site.data.conf.livestream.show %}
+                        <a class="btn btn-lg jumbotron-btn" href="{{ site.data.conf.livestream.url }}">
+                            {{ site.data.conf.livestream.button-label }} {% if site.data.conf.homepage-display == 'post' %} Archive{% endif %}
+                        </a>
+                    {% endif %}
+                    {% if site.data.conf.closed-captioning.url != nil %}
+                        <a class="btn btn-lg jumbotron-btn" href="{{ site.data.conf.closed-captioning.url }}">
+                            Closed captioning
+                        </a>
+                    {% endif %}
+
+                    {% if site.data.registration.conference.show %}
+                      {% if site.data.registration.conference.open %}
+                        {% if site.data.registration.conference.waitlist %}
+                          <a class="btn btn-lg jumbotron-btn" href="{{ site.data.registration.conference.url }}">Register or Join Waitlist</a>
+                        {% else %}
+                          <a class="btn btn-lg jumbotron-btn" href="{{ site.data.registration.conference.url }}">Register Now!</a>
+                        {% endif %}
+                      {% elsif site.data.registration.workshop-only.show %}
+                          <a class="btn btn-lg jumbotron-btn" href="{{ site.data.registration.conference.url }}">Pre-Conference Registration</a>
+                      {% endif %}
+                    {% endif %}
+
+                    {% if site.data.conf.sponsor-buttons %}
+                        <a class="btn btn-lg jumbotron-btn" href="{{ site.baseurl }}{% link prospectus/index.html %}">Sponsor Code4Lib!</a>
+                    {% endif %}
+
+                    {% if site.data.conf.slides.show %}
+                      <a class="btn btn-lg jumbotron-btn" href="{{ site.data.conf.slides.url }}">Slides</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="heroImageAttribution">
+            <div class="col-12 text-right">
+              <a href="attributions.html">image attributions</a>
+            </div>
+        </div>
+
+    </div>
+</div>

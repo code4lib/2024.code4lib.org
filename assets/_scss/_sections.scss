@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+section {
+  min-height: 200px;
+  padding: 2em 0;
+}
+
+section:nth-of-type(3n+1) {
+  background-color: $body-bg;
+  color: $text-color;
+  &.welcome {
+    border-top: 2px solid $gray-light;
+    background: #050505;
+    color: $accent;
+  }
+}
+
+section:nth-of-type(3n+2) {
+  border-top: 2px solid $gray-light;
+}
+
+section:nth-of-type(3n+3) {
+  background: $section-3-bg;
+  color: $section-3-color;
+
+  a {
+    color: $section-3-link;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $section-3-hover;
+    }
+  }
+}
+
+/* ==========================================================================
+   General Info
+   ========================================================================== */
+
+section .general-info {
+  background: none;
+  color: $gray-base;
+}
+
+section .general-info a {
+  &:not(.thumbnail):not(.btn) {
+    @include link-styles;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include link-styles-states;
+    }
+  }
+}
+
+

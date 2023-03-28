@@ -1,0 +1,17 @@
+---
+layout: presentation
+speakers-text: Alison Langmead
+speaker: alison-langmead
+categories: past-keynotes
+title: Closing Keynote - Alison Langmead — "Programming Mentorship"
+slides:
+youtube_key:
+---
+
+<p>
+{% for speaker in site.data.speakers %}
+    {% if speaker.id == page.speakers %}
+        {{ speaker.bio }}
+    {% endif %}
+{% endfor %}
+</p>

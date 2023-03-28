@@ -1,0 +1,8 @@
+url: http://2023.code4lib.org
+permalink: /:categories/:title
+exclude: [vendor]
+repository: pulibrary/2023.codelib.org
+future: true
+timezone: America/New_York
+sass:
+  sass_dir: assets/_scss

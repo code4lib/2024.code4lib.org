@@ -1,0 +1,37 @@
+.lanyard-row {
+    margin: .5em 0 .5em 0;
+    align-items: center;
+}
+
+.lanyard-colorbox {
+    border: 1px solid $gray-base;
+    min-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lanyard-green {
+    background-color: $lanyard-bg-green;
+    color: $lanyard-text-green;
+    font-size: $font-size-lg;
+}
+
+.lanyard-yellow {
+    background-color: $lanyard-bg-yellow;
+    color: $lanyard-text-yellow;
+    font-size: $font-size-lg;
+}
+
+.lanyard-red {
+    background-color: $lanyard-bg-red;
+    color: $lanyard-text-red;
+    font-size: $font-size-lg;
+}
+
+.lanyard-zebra {
+    background-color: $lanyard-bg-zebra;
+    background: repeating-linear-gradient(75deg, #fff, $lanyard-bg-zebra 15px);
+    color: $lanyard-text-zebra;
+    font-size: $font-size-lg;
+}

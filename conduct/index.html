@@ -1,0 +1,374 @@
+---
+layout: secondary-nav
+title: Conduct
+nav: conduct
+active: 'Conduct & Safety'
+---
+
+<section class="general-info">
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="page-header" id="#conduct">
+                <h1>Conduct & Safety</h1>
+            </div>
+
+            <h2 id="conduct">Code4Lib Community Code of Conduct</h2>
+
+                <div class="blockquote">
+                  <p>
+                    Code4Lib seeks to provide a welcoming, fun, and safe community and conference experience and ongoing
+                    community for everyone. We do not tolerate harassment in any form. Discriminatory language and imagery
+                    (including sexual) is not appropriate for any event venue, including talks, or any community channel such
+                    as the chatroom or mailing list.</p>
+
+                  <p>Harassment is understood as any behavior that threatens another person or group, or produces an unsafe
+                    environment. It includes offensive verbal comments or non-verbal expressions related to gender, gender
+                    identity, gender expression, sexual orientation, disability, physical appearance, body size, race, age,
+                    religious beliefs, sexual or discriminatory images in public spaces (including online), deliberate
+                    intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or
+                    other events, inappropriate physical contact, and unwelcome sexual attention.</p><br>
+                    <cite title="Source Title">—CodeOfConduct4Lib</cite>
+                </div>
+
+            <p class="lead text-center">
+                <a href="https://github.com/code4lib/antiharassment-policy/blob/master/code_of_conduct.md">
+                    &#10163; Read and contribute to our full Code of Conduct document on GitHub
+                </a>
+            </p>
+
+            {% if site.data.emergency %}
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="emergency">Emergency Resources</h2>
+
+                    <p>See also the contact information for <a href="#volunteers">community support volunteers</a> on this page.</p>
+
+                    <h3>{{ site.data.conf.city-state }} Police Department</h3>
+                    <p>
+                      <ul>
+                        <li>Emergency: <a href="tel:9-1-1">9-1-1</a>.</li>
+                        {% if site.data.emergency.police.has311 %}
+                            <li>Non-emergency: dial <a href="tel:3-1-1">3-1-1</a></li>
+                        {% endif %}
+                        {% if site.data.emergency.police.phone != nil %}
+                            <li>Phone: <a href="tel:1-{{site.data.emergency.police.phone}}">{{ site.data.emergency.police.phone }}</a></li>
+                        {% endif %}
+                        {% if site.data.emergency.police.link != nil %}
+                            <li><a href="{{site.data.emergency.police.link}}">{{ site.data.emergency.police.link-text }}</a></li>
+                        {% endif %}
+                      </ul>
+                    </p>
+                    <p>Please take a moment to consider the varied relationships that different communities have with the police before involving them in a situation.</p>
+
+                    {% if site.data.emergency.hospitals.size > 0 %}
+                        <h3>Hospitals & Urgent Care</h3>
+                    {% endif %}
+                    {% for item in site.data.emergency.hospitals %}
+                        <h4>{{ item.name }}</h4>
+                        <p>
+                            {%- if item.phone != nil -%}
+                                <a href="tel:1-{{item.phone}}">{{ item.phone }}</a><br>
+                            {%- endif -%}
+                            {%- if item.address != nil -%}
+                                {{ item.address }}<br>
+                            {%- endif -%}
+                            {%- if item.link != nil -%}
+                                <a href="{{ item.link }}">{{ item.link-text }}</a><br>
+                            {%- endif -%}
+                            {%- if item.note != nil -%}
+                                {{ item.note }}<br>
+                            {%- endif -%}
+                        </p>
+                    {% endfor %}
+
+                    <h3>Suicide Prevention Lifeline</h3>
+                    <p>Confidential suicide prevention hotline available to anyone in suicidal crisis or emotional distress. Your call is routed to the nearest crisis center in the national network of more than 150 crisis centers. All services are available 24/7.</p>
+                    <ul>
+                      <li>English: <a href="tel:1-800-273-8255">1-800-273-8255</a></li>
+                      <li>Español: <a href="tel:1-888-628-9454">1-888-628-9454</a></li>
+                      <li>Deaf and Hard of Hearing: <a href="tel:1-800-799-4889">1-800-799-4889</a></li>
+                      <li>Chat: Go to <a href="https://suicidepreventionlifeline.org/chat/">suicidepreventionlifeline.org</a></li>
+                    </ul>
+
+                    {% if site.data.emergency.recovery-groups.size > 0 %}
+                        <h3>Recovery Groups</h3>
+                    {% endif %}
+                    {% for item in site.data.emergency.recovery-groups %}
+                        <h4>{{ item.name }}</h4>
+                        <p>
+                            {%- if item.phone != nil -%}
+                                <a href="tel:1-{{item.phone}}">{{ item.phone }}</a><br>
+                            {%- endif -%}
+                            {%- if item.address != nil -%}
+                                {{ item.address }}<br>
+                            {%- endif -%}
+                            {%- if item.link != nil -%}
+                                <a href="{{ item.link }}">{{ item.link-text }}</a><br>
+                            {%- endif -%}
+                            {%- if item.note != nil -%}
+                                {{ item.note }}<br>
+                            {%- endif -%}
+                        </p>
+                    {% endfor %}
+
+                    {% if site.data.emergency.other.size > 0 %}
+                        <h3>Other Resources</h3>
+                    {% endif %}
+                    {% for item in site.data.emergency.other %}
+                        <h4>{{ item.name }}</h4>
+                        <p>
+                            {%- if item.phone != nil -%}
+                                <a href="tel:1-{{item.phone}}">{{ item.phone }}</a><br>
+                            {%- endif -%}
+                            {%- if item.address != nil -%}
+                                {{ item.address }}<br>
+                            {%- endif -%}
+                            {%- if item.link != nil -%}
+                                <a href="{{ item.link }}">{{ item.link-text }}</a><br>
+                            {%- endif -%}
+                            {%- if item.note != nil -%}
+                                {{ item.note }}<br>
+                            {%- endif -%}
+                        </p>
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
+            {%- comment %} remove Emergency menu link because we don't have the info yet
+            NOTE: jQuery not available on the page yet. {% endcomment -%}
+            <script>try { document.querySelector('ul.secondarynav a[href="#emergency"]').parentElement.remove() } catch(e) {}</script>
+            {% endif %}
+
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="volunteers">Community Support Volunteers</h2>
+
+                    <p>
+                        During all days of the conference, including post-conference and sponsored
+                        evening activities, there will be Community Support Volunteers available to help provide
+                        support for anyone who has been harassed, threatened, abused, or feels the
+                        <a href="https://github.com/code4lib/antiharassment-policy/blob/master/code_of_conduct.md">
+                        CodeOfConduct4Lib</a> has been violated during the conference.
+                    </p>
+
+                    <h3>Contacting a Community Support Volunteer</h3>
+
+                    {% unless site.data.community-support %}
+                        <p>Community Support Volunteers for the {{site.data.conf.year}} conference have not year been selected. You still may send concerns or questions about the Code of Conduct and how it's been applied in the past using the means listed below.</p>
+                    {% endunless %}
+
+                      <ul>
+                        {% if site.data.conf.community-support-email != nil %}
+                            <li>Send an email to <a href="mailto:{{site.data.conf.community-support-email}}">{{site.data.conf.community-support-email}}</a>. Only Community Support Volunteers are subscribed to this mailing list, and no archive is kept.
+                        {% else %}
+                            <li>While no Community Support Volunteer email is available yet, you can contact the Local Planning Committee at <a href="mailto:{{site.data.conf.main-conf-email}}">{{site.data.conf.main-conf-email}}</a>
+                        {% endif %}
+
+                        {% if site.data.conf.community-support-phone != nil %}
+                            <li>Call a Community Support Volunteer at <a href="tel:{{site.data.conf.community-support-phone}}">{{site.data.conf.community-support-phone}}</a>.</li>
+                        {% endif %}
+
+                        {% if site.data.conf.anonymous-form != nil %}
+                            <li>Use the <a href="{{site.data.conf.anonymous-form}}">anonymous reporting form</a>.
+                        {% endif %}
+
+                        <li>Message the <code>@css</code> group on the <a href="https://code4lib.slack.com/">Code4lib Slack team.</a> You can also ping Community Support by writing a message containing the phrase <code>c4lcss</code> or <code>c4lcsv</code> (no hashtag) in any public channel. Not a member of the Slack team? <a href="https://docs.google.com/forms/d/120Dw1JjLxPJB9VTGl0mUY7Ot6yg6YNY1RZUISJFzdwk/viewform?c=0&w=1">Sign up here</a>.</li>
+
+                        <li>Message <code>@community_support_volunteers</code> on the Code4Lib Discord</li>
+                      </ul>
+
+                    {% if site.data.community-support %}
+                        {% if site.data.conf.online-only-conference == false %}
+                            <h3>On-Site Community Support Volunteers</h3>
+
+                            <div class="row">
+                              {% assign onsite_volunteers = site.data.community-support | where:"onsite","true" | sort: 'last'%}
+                                {% for volunteer in onsite_volunteers %}
+                                <div class="col-4">
+                                    <div class="speaker-box text-center">
+                                        <div class="speaker-box-inner">
+											<div class="speaker-mini">
+												<h4 class="speaker-name">{{ volunteer.name }}</h4>
+												{% if volunteer.pronouns.size > 0 %}
+													<p class="speaker-pronouns">({{ volunteer.pronouns }})</p>
+												{% endif %}
+											</div>
+											{% if volunteer.img == nil %}
+												<div class="clip-circle-lg">
+													<p style="color:#fff; font-size:1.15rem; font-style:italic; font-weight:bold; height:100%; display:flex; justify-content:center; align-items:center; padding:1rem;">Image Forthcoming</p>
+												</div>
+                                            {% elsif volunteer.img_alt != nil %}
+                                                <img alt="{{ volunteer.img_alt }}" class="clip-circle-lg" src="{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                            {% else %}
+                                                <img alt="{{ volunteer.name }}" class="clip-circle-lg" src="{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                            {% endif %}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        <div class="row">
+                          <h3>Online Community Support Volunteers</h3>
+                          <p>Community Support Volunteers are also present on various online code4lib platforms, primarily <a href="https://wiki.code4lib.org/How_to_hack_code4lib#Or_get_to_the_.23code4lib_IRC_channel_.28and_other_discussions.29_via_Slack">Slack</a> and the livestream. IRC and the <a href="https://twitter.com/hashtag/{{site.data.conf.hashtag}}">#{{site.data.conf.hashtag}}</a> conference hashtag feed have some coverage as well, but if you should observe or experience a code of conduct violation on IRC or the hashtag, please contact the community support volunteers via Slack, email, or the anonymous reporting form.
+                          </p>
+
+                          {% assign online_volunteers = site.data.community-support | where:"online","true" | sort: 'last'%}
+                          {% for volunteer in online_volunteers %}
+                            <div class="col-4">
+                                    <div class="speaker-box text-center">
+                                        <div class="speaker-box-inner">
+											<div class="speaker-mini">
+												<h4 class="speaker-name">{{ volunteer.name }}</h4>
+												{% if volunteer.pronouns.size > 0 %}
+													<p class="speaker-pronouns">({{ volunteer.pronouns }})</p>
+												{% endif %}
+												<p style="font-size:1.1em">Slack: {{ volunteer.slack_handle }}</p>
+											</div>
+											{% if volunteer.img == nil %}
+												<div class="clip-circle-lg">
+													<p style="color:#fff; font-size:1.15rem; font-style:italic; font-weight:bold; height:100%; display:flex; justify-content:center; align-items:center; padding:1rem;">Image Forthcoming</p>
+												</div>
+                                            {% elsif volunteer.img_alt != nil %}
+                                                <img alt="{{ volunteer.img_alt }}" class="clip-circle-lg" src="{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                            {% else %}
+                                                <img alt="{{ volunteer.name }}" class="clip-circle-lg" src="{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                            {% endif %}
+
+                                        </div>
+                                    </div>
+                            </div>
+                          {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+           </div>
+
+            {% if site.data.community-support-schedule != nil %}
+            <div class="row csv-schedule">
+                <div class="col-12">
+                    <h2 id="schedule">Community Support Volunteer Schedule</h2>
+					{% if site.data.community-support-schedule.onsite == nil and site.data.community-support-schedule.online == nil %}
+						<p>Schedule will be posted shortly before the conference.</p>
+					{% endif %}
+
+                    {% if site.data.community-support-schedule.onsite != nil %}
+                        <h3>On-Site</h3>
+                        {% for session in site.data.community-support-schedule.onsite %}
+							<h3>{{ session.day }} — {{ session.period }}</h3>
+							<div class="row">
+								<div class="col-12 keynote-sequence sequence">
+									{% if session.all-hands %}
+										<p><strong>All community support volunteers attending the event &mdash; look for the black & white striped lanyards!</strong></p>
+									{% else %}
+										{% for volunteerId in session.volunteers %}
+										{% assign volunteer = site.data.community-support[volunteerId] %}
+										<div class="speaker-box text-center">
+											<div class="speaker-box-inner">
+												{% if volunteer.img_alt != nil %}
+													<img alt="{{ volunteer.img_alt }}" class="clip-circle-lg" src="{{ volunteer.img }}" alt="{{ volunteer.name }}">
+												{% else %}
+													<img alt="{{ volunteer.name }}" class="clip-circle-lg" src="{{ volunteer.img }}" alt="{{ volunteer.name }}">
+												{% endif %}
+												<h4 class="speaker-name">{{ volunteer.name }}</h4>
+											</div>
+										</div>
+										{% endfor %}
+									 {% endif %}
+								</div>
+							</div>
+						{% endfor %}
+                    {% endif %}
+
+                    {% if site.data.community-support-schedule.online != nil %}
+                        <h3>Online</h3>
+                        {% for session in site.data.community-support-schedule.online %}
+                           {% assign volunteer = site.data.community-support[session.volunteer] %}
+                           <div class="row">
+                              <div class="col-2">{{ session.day }}</div>
+                              <div class="col-3">{{ session.period }}</div>
+                              <div class="col-4">{{ volunteer.name }} ({{ volunteer.slack_handle }})</div>
+                           </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% else %}
+				{%- comment %} remove CSV Schedule menu link because we don't have the info yet
+				NOTE: jQuery not available on the page yet. {% endcomment -%}
+				<script>try { document.querySelector('ul.secondarynav a[href="#schedule"]').parentElement.remove() } catch(e) {}</script>
+            {% endif %}
+
+            {% if site.data.conf.online-only-conference == false %}
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="photography">Photography Policy</h2>
+
+                    <p>
+                        Do not photograph, film, or audio-record anyone at Code4Lib without their
+                        expressly-given permission beforehand. Color- and pattern-coded lanyards are
+                        available at the registration desk to help indicate the wearer’s preference
+                        for photography ONLY. Please note, regardless of lanyards, you must always
+                        ask before filming or audio-recording attendees.
+                    </p>
+
+                    <h3>Lanyard color code</h3>
+                    <div class="container">
+                      <div class="row lanyard-row">
+                        <div class="col-md-3 lanyard-colorbox lanyard-green">
+                          Green
+                        </div>
+                        <div class="col-md-9">
+                          Photographs always okay, as this represents expressly-given permission beforehand
+                        </div>
+                      </div>
+                      <div class="row lanyard-row">
+                        <div class="col-md-3 lanyard-colorbox lanyard-yellow">
+                          Yellow
+                        </div>
+                        <div class="col-md-9">
+                          Ask before photographing
+                        </div>
+                      </div>
+                      <div class="row lanyard-row">
+                        <div class="col-md-3 lanyard-colorbox lanyard-red">
+                          Red
+                        </div>
+                        <div class="col-md-9">
+                          Photographs never okay, don’t ask
+                        </div>
+                      </div>
+                      <div class="row lanyard-row">
+                        <div class="col-md-3 lanyard-colorbox lanyard-zebra">
+                          Zebra-striped
+                        </div>
+                        <div class="col-md-9">
+                          Community Support Volunteers, available for any concerns
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="photography">Photography Policy</h2>
+                    <p>
+                    <ul>
+                        <li>Neither attendees nor presenters will be expected to have their web camera on at any time.</li>
+                        <li>If you do leave your camera on, please be aware that others may take screenshots that include your image.</li>
+                        <li>For post-conferences or smaller group events, if you want to take a screenshot or screen recording of attendees, please provide notice before doing so and give adequate time for those who do not wish to be recorded to turn off their cameras.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+</section>

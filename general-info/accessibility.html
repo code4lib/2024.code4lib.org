@@ -1,0 +1,182 @@
+---
+layout: secondary-nav
+title: Accessibility
+nav: general-info
+active: Accessibility
+subnav:
+- name: 'Accommodation Requests'
+  url: '#contactus'
+- name: 'Captioning'
+  url: '#captioning'
+- name: 'Quiet Room'
+  url: '#quietroom'
+# - name: 'Conference Platform'
+#   url: '#platform'
+- name: 'Presentations'
+  url: '#presenters'
+- name: 'Microphones'
+  url: '#microphones'
+- name: 'Venues'
+  url: '#venue'
+- name: 'Transportation'
+  url: '#transportation'
+- name: 'Parking'
+  url: '#parking'
+---
+
+<section class="general-info">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-header">
+				<h1>Accessibility</h1>
+			</div>
+			<p>Code4Lib is committed to continuous improvement of the accessibility of its conference experience for both on-site and virtual attendees. We welcome <a href="mailto:{{site.data.conf.accessibility-email}}">feedback and suggestions</a> for this ongoing effort. </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+            <h2 id="contactus">Accommodation Requests or Questions</h2>
+            <p>Contact <a href="mailto:{{site.data.conf.accessibility-email}}">{{site.data.conf.accessibility-email}}</a> with any questions, concerns, or accommodation requests related to the conference.</p>
+		</div>
+	</div>
+
+    {% if site.data.conf.live-captioning.show %}
+	<div class="row">
+		<div class="col-12">
+            <h2 id="captioning">Live Captioning</h2>
+            <p>
+				During the general conference, Code4Lib {{site.data.conf.year}} will feature live captioning by {{site.data.conf.live-captioning.service}}. In order to improve the quality of this service, we ask everyone to speak slowly and clearly so the captioning service is able to accurately capture what you say. Any prerecorded sessions or talks will also be live captioned. 
+				{% if site.data.conf.closed-captioning.show %}
+					Attendees, both local and remote, may view the text stream at:
+               		<a href="{{site.data.conf.closed-captioning.url}}">{{site.data.conf.closed-captioning.url}}</a>.
+				{% endif %}
+				These transcriptions will be applied to the captioning on the YouTube archive soon after the completion of the conference.
+            </p>
+		</div>
+	</div>
+	{% else %}
+	{% comment %} remove from secondary nav (jQuery not yet on page) {% endcomment %}
+	<script>document.querySelector('.secondarynav a[href="#captioning"]').parentElement.remove()</script>
+	{% endif %}
+
+    {% if site.data.conf.quiet-room.show %}
+	<div class="row">
+		<div class="col-12">
+            <h2 id="quietroom">Quiet Room</h2>
+            <p>
+				For the General Conference days, room {{site.data.conf.quiet-room.location}} will serve as a <em>quiet room</em> at the conference venue. The purpose of this room is to provide a quiet space so that attendees can take a mental or physical break from the many goings on. The room is open to all attendees during the conference hours.
+            </p>
+            <p>
+               If you use the Quiet Room, we ask you to abide by the following rules:
+            </p>
+            <ul>
+               <li>The quiet space is not for private discussions or meetings. Any talking should be brief and kept to a whisper.</li>
+               <li>While in the room, please turn off or silence any electronics, especially cellphones. This is not a space to make phone calls, catch up on emails, or otherwise do work. This is a space to relax.
+               </li>
+               <li>If you want to listen to music, watch a video, etc., please wear headphones and keep the volume low. If someone asks you to further turn down the volume, please do so.</li>
+               <li>Personal belongings should not be left unattended.</li>
+               <li>Please leave the space in the same condition (or better) as you found it.</li>
+               <li>Food and drink is permitted but avoid noisy foods or anything with strong odors. </li>
+               <li>We will attempt to generally keep the lights as low as possible while maintaining a safe space.</li>
+               <li>Above all, respect your fellow conference goers in this space so that all of you can find a bit of quiet.</li>
+			   <li>Please respect any requests for social distancing or mask wearing in this space.</li>
+            </ul>
+		</div>
+	</div>
+	{% else %}
+	{% comment %} remove from secondary nav (jQuery not yet on page) {% endcomment %}
+	<script>document.querySelector('.secondarynav a[href="#quietroom"]').parentElement.remove()</script>
+	{% endif %}
+
+	{%- comment -%} if we're not using Whova again we'll need to disable this {%- endcomment -%}
+	{% if site.data.conf.online-only-conference %}
+		<div class="row">
+			<div class="col-12">
+				<h2 id="platform">Conference Platform Accessibility</h2>
+				<p>
+					Code4Lib {{ site.data.conf.year }} will be using Whova as the conference platform. In general, the platform is accessible, but it is missing landmarks and headers on pages. You can <a href="https://github.com/terrill/whova-a11y-fix">install a userscript</a> in your browser (Tampermonkey for Chrome or Greasemonkey for Firefox) that will create landmarks and headers. The userscript is not available for Safari. For assistance, contact <a href="mailto:{{site.data.conf.accessibility-email}}">{{site.data.conf.accessibility-email}}</a>.
+				</p>
+			</div>
+		</div>
+	{% endif %}
+
+	<div class="row">
+		<div class="col-12">
+			<h2 id="presenters">Presentation Accessibility</h2>
+            <p>
+				Code4Lib encourages all of its presenters to produce and deliver accessible talks. A guide to accessible presentations will be available soon. Towards this efforts, we have collected a body of advice and best practices:</p>
+				<p style="text-align:center;font-weight:bold;font-size:larger">
+					<a href="accessible-presenting.html">Code4Lib Accessible Presenting Guide</a> 
+				</p>
+            </p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<h2 id="microphones">Microphone Usage</h2>
+            <p> The single greatest act you can to do to promote accessibility at Code4Lib {{site.data.conf.year}} is to use the microphone. It doesn't matter if you think you are loud or you can project, you should use the microphone. It benefits everyone:
+            </p>
+            <ul>
+               <li>When a speaker uses the mic properly, you all hear them better.</li>
+               <li>When you ask a question with a mic, the speaker and everyone else hears your question.</li>
+               <li>Using the mic ensures everyone livestreaming or watching recorded talks can share the C4L experience.</li>
+               <li>Using the mic improves the quality of the live captioning feed.</li>
+            </ul>
+
+			<h3>Using a Microphone</h3>
+			<p>Generally, the line of the microphone should always point towards your mouth and nose. For a handheld mic, hold it like a candy bar or at a 45 degree angle. Position a podium mic towards you.</p>
+
+			
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<h2 id="venue">Conference Venues</h3>
+		
+			<h3>Frist Campus Center (Main Conference / Game Night)</h3>
+			<p>The main conference will be held on the Princeton campus in the <a href="https://www.princeton.edu/frist/">Frist Campus Center</a> on the <a href="https://www.princeton.edu/frist/floorplans/floorplansBc.html">B Level</a>. Elevators and accessible bathrooms are located on this level outside of the conference hall, and a gender-neutral bathroom on the second floor.</p>
+			
+			<p>There is an accessible bus stop that is located right outside of the garage and lets riders off on Washington Road on the North side of Frist Campus Center on the opposite side of the road.  Participants can navigate on the walkway heading South towards Frist and enter the building either on the backside, using a ramp then chair lift leaving them on the first floor or move along the side of the building to an entrance with an automatic door opener onto the first floor.  There is an elevator on the opposite side of the building that leads to the B level and conference location.</p>
+			
+			<h3>Julis Romo Rabinowitz Building (Pre-Conference Workshops)</h3>
+			<p>Pre-conference workshops will be held on the Princeton campus in the Julis Romo Rabinowitz Building on A Floor. Elevators and accessible and gender-neutral bathrooms are located on this level.</p>
+			<p>There is an accessible bus stop on Washington Road on the South side of Rabinowitz. Participants can navigate on the walkway and use the ramp approaching Rabinowitz from the South to enter the first floor. There is an elevator to the right of the main doors in the Rabinowitz atrium that leads down to the pre-conference rooms.</p>
+			
+			<h3>Prospect House (Lunch)</h3>
+			<p>Daily lunch will be served at <a href="https://www.princeton.edu/prospecthouse/index.html">Prospect House</a>. While the main entrance has two steps, but there is another door with no steps, also on the front of the building. An accessible bathroom is upstairs. The elevator is just inside the kitchen door.</p>
+			<p>It is worth noting that the walking path between the Frist Center and Prospect House can be steep at points. Please contact <a href="mailto:{{site.data.conf.accessibility-email}}">{{site.data.conf.accessibility-email}}</a> to request any assistance. 
+			</p>
+			
+			<p>Food is also available for purchase in Frist.</p>
+
+			<h3>Palmer House (Reception)</h3>
+			<p>The Wednesday night reception will be held in <a href="https://www.princeton.edu/palmerhouse/">Palmer House</a>. Further details about access are forthcoming.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<h2 id="transportation">Transportation</h2>
+			
+			<h3>Public Transportation</h3>
+			{% if site.data.conf.public-transportation.show %}
+				<p>For more information about accessible public transit in the Princeton area, see the accessibility sites of <a href="https://www.njtransit.com/railaccessibility">New Jersey Transit</a> and <a href="https://www.amtrak.com/accessible-travel-services">Amtrak</a>.</p>
+			{% else %}
+			<p>More information forthcoming. </p>
+			{% endif %}
+			
+			<h3>On the Priceton Campus</h3>
+			<p>General information about getting around the Princeton campus accessibly is available from <a href="https://transportation.princeton.edu/campus-accessibility">Princeton Transportation &amp; Parking Services</a>. Available information includes the <a href="https://transportation.princeton.edu/campus-accessibility/accessible-transit-services">accessibility of TigerTransit</a> and <a href="https://transportation.princeton.edu/campus-accessibility/accessible-paths-entrances">maps of accessible paths and entrances</a>.
+			</p>
+			
+			<h3>TigerAccess</h3>
+			<p>Visitors with disability to the Princeton campus can <a href="https://transportation.princeton.edu/campus-accessibility/accessible-transit-services">contact TigerAccess</a> for additional assistance in commuting around on campus. Rides should be reserved 24 hours in advance to guarantee availability. Rides may be requested less than 24 hours in advance, but cannot be guaranteed.</p> 
+			
+        </div>
+    </div>
+</div>
+</section>

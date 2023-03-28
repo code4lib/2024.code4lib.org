@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Schedule Page
+   ========================================================================== */
+
+.sched-well {
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 4px 5px 0px rgba(0, 0, 0, .11);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.sched-well h4 {
+  padding: 0px 0px 5px 0px;
+  text-align: left;
+  font-size: 1.75em;
+}
+
+.sched-well a {
+  @include link-styles;
+
+  &:active,
+  &:focus,
+  &:hover {
+    @include link-styles-states;
+  }
+}
+
+.sched-well p {
+  font-size: .9em;
+  line-height: 1.7em;
+  word-break: break-word;
+}
+
+.text-right h3 {
+  font-size: 1.25em;
+
+}

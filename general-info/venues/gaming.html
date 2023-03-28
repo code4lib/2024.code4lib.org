@@ -1,0 +1,16 @@
+<section class="general-info">
+  <div class="col-12">
+      <h2 id="gaming">Game Night</h2>
+      <p><strong>When: </strong>{{site.data.conf.game-night.date | date: '%A, %B %-d, %Y'}}, {{site.data.conf.game-night.time}}</p>
+      <p><strong>Where: </strong> {{site.data.conf.game-night.location}}</p>
+      <p>{{ site.data.conf.game-night.description }}</p>
+
+      {% if site.data.conf.game-night.sign-up-url != '' %}
+        <a class="btn ct-btn-light" target="blank" href="{{site.data.conf.game-night.sign-up-url}}">{{site.data.conf.game-night.sign-up-button-text}}</a>
+      {% endif %}
+
+      {% if site.data.conf.game-night.event-url != '' %}
+        <a class="btn ct-btn-light" target="blank" href="{{site.data.conf.game-night.event-url}}"> {{site.data.conf.game-night.event-url-button-text}}</a>
+      {% endif %}
+  </div>
+</section>

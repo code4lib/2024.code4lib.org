@@ -1,0 +1,16 @@
+# NOTE: we've not traditionally used the github, twitter, slack, or bio at all
+- id: aaaron-collier
+  name: Aaron Collier
+  last: Collier
+  pronouns: he/him/his
+  institution: Stanford University
+  position-title: Software Engineer
+  bio: |
+    Aaron Collier joined the Infrastructure Team at Stanford Libraries as a developer in mid-2017 from the California State University Office of the Chancellor, where he served as Repository Manager for several years. His true passion is judging beer.
+  twitter: aaronisbrewing
+  slack: acollier
+  github: aaaron-collier
+  image_src: /assets/img/speakers/aaaron-collier.jpg
+  image_alt: |
+    This is a great description of what the profile photo shows. It is a photo of someone who has eyes, a face, maybe hair, skin of some color, and there may be some gender-y things worth talking about. The emotions and actions are also described.
+  keynote: false

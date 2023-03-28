@@ -1,0 +1,56 @@
+###############
+# Registration
+###############
+
+# include "$" in all "cost" strings, makes templates cleaner
+
+conference:
+  # "show" means display information on the home page and /general-info/attend
+  show: false
+  url: 'https://concentracms.regfox.com/code4lib-2023'
+  start-date: '2023-01-05'
+  end-date: '2023-02-21'
+  cancellation-date: '2023-02-21'
+  # "open" means people can register
+  open: false
+  cost: '$200'
+  late-cost: '$260'
+  workshop-half-day-cost: '$40'
+  workshop-full-day-cost: '$80'
+  limited-capacity: true
+  waitlist: false
+
+workshop-only:
+  # "show" only toggles the display of info in the registration bullets on the general-info/attend page
+  show: true
+  # "show-button" only affects a button on the general-info/attend page
+  show-button: false
+  undecided: false
+  undecided-text: "Depending on availability, Pre-Conference ONLY registration may open at the beginning of May."
+  url: 'https://concentracms.regfox.com/code4lib-2023'
+  # precon-only registration cost may differ from precons with general registration
+  half-day-cost: '$50'
+  full-day-cost: '$100'
+  start-date: '2023-02-08'
+  end-date: '2023-03-13'
+
+t-shirt-only:
+  show: false
+  start-date: '2023-01-05'
+  cost: '$29'
+  # should be one or the other: have to purchase by last-date or cost changes after late-date
+  last-date: '2023-02-21'
+  # late-date: ''
+  # late-cost: ''
+
+childcare:
+  # "show" toggles the child care entry on /general-info/attend, under 'Additional Information' heading
+  show: false
+  # distinct from `show: false` in that we _know_ we won't be able to offer childcare
+  no-childcare: true
+  no-childcare-text: "Child Care will, unfortunately, not be available on campus this year."
+  full-day-cost:
+  half-day-cost:
+  end-date:
+
+reception-plus-one-cost:

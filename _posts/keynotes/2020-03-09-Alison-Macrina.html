@@ -1,0 +1,17 @@
+---
+layout: presentation
+speakers-text: Alison Macrina
+speaker: alison-macrina
+categories: past-keynotes
+title: Opening Keynote - Alison Macrina
+slides:
+youtube_key:
+---
+
+<p>
+{% for speaker in site.data.speakers %}
+    {% if speaker.id == page.speakers %}
+        {{ speaker.bio }}
+    {% endif %}
+{% endfor %}
+</p>

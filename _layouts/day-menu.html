@@ -1,0 +1,25 @@
+{% include header.html %}
+{% include search_results.html %}
+
+{% assign menu = site.data[page.menu] %}
+<div id="main">{% comment %} #main element needed for skip-menu link but we can't add it inside the loop {% endcomment %}</div>
+{% for meal in menu %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% if forloop.index == 1 %}
+                    <h1>{{ page.title }}</h1>
+					<p>
+						<a style="text-decoration:underline" href="{{ page.backlink }}">Back to {{ page.backlink_text }} Schedule</a>
+					</p>
+                    {{ content }}
+                {% endif %}
+                {% include menu.html meal=meal %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+{% include footer.html %}

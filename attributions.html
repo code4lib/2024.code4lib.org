@@ -1,0 +1,30 @@
+---
+layout: default
+title: image attributions
+---
+
+{% include homepage/jumbotron.html %}
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            {% if site.data.conf.image-attributions %}
+            <h2>Image Attributions</h2>
+
+                {% for attribution in site.data.conf.image-attributions %}
+                    <h3 class="h4">{{ attribution.creator }}</h3>
+                    {% if attribution.image-title != nil and attribution.image-url != nil %}
+                    Image: <a href="{{ attribution.image-url }}">{{ attribution.image-title }}</a> <br />
+                    {% endif %}
+                    {% if attribution.license-name != nil and attribution.license-url != nil %}
+                    License: <a href="{{ attribution.license-url }}">{{ attribution.license-name }}</a> <br />
+                    {% endif %}
+                {% endfor %}
+
+            {% endif %}
+        </div>
+      </div>
+
+    </div>
+</section>

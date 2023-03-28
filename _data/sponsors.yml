@@ -1,0 +1,155 @@
+# Example
+# - name: ebsco
+  # img: /assets/img/sponsors/ebsco.svg
+  # link: http://www.google.com
+  # level: platinum
+  # diversity: true
+  # transcription: false
+
+# if img is omitted, the name will be displayed instead.
+
+# The annotation key can be used to specify a qualifier next
+# to the sponsor's name/logo (e.g., "Closed Captioning")
+
+# diversity key indicates sponsors that should show up
+# on the diversity scholarships section of the site
+
+# Available Levels
+# - adamantium
+# - platinum
+# - diamond
+# - gold
+# - silver
+# - bronze
+# - contributor
+# - supporter
+# - exhibitor
+- name: OCLC
+  img: /assets/img/sponsors/Platinum_OCLC_logo.png
+  link: https://www.oclc.org/?utm_campaign=code4lib-2023-conference&utm_medium=conference&utm_source=conference-website&utm_content=code4lib-2023-conference-oclc-description
+  level: platinum
+
+- name: Blacklight
+  img: /assets/img/sponsors/Gold_blacklight-logo-vectorized.svg
+  link: https://projectblacklight.org/
+  level: gold
+
+- name: EBSCO
+  img: /assets/img/sponsors/Gold_EBSCO.png
+  link: http://www.ebsco.com/
+  level: gold
+
+- name: 4Science
+  img: /assets/img/sponsors/Gold_4science_blue_transparent.png
+  link: https://www.4science.com/
+  level: gold
+
+- name: University of Pittsburgh- University Library System
+  img: /assets/img/sponsors/PittShield_Rule_ULS_3color_lightback.png
+  link: https://www.library.pitt.edu/
+  level: bronze
+
+- name: Index Data
+  img: /assets/img/sponsors/indexdata.png
+  link: http://www.indexdata.com/
+  level: bronze
+
+- name: University of Michigan Library
+  img: /assets/img/sponsors/Bronze_PostCon_umich.png
+  link: https://lib.umich.edu/
+  level: bronze
+  annotation: 'PLUS Post Conference Video Production'
+
+- name: Rockefeller Archive Center
+  img: /assets/img/sponsors/Bronze_Rockefellar.jpeg
+  link: https://rockarch.org/
+  level: bronze
+
+- name: School of Communication and Information - Rutgers University
+  img: /assets/img/sponsors/Bronze_Rutgers.png
+  link: https://comminfo.rutgers.edu/about/library-and-information-science-department
+  level: bronze
+
+- name: Lyrasis
+  img: /assets/img/sponsors/Captioning_lyrasis-logo_1.png
+  link: http://www.lyrasis.org/
+  level: bronze
+  annotation: Captioning Sponsor
+
+- name: School of Information Sciences, University of Illinois Urbana-Champaign
+  img: /assets/img/sponsors/Contributor_UofIL_School_of_Info_Science.png
+  link: https://ischool.illinois.edu/
+  level: contributor
+
+- name: Rice University - Fondren Library
+  img: /assets/img/sponsors/Contributor_Rice_Fondren_Lib.jpeg
+  link: https://www.library.rice.edu/
+  level: contributor
+
+- name: School of Information and Library Science, UNC-Chapel Hill
+  img: /assets/img/sponsors/Supporter_UNC.png
+  link: https://sils.unc.edu/
+  level: supporter
+
+- name: Carnegie Mellon University Libraries
+  img: /assets/img/sponsors/Supporter_CMU.png
+  link: https://library.cmu.edu/
+  level: supporter
+
+- name: ArchivesSpace
+  img: /assets/img/sponsors/Supporter_archivesspace_logo.png
+  link: https://archivesspace.org/
+  level: supporter
+
+- name: School of Information - University of British Columbia
+  img: /assets/img/sponsors/Supporter_ubc_school_of_information_logo.png
+  link: https://ischool.ubc.ca/
+  level: supporter
+
+- name: Developers 4 Diversity
+  img: /assets/img/sponsors/Scholarship_devs4diversity.png
+  link: https://github.com/pulibrary
+  diversity: true
+
+- name: MIT
+  img: /assets/img/sponsors/Scholarship_MIT.png
+  link: https://libraries.mit.edu/
+  diversity: true
+  annotation: '(2) Diversity Scholarships'
+
+- name: Princeton University Library
+  img: /assets/img/sponsors/Scholarship_Princeton_Univ_Library.png
+  link: https://library.princeton.edu/
+  diversity: true
+
+- name: OCLC
+  img: /assets/img/sponsors/Platinum_OCLC_logo.png
+  link: https://www.oclc.org/?utm_campaign=code4lib-2023-conference&utm_medium=conference&utm_source=conference-website&utm_content=code4lib-2023-conference-oclc-description
+  diversity: true
+
+- name: CLIR
+  link: https://www.clir.org/
+  level: exhibitor
+
+- name: Lyrasis
+  link: http://www.lyrasis.org/
+  level: exhibitor
+
+- name: 4Science
+  link: https://www.4science.com/
+  level: exhibitor
+
+- name: Equinox Open Library Initiative
+  link: https://www.equinoxoli.org/
+  level: exhibitor
+
+- name: Princeton University Library
+  link: https://library.princeton.edu/
+  level: gold
+  img: /assets/img/sponsors/Gold_Princeton_Logo.png
+  annotation: Reception Sponsor
+
+- name: Johns Hopkins University
+  link: https://www.library.jhu.edu/
+  level: bronze
+  img: /assets/img/sponsors/Bronze_Johns_Hopkins.jpeg

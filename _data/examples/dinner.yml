@@ -1,0 +1,42 @@
+# for sorting purposes:
+# - distance should start with a number
+# - price point should start with a $ and then a number
+- restaurant-name: Apteka
+  url: https://aptekapgh.com/
+  type-of-food: Vegan
+  distance-from-hotel: 1 mile
+  vegetarian-options: Yes
+  vegan-options: Yes
+  takes-reservations: No
+  price-point: $11-30
+  accessibility-and-notes: Accessible entry.
+
+- restaurant-name: Foodies Food Palace
+  url: https://example.com
+  type-of-food: Barbecue
+  distance-from-hotel: 0.5 miles
+  vegetarian-options: No
+  vegan-options: No
+  takes-reservations: Yes
+  price-point: $10-23
+  accessibility-and-notes: Very "rowdy" atmosphere.
+
+- restaurant-name: Place w/o a Website
+  url:
+  type-of-food: Stews
+  distance-from-hotel: 5 miles
+  vegetarian-options: Yes
+  vegan-options: No
+  takes-reservations: Yes
+  price-point: $30-40
+  accessibility-and-notes:
+
+- restaurant-name: Plant-based Prandial
+  url: https://example.com
+  type-of-food: Vegan
+  distance-from-hotel: 2 miles
+  vegetarian-options: No
+  vegan-options: Yes
+  takes-reservations: Yes
+  price-point: $15-30
+  accessibility-and-notes: Accessible entry.

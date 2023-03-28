@@ -1,0 +1,259 @@
+---
+layout: secondary-nav
+title: Attend Code4Lib
+nav: general-info
+active: Attend Code4Lib
+---
+<section class="general-info">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1>Attend Code4Lib</h1>
+
+                    {% if site.data.registration.conference.show %}
+                        {% if site.data.registration.conference.open %}
+                          <h2>Code4Lib {{ site.data.conf.year }} is Sold Out!</h2>
+                          {% if site.data.registration.conference.waitlist %}
+                            <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Join Waitlist</a>
+                          {% else %}
+                            <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Register Now!</a>
+                          {% endif %}
+                        {% elsif site.data.registration.workshop-only.show %}
+                            <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Pre-Conference Registration</a>
+                        {% else %}
+                            <p>Registration will open
+                                at 11 a.m. EST / 8 a.m. PST
+                                on <span class="font-weight-bold">{{ site.data.registration.conference.start-date | date: '%A, %B %-d, %Y' }}</span>.</p>
+                        {% endif %}
+                    {% else %}
+                        <p>Code4Lib will be held from {{site.data.conf.days[0].date}} to {{site.data.conf.days.last.date}} this year.
+                            {% if site.data.conf.venue.hotel.reserved-room-block %}
+                            We have reserved a block at the {{site.data.conf.venue.hotel.name}}; see more details on the <a href="venues/">Venues</a> page.
+                            {% endif %}
+                            There will be no large group block of rooms at a single hotel this year, but the Local Planning Committee is looking into discounted room rates at a few nearby hotels. See <a href="/general-info/venues/">Venues</a> page for more information.
+                        </p>
+                    {% endif %}
+
+                    <h3>Covid Procedures</h3>
+                    <p>Attendance will be subject to <a href="https://ehs.princeton.edu/VisitorPolicy">Princeton's visitor policy</a>. The policy requires that visitors to campus be fully vaccinated, show proof of a recent negative Covid-19 test, or wearing a face covering at all times inside campus buildings.</p>
+
+                    {% if site.data.registration.workshop-only.show-button %}
+                        <h3>Pre-Conference Workshops</h3>
+                        <p><a class="btn btn-lg btn-warning" href="{{ site.data.registration.workshop-only.url }}">Pre-Conference Registration</a></p>
+                    {% endif %}
+            </div>
+        </div>
+
+        {% if site.data.registration.conference.show %}
+        <div class="row">
+            <div class="col-12">
+                <h3>Registration Fees</h3>
+                <ul>
+                    <li><span class="font-weight-bold">Main Conference</span>: {{ site.data.registration.conference.cost }}</li>
+
+                    <li><span class="font-weight-bold">Main Conference (after {{ site.data.registration.conference.end-date | date: "%B %-d" }})</span>: {{ site.data.registration.conference.late-cost }}</li>
+
+                    {% if site.data.registration.post-conference.show %}
+                        {% if site.data.registration.post-conference.workshop-half-day-cost %}
+                            <li><span class="font-weight-bold">Post-Conference</span>: {{ site.data.registration.post-conference.workshop-half-day-cost }} per workshop</li>
+                        {% else %}
+                            <li><span class="font-weight-bold">Post-Conference</span>: Pricing & Details Coming Soon</li>
+                        {% endif %}
+                    {% else %}
+                        <li><span class="font-weight-bold">Pre-Conferences (with main conference registration)</span>: {{ site.data.registration.conference.workshop-half-day-cost }} per half day ({{ site.data.registration.conference.workshop-full-day-cost }} for full day)</li>
+
+                        {% if site.data.registration.workshop-only.show %}
+                            <li><span class="font-weight-bold">Pre-Conference Only</span>: {{ site.data.registration.workshop-only.half-day-cost }} per half day. {% if site.data.registration.workshop-only.full-day-cost != nil %} ({{ site.data.registration.workshop-only.full-day-cost }} for full day).{% endif %} {% if site.data.registration.workshop-only.start-date != nil %} Opens {{ site.data.registration.workshop-only.start-date | date: "%B %-d" }}.{% endif %}</li>
+                        {% endif %}
+                    {% endif %}
+
+                    {% if site.data.registration.t-shirt-only.show %}
+                        <li><span class="font-weight-bold">Conference T-Shirt ONLY</span>: {{ site.data.registration.t-shirt-only.cost }}
+                        {% if site.data.registration.t-shirt-only.last-date != nil %}
+                            (Must register on or before {{ site.data.registration.t-shirt-only.last-date | date: "%B %-d" }})
+                        {% endif %}
+                        {% if site.data.registration.t-shirt-only.late-cost != nil %}
+                            ({{ site.data.registration.t-shirt-only.late-cost }} after
+                            {{ site.data.registration.t-shirt-only.late-date | date: "%B %-d" }})
+                        {% endif %}
+                        </li>
+                    {% endif %}
+
+
+                    {% if site.data.registration.reception.plus-one-cost %}
+                        <li><span class="font-weight-bold">Reception "plus one"</span>: {{ site.data.registration.reception.plus-one-cost }} (limit one "plus one" per registration)</li>
+                    {% endif %}
+
+                    {% if site.data.conf.online-only-conference == false
+                        and site.data.conf.venue.hotel.show
+                        and site.data.conf.venue.hotel.multiple-hotels == false %}
+                    <li>
+                        <span class="font-weight-bold">{{site.data.conf.venue.hotel.name}}</span>:
+                        {{ site.data.conf.venue.hotel.cost }}/night
+                        ({% if site.data.conf.venue.hotel.with-tax-cost %}
+                            {{ site.data.conf.venue.hotel.with-tax-cost }} with taxes
+                            {% else %}plus taxes
+                        {% endif %})
+                        {% if site.data.conf.venue.hotel.cost-cutoff-date %}
+                            until {{ site.data.conf.venue.hotel.cost-cutoff-date | date: "%B %-d" }}
+                        {% endif %}
+                    </li>
+                    {% else %}
+                    <li>
+                        <span class="font-weight-bold">Lodging</span>: Please see <a href="/general-info/venues/">the Venues page</a> where we'll be adding more info as it becomes available.
+                    </li>
+                    {% endif %}
+                </ul>
+
+                <p>
+                    <span class="font-weight-bold">Payment Policy</span>: Payment for the full amount of registration fees must be made at the time of registration or within 48 hours of the completion of registration.
+                </p>
+
+                <p>
+                    <span class="font-weight-bold">Cancellation Policy</span>: All cancellations received on or before {{ site.data.registration.conference.cancellation-date | date: "%B %-d, %Y" }} are eligible for a full refund of fees paid, less a 10% cancellation fee. No refunds will be issued after the {{ site.data.registration.conference.cancellation-date | date: "%B %-d" }} cut-off date. Registrants are able to transfer completed registrations to colleagues - please contact <a href="mailto:{{ site.data.conf.main-conf-email }}">{{ site.data.conf.main-conf-email }}</a> to finalize this process.
+                </p>
+
+                {%- comment -%}
+                <p>
+                    When you register, you will be able to select two half-day workshops. As with past Code4Lib conferences, it will be possible to register for the main conference, the main conference + post-conference(s), or only for the post-conference workshop(s)
+                </p>
+                <p>
+                    <span class="font-weight-bold">Post-conference only registration will not open this year due to limited sessions and capacity.</span>
+                </p>
+                {%- endcomment -%}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3>Additional Information</h3>
+                <ol>
+                    {% if site.data.registration.childcare.show %}
+                    <li>
+                        Child Care is available for each day of the conference. When you register, you may select which days you require child care. The cost is {{ site.data.registration.childcare.full-day-cost }} per full day, {{ site.data.registration.childcare.half-day-cost }} for the half day on {{ site.data.conf.days[3].weekday }}, and {{ site.data.registration.childcare.half-day-cost }} for child care during the {{ site.data.conf.days[1].weekday }} evening reception.
+                        {% if site.data.registration.childcare.end-date != '' %}
+                          <span class="font-weight-bold">Please Note</span>: Child Care Registration will close on {{ site.data.registration.childcare.end-date | date: "%B %e, %Y" }}. Registration and payment must be finalized on or before {{ site.data.registration.childcare.end-date | date: "%B %e"}}, to utilize the child care services.
+                        {% endif %}
+                    </li>
+                    {% elsif site.data.registration.childcare.no-childcare %}
+                        <li>
+                            {{ site.data.registration.childcare.no-childcare-text }}
+                        </li>
+                    {% endif %}
+
+                    {% if site.data.registration.conference.limited-capacity %}
+                    <li>
+                        Registration will close when the maximum capacity has been reached.
+                        A waitlist will be available once this final round of registration is
+                        closed.
+                    </li>
+                    {% endif %}
+
+                    <li>
+                        {% if site.data.conf.have-talks %}
+                            <span class="font-weight-bold"><a href="/talks/">Conference Talks</a></span>:
+                        {% else %}
+                            <span class="font-weight-bold">Conference Talks</span>:
+                        {% endif %}
+                        {% if site.data.conf.have-schedule %}
+                            See conference program <a href="/schedule/">on the schedule page</a> to get
+                            an idea of what will be part of the program. Conference speakers still need
+                            to register for the conference at full price.
+                        {% else %}
+                            See conference program <a href="/schedule/timeline">on the schedule page</a> to get
+                            an idea of what will be part of the program. Conference speakers still need
+                            to register for the conference at full price.
+                        {% endif %}
+                    </li>
+
+                    {% if site.data.registration.workshop-only.undecided %}
+                        <li>
+                            {{ site.data.registration.workshop-only.undecided-text }}
+                        </li>
+                    {% endif %}
+                </ol>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</section>
+
+
+<section class="general-info" id="remote">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                {% if site.data.conf.online-only-conference %}
+                    <h2>Can't attend the live stream?</h2>
+                {% else %}
+                    <h2>Can't attend in person?</h2>
+                {% endif %}
+
+                {% if site.data.conf.online-only-conference and site.data.registration.conference.open %}
+                    <p>
+                        Due to the conference being virtual this year, we will not be Live Streaming the sessions on YouTube. If you are interested in participating in real-time, you must <a href="{{ site.data.registration.conference.url }}">register</a> for the event to receive the information and access to the live streams.
+                    </p>
+                {% endif %}
+
+                <p>
+                    Presentations will be
+                    {% unless site.data.conf.online-only-conference %}streamed and{% endunless %}
+                    archived on our <a href="{{ site.data.conf.social-links.youtube }}">YouTube channel</a> after the conference has ended.
+                    Please be sure to thank our volunteers that make this happen.
+                </p>
+
+                <p>For {{site.data.conf.year}}, there are two options for participating remotely.</p>
+                <ul>
+                    <li><span class="font-weight-bold">Option 1</span> - Watch the presentations streamed to the code4lib YouTube channel and subscribe to the #code4libcon Slack channel to engage in discussions with all attendees during the conference. There is no fee for this option and no registration required.</li>
+                    <li><span class="font-weight-bold">Option 2</span> - Register online as a “Conference T-Shirt ONLY Attendee”, pay the appropriate registration fee based on your registration date (see above for fees), and receive the same conference t-shirt that in-person attendees receive. If you choose this registration type, you'll watch and engage in the conference in the same manner as outlined in Option 1, above. NOTE: “Conference T-Shirt ONLY Attendee” registration is NOT required to participate in the conference, as outlined in Option 1 above.</li>
+                </ul>
+
+                <h3>Social Media and "Back Channels"</h3>
+                <p>
+                    You can also connect with us via
+                    <a href="{{ site.data.conf.social-links.slack}}">Slack</a>
+                    (<a href="https://docs.google.com/forms/d/120Dw1JjLxPJB9VTGl0mUY7Ot6yg6YNY1RZUISJFzdwk/viewform?c=0&w=1">sign up here</a>),
+                    <a href="https://twitter.com/hashtag/{{site.data.conf.hashtag}}">Twitter</a>, and
+                    <a href="{{ site.data.conf.social-links.irc}}">IRC</a>.
+                </p>
+
+                {% if site.data.conf.closed-captioning.show %}
+                {% assign sponsors = site.data.sponsors | where:"transcription","true" %}
+                <h3>Live Transcription</h3>
+                {% if site.data.conf.closed-captioning.url != nil %}
+                <p>
+                    We are thrilled to be able to provide <a href="{{ site.data.conf.closed-captioning.url }}">
+                    live transcriptions of all the presentations</a>.
+                {% else %}
+                    We are thrilled to be able to provide live transcriptions of all the presentations.
+                {% endif %}
+                    A link to view the transcriptions will be added here in the days leading up to the conference.
+                </p>
+                {% if sponsors.size > 0 %}
+                    <p>
+                        Thank you to our Transcription sponsor{% if sponsors.size > 1 %}s{% endif %}:
+                    </p>
+                    <ul>
+                        {% for sponsor in sponsors %}
+                            <li>{{ sponsor.name }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {% for sponsor in sponsors %}
+                    {% if sponsor.img != '' %}
+                    <div class="row sponsor-row">
+                        <div class="col-12 col-md-6">
+                            <a href="{{ sponsor.link }}" class="thumbnail" style="background: white;">
+                                <img src="{{ sponsor.img }}" alt="{{ sponsor.name }}">
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

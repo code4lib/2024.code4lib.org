@@ -1,0 +1,77 @@
+<footer id="footer" class="footer" role="contentinfo">
+    <div class="container">
+        <a href="#"><img src="{{ "/assets/img/theme-images/c4l-logo.svg" | relative_url }}" alt="Code4Lib"></a>
+        <ul id="footerNav" class="list-inline list-unstyled small">
+            <li class="list-inline-item tci"><a class="nav" href="{{ site.baseurl }}/">Home</a></li>
+            <li class="list-inline-item tci"><a class="nav" href="{{ site.baseurl }}{% if site.data.conf.have-schedule %}
+            {% link schedule/index.html %}{% else %}{% link schedule/timeline.html %}
+            {% endif %}">Schedule</a></li>
+            <li class="list-inline-item tci"><a class="nav" href="{{ site.baseurl }}{% if site.data.conf.have-talks %}
+            {% link speakers/index.html %}{% else %}{% link speakers/past-keynotes.html %}
+            {% endif %}">Speakers</a></li>
+
+            {% if site.data.conf.show-sponsors %}
+                <li class="list-inline-item tci"><a class="nav" href="{{ site.baseurl }}{% link sponsors/index.html %}">Sponsors</a></li>
+            {% endif %}
+
+            <li class="list-inline-item tci"><a class="nav" href="{{ site.baseurl }}{% link general-info/attend.html %}">General Info</a></li>
+            <li class="list-inline-item tci"><a class="nav" href="{{ site.baseurl }}{% link conduct/index.html %}">Conduct & Safety</a></li>
+            <li class="list-inline-item tci"><a class="nav" href="mailto:code4lib@concentra-cms.com">Contact Us</a></li>
+        </ul>
+        <div class="bucket">
+            <p>
+                <a rel="license" href="//creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 International license">
+                    <img src="{{ "/assets/img/persistent/cc.png" | relative_url }}" alt="License"></a>
+            </p>
+            <div style="display: inline;" xmlns:cc="/ns#" about="http://creativecommons.org">
+                <p>
+                    <small>
+                        Except where otherwise noted, content on this site is licensed under a
+                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">
+                            Creative Commons Attribution 4.0 International license</a>.
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
+{%- comment -%} required for Bootstrap tooltips but not used directly {%- endcomment -%}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+{% if site.data.conf.search %}
+    <script>var searchData = "{{ site.baseurl }}/search_data.json"</script>
+    <script src="{{ "/assets/js/lunr.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+{% endif %}
+
+{% if page.layout == 'proposedContent' %}
+<script src="{{ "/assets/js/vendor/tabletop.js" | relative_url }}"></script>
+{% include proposed-js.html %}
+{% endif %}
+
+{% if site.data.dinner != nil and page.title == 'Venues' %}
+<script src="https://kit.fontawesome.com/bd2d035961.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#dinner-datatable').DataTable({
+        "paging": false,
+        "searching": false,
+        "autoWidth": false,
+        "order": [[0, 'asc']]
+    })
+})
+// tooltips beside restaurant names
+$('i[role="tooltip"]').each((idx, elem) => $(elem).tooltip())
+</script>
+{% endif %}
+
+{% include analytics.html %}
+
+</body>
+</html>

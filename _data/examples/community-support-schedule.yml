@@ -1,0 +1,32 @@
+# The schedule for Community Support Volunteers, only affects
+# /conduct/#schedule
+# The volunteer(s) fields key off of objects in community-support.yml
+# Everything else is a string; "period" can be text or a time but we
+# usually use a label for the onsite schedule & time for online.
+
+onsite:
+  # template:
+  # - day: Tuesday
+  #   period: Morning Preconferences
+  #   volunteers:
+  #     - surname
+  #     - othersurname
+  - day: Tuesday
+    period: Morning Preconferences
+    volunteers:
+      - surname
+
+  - day: Tuesday
+    period: Afternoon Preconferences
+    volunteers:
+      - othersurname
+      - surname
+
+online:
+  # template:
+  # - day:
+  #   period:
+  #   volunteer:
+  - day: Tuesday
+    period: 9am - 12pm MT
+    volunteer: drrobot

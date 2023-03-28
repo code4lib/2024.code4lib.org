@@ -1,0 +1,54 @@
+<div class="container-fluid" id="angel-fund">
+	<div class="row">
+		<div class="col-12">
+			{% if site.data.conf.angel-fund.show %}
+			<h2>Individual Giving</h2>
+			<p>
+				The Angel Fund has proven over the years to be a successful way for individuals in the community to support the Diversity and Inclusion Scholarships. We would like to continue accepting donations from individuals who would like to support this year’s Financial Assistance Program. Individual donors will be thanked below, though anonymous donation is also possible. All funds raised will help pay the conference registration costs for anyone in the community requesting financial assistance for our annual conference.
+			</p>
+			<p>[February 2, 2021] <br />Wow! Thank you to all of our community members and organizations for the contributions received so far! We understand that the Code4Lib community is committed to supporting diversity and inclusion each year. Because of this, any extra funding (in surplus of the Financial Assistance requests) may be directed to our <a href="/prospectus/#Targeted-Sponsorship">Diversity and Inclusion Sponsorships</a>, which includes Closed Captioning and Post-Conference Video Production. These sponsorships provide access to conference content to many around the world who are unable to attend, and for future viewing. If you have any questions about this use of funding, please contact <a href="mailto:{{site.data.conf.main-conf-email}}">{{site.data.conf.main-conf-email}}</a>
+			</p>
+			<div>
+				<a class="btn ct-btn-light btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel Fund today!</a>
+			</div><br>
+			{% endif %}
+
+			<div id="donation-total"></div>
+
+			{% if site.data.conf.angel-fund.thermometer %}
+				<div id="donation-thermometers"></div>
+
+				<!-- thermometer HTML/CSS based on https://codepen.io/robotballoon/pen/Fjnyp -->
+				<template id="thermometer">
+				    <div class=countdown-wrap>
+				      <div class="goal-title">
+				          <div class="label">{{label}}</div>
+				          <div class="goal">{{goal}}</div>
+				      </div>
+				      <div class="glass">
+				        <div class="progress">
+				        </div>
+				      </div>
+				      <div class="goal-stat">
+				        <span class="goal-number percent">{{percent}}</span>
+				        <span class="goal-label">Funded</span>
+				      </div>
+				      <div class="goal-stat">
+				        <span class="goal-number total">{{total}}</span>
+				        <span class="goal-label">Raised</span>
+				      </div>
+				      <div class="goal-stat">
+				        <span class="goal-number donations">{{donations}}</span>
+				        <span class="goal-label">Donations</span>
+				      </div>
+				    </div>
+				</template>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{% if site.data.conf.angel-fund.thermometer %}
+	<script src="{{ "/assets/js/thermometer.js" | relative_url }}"></script>
+	<style>@import url('{{ "/assets/css/thermometer.css" | relative_url }}') screen;</style>
+{% endif %}

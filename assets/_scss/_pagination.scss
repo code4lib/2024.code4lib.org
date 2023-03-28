@@ -1,0 +1,14 @@
+.page-link {
+
+  &:hover {
+    color: $pagination-hover-color;
+    background-color: $accent-dark;
+    border-color: $pagination-hover-border-color;
+  }
+
+  &:focus {
+    z-index: 4;
+    outline: $pagination-focus-outline;
+    box-shadow: $pagination-focus-box-shadow;
+  }
+}

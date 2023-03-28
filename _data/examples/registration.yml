@@ -1,0 +1,37 @@
+###############
+# Registration
+###############
+
+# include "$" in all "cost" strings, makes templates cleaner
+
+workshop-only:
+  # "show" only affects a button on the general-info/attend page
+  show: false
+  url: "https://na.eventscloud.com/c4l20"
+  # precon-only registration cost may differ from precons with general registration
+  half-day-cost: "$60"
+  full-day-cost: "$120"
+  start-date: 2020-02-11
+
+conference:
+  # "show" means display information on the home page and /general-info/attend
+  show: false
+  url: "https://na.eventscloud.com/c4l20"
+  start-date: 2019-12-11
+  end-date: 2020-02-10
+  cancellation-date: 2020-02-12
+  # "open" means people can register
+  open: false
+  cost: "$375"
+  late-cost: "$450"
+  workshop-half-day-cost: "$50"
+  workshop-full-day-cost: "$100"
+
+childcare:
+  # "show" toggles the child care entry on /general-info/attend, under 'Additional Information' heading
+  show: false
+  full-day-cost: "$30"
+  half-day-cost: "$15"
+  end-date: 2020-02-08
+
+reception-plus-one-cost:

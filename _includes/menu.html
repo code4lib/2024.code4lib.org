@@ -1,0 +1,49 @@
+{% assign meal = include.meal %}
+<div class="col-md-12">
+    <a name="{{meal[0]}}"></a>
+    <aside class="tasting-menu" style="background-color:#fff;">
+        <h2 class=".h4 meal-header"><span>{{ meal[0] }}</span></h2>
+        <br/>
+        <ul class="tasting-options">
+            {% for category in meal[1] %}
+            <li>
+                <h3 class=".h5 category-header">{{ category[0] }}</h3>
+                <ul class="items list-unstyled">
+                    {% for item in category[1] %}
+                    <li>
+                        {{ item[0] }}
+                        {% assign notes = item[1] | split: ", " %}
+                        {% for note in notes %}
+                        {% if note == "VGN" %}
+                        <img src="/assets/img/persistent/vegan.svg" alt="vegan" height="35"/>
+                        {% endif %}
+                        {% if note == "VGT" %}
+                        <img src="/assets/img/persistent/vegetarian.svg" alt="vegetarian" height="35"/>
+                        {% endif %}
+                        {% if note == "GF" %}
+                        (GF)
+                        {% endif %}
+                        {% if note == "DF" %}
+                        (DF)
+                        {% endif %}
+                        {% endfor %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+        <p style="text-align:center">
+            <img src="/assets/img/persistent/vegetarian.svg" alt="vegetarian" height="35"/> = Vegetarian &nbsp; &nbsp; <img src="/assets/img/persistent/vegan.svg" alt="vegan" height="35"/> = Vegan
+            &nbsp; &nbsp; (GF) = Made without Gluten
+            &nbsp; &nbsp; (DF) = Dairy Free
+        </p>
+        <p>
+            Princeton <u>does not</u> have an allergen free kitchen or equipment. They work hard to
+            eliminate cross contamination, but they are not able to guarantee, therefore we are not
+            able to provide full ingredient lists. If you have specific questions or concerns,
+            please email <a href="mailto:code4lib@concentra-cms.com">code4lib@concentra-cms.com</a>
+            to be put in touch with the Princeton Campus Wellness Dietician.
+        </p>
+    </aside>
+</div>

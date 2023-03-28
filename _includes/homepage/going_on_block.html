@@ -1,0 +1,46 @@
+{% if site.data.registration.conference.waitlist %}
+<h3>Code4Lib {{site.data.conf.year}} Main Conference is Sold Out!</h3>
+<p>Please register below for pre-conference workshops or join the main conference waitlist.</p>
+{% endif %}
+<div class="row going-on">
+    <div class="col-12 col-sm-6 col-md-5">
+        {% if include.primary %}
+        <div class="h4">{{ include.title }}</div>
+        {% else %}
+        <div class="h4">{{ include.title }}</div>
+        {% endif %}
+        {% if include.more-info-link.size %}
+            <a href="{{ include.more-info-link }}">
+        {% endif %}
+            <small>
+            {% if include.more-info-text.size %}
+                {{ include.more-info-text }}
+            {% elsif include.more-info-text.size %}
+                More info
+            {% endif %}
+            </small>
+        {% if include.more-info-link.size %}
+            </a>
+        {% endif %}
+    </div>
+    <div class="col-12 col-sm-6 col-md-5">
+    {% if include.end-date.size %}
+        Now through {{ include.end-date | date: '%B %-d'}}{% include date_ordinals.html date=include.end-date %}
+    {% else if include.start-date.size %}
+        Starting on {{ include.start-date | date: '%B %-d'}}{% include date_ordinals.html date=include.start-date %}
+    {% endif %}
+    </div>
+    <div class="col-12 col-md-2">
+        {% if include.url.size and include.url-text.size %}
+          {% if site.data.registration.conference.waitlist %}
+            <a class="btn ct-btn-light btn-sm btn-block" href="{{ include.url }}" target="_blank">
+              Register or<br/>Join Waitlist
+            </a>
+          {% else %}
+            <a class="btn ct-btn-light btn-sm btn-block" href="{{ include.url }}" target="_blank">
+              {{ include.url-text }}
+            </a>
+          {% endif %}
+        {% endif %}
+    </div>
+</div>

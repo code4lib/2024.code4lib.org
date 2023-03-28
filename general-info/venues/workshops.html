@@ -1,0 +1,15 @@
+<section class="general-info">
+    <div class="col-12">
+        <h2 id="workshops">Workshops</h2>
+        {% if site.data.conf.workshops.show %}
+        {% assign location = site.data.locations | where: 'id', site.data.conf.workshops.location | first %}
+        <p>
+            All Pre-Conference workshops will be held {{ site.data.conf.days[0].weekday }}, {{ site.data.conf.days[0].date-data | date: "%B %-d, %Y" }}{% if location %} in <a href="{{ location.google_maps }}">{{ location.name }}</a>{% endif %}. Please see the <a href="/workshops/">schedule</a> for more information.
+        </p>
+        {% else %}
+        <p>
+            Stay tuned… When the information of the workshops is confirmed, the details will be added here.
+        </p>
+        {% endif %}
+    </div>
+</section>

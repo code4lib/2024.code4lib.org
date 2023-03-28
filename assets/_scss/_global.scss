@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  /* Margin bottom by footer height */
+  color: $gray-base;
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  margin-bottom: 20.3125em;
+  padding-bottom: 20px;
+}
+
+// halve blockquote padding on smaller screens
+@media screen and (max-width: $screen-sm) {
+  blockquote {
+    padding: ($line-height-computed / 4) ($line-height-computed / 2);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-sans-serif;
+  letter-spacing: .02em;
+
+  &.expo {
+    border-bottom: 1px solid $gray-light;
+  }
+
+  margin-top: $font-size-base;
+  margin-bottom: $font-size-base;
+}
+
+.btn:focus {
+    @include fixed-tab-focus;
+}
+
+.navbar {
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  background: $navbar-bg;
+}
+
+dt {
+    margin-top: 1em;
+}
+
+p {
+  line-height: 2em;
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+  z-index: 0;
+}
+
+.modal-dialog {
+  z-index: 1;
+}
+
+.sequence {
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.ct-btn-light {
+    background-color: $accent-light;
+    border: 2px solid $accent-light;
+    &:hover {
+        background-color: $cultured-white;
+    }
+}

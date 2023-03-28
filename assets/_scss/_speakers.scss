@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Speaker Boxes
+   ========================================================================== */
+
+.speaker-name {
+  font-size: 1.65em;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+.speaker-name button {
+  font-weight: bold;
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+.speaker-mini {
+  padding: 0 15px;
+}
+
+button.speaker-info-toggle {
+  color: $primary-light;
+  background: transparent;
+  border: 0;
+}
+
+p.speaker-title,
+p.speaker-bio {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+p.speaker-session {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+p.speaker-pronouns,
+p.speaker-title,
+p.speaker-inst {
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: .2em .5em;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  position: relative;
+  z-index: 100;
+}
+
+
+p.speaker-bio,
+p.speaker-session {
+  color: $speaker-info-color;
+  padding: .5em;
+}
+
+.speaker-info-inner .image-description {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: $speaker-info-color;
+  padding: 0 2.5em;  
+  font-style: italic;
+}
+.speaker-info-inner h4.image-description {
+  margin: 0.25em 0 0;
+}
+
+p.speaker-bio a,
+p.speaker-session a {
+  &:not(.icon) {
+    @include link-styles;
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include link-styles-states;
+    }
+  }
+}
+
+// Links to twitter usernames for speakers & scholarships
+p.speaker-bio .icon--twitter a,
+dt .speaker-bio .icon.icon--twitter a {
+  border-bottom: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+		background-color: transparent;
+		border-bottom: 0;
+		color: $black;
+  }
+}
+
+p.speaker-bio:not(:nth-of-type(1)) {
+  margin-bottom: 5px;
+  padding-top: 0;
+}
+
+
+
+.speaker-info {
+  background-color: $speaker-info-bg;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .15s ease;
+  width: 900px;
+}
+
+.speaker-info.show {
+  max-height: max-content;
+  transition: max-height .35s ease;
+  transition-delay: .15s;
+  display: flex;
+}
+
+.speaker-info-inner {
+  padding: 20px 15px 10px;
+}
+
+.speaker-info-inner h4 {
+  color: $speaker-info-color;
+  padding: .5em;
+}
+
+.speaker-info-inner h4 a {
+  color: $accent-dark;
+
+  &:focus,
+  &:hover {
+    color: $accent-darker;
+  }
+}
+
+.speaker-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 10px 10px 0px;
+  width: 300px;
+}
+
+.speaker-box-inner {
+  padding: 15px 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.speaker-box-inner img {
+	order: 1;
+}
+.speaker-box-inner .speaker-name {
+	order: 2;
+}
+.speaker-box-inner .speaker-mini {
+	order: 3;
+}
+
+
+.speaker-box.selected .speaker-box-inner {
+  background-color: $speaker-selected-bg;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.speaker-box.selected button {
+  color: $white;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border: none;
+    color: $speaker-selected-color;
+  }
+}
+
+.speaker-box.selected p {
+  color: $white;
+}
+
+.arrow-down {
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-top: 15px solid $speaker-selected-bg;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  z-index: 99;
+  bottom: -14px;
+}
+
+.speaker-box.selected .arrow-down {
+  opacity: 1;
+}
+
+.icon > svg,
+.icon > a > svg {
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}

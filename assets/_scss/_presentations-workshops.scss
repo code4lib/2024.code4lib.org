@@ -1,0 +1,187 @@
+/* ==========================================================================
+   Single Presentation/Workshop page
+   ========================================================================== */
+
+.past-slides {
+  display: block;
+  font-size: 2em;
+}
+
+.talk-row {
+  margin-top: 11px;
+  padding: 11px 0 11px 11px;
+}
+
+.talk-row:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $gray-300;
+}
+
+.talk-title {
+    margin-bottom: 1em;
+}
+
+.back-workshops {
+  border-top: solid 1px $white;
+  color: $black;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 0 5px 0;
+}
+
+.talk-detail-box {
+  animation: intro .34s .4s cubic-bezier(1, 1.4, .41, 1.01) forwards;
+  background: $talk-box-bg;
+  border-radius: 10px;
+  box-shadow: 4px 5px 0px $talk-box-shadow;
+  color: $talk-box-color;
+  margin-bottom: 100px;
+  transform: translateY(-50%) scale(0) rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+}
+
+.talk-detail-box .time-slot {
+  background: $talk-box-2-bg;
+  color: $talk-box-2-color;
+}
+
+.talk-detail-box .building {
+  background: $talk-box-bg;
+}
+
+.talk-detail-box .time-length {
+  background: $talk-box-3-bg;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: $talk-box-3-color;
+}
+
+.talk-box-detail-icon {
+  display: table-cell;
+  font-size: 20px;
+  height: 100px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.talk-box-detail-value {
+  display: table-cell;
+  font-size: 25px;
+  font-weight: bold;
+  height: 100px;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@keyframes intro {
+  0% {transform: translateY(25%) scale(0) rotateX(10deg) rotateY(10deg) rotateZ(40deg)}
+  100% {transform: translateY(25%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+}
+
+/* ==========================================================================
+   Presentation/Workshop index page
+   ========================================================================== */
+
+#workshop-sorting-div {
+  margin-bottom: 20px;
+
+  & button {
+    border: 1px solid $gray-light;
+
+    &:hover,
+    &:active {
+      background-color: $accent-dark;
+    }
+
+    &:focus {
+      background-color: $white;
+      outline: $pagination-focus-outline;
+      box-shadow: $pagination-focus-box-shadow;
+      z-index: 4;
+    }
+
+    &.active {
+      background-color: $accent;
+    }
+  }
+}
+
+.workshop-well {
+  -webkit-flex-flow: row wrap;
+  background-color: $white;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 10px 0px;
+  padding: 10px 10px 0px;
+  width: 300px;
+}
+
+.workshop-well p,
+.workshop-well ul,
+.workshop-well ol {
+  font-size: .9em;
+  line-height: 1.3em;
+}
+
+.workshop-well a {
+  @include link-styles;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include link-styles-states;
+  }
+}
+
+.workshop-well.top-10 {
+  background-color: lightgoldenrodyellow;
+}
+
+.workshop-time {
+  font-size: $h5-font-size;
+  font-weight: 700;
+  letter-spacing: .02em;
+  line-height: 1.1;
+
+  & p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 1.1em;
+  }
+}
+
+.sched-date {
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Proposals listing page
+   ========================================================================== */
+
+.proposals {
+  padding-top: 20px;
+
+  h3 {
+    padding-bottom: 20px;
+  }
+
+  .card-body a {
+    @include link-styles;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include link-styles-states;
+    }
+  }
+}

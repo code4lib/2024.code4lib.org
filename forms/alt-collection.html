@@ -1,0 +1,104 @@
+---
+layout: default
+title: Collecting Speaker Image Descriptions
+---
+
+<div class="container-fluid">
+	<div class="col-12 forms-page">
+		<h1>Collecting Speaker Image Descriptions</h1>
+
+		<div class="alert alert-warning">
+			<a href="#form">Skip to the Speaker Image Description Submission Form</a>
+		</div>
+
+		<p>
+			As part of our ongoing pursuit of an increasingly accessible Code4Lib experience, we are improving the conference's speaker page by providing <em>more descriptive</em> alternative text for the speaker images. Instead of just repeating the person's name, we are asking all speakers to provide a short description of their provided image. The provided text will be set as the <i><code>alt</code></i> text but also made visible alongside the bios as shown in the screenshot.
+		</p>
+		
+		<button class="btn btn-primary" id="speaker-example-toggle" aria-expanded="false" aria-controls="speaker-example">
+			Show/Hide Screenshot
+		</button>
+		<figure id="speaker-example" class="forms-figure hide">
+			<img src="/assets/img/forms/speaker-image-example.png" alt="Screenshot of a speaker profile opened and showing the speaker provided image description">
+			<figcaption>
+				<p>
+					Example of a speaker description showing the new image description at work. Under the photo of Kate Deibel and before her biography is the image description which reads:
+				</p>
+				<blockquote>
+					Cartoon avatar of a quite pale white bespectacled brunette geek girl whose open downturned mouth is adamantly advocating an important point or three. A bookcase is behind her.
+				</blockquote>
+			<figcaption>
+		</figure>
+		
+		
+		
+		
+		<h2>How to Write a Speaker Image Description</h2>
+		<p>
+			Writing effective alt text for images can be challenging, so we provide the following guidance for writing an accessible description of your speaker photo.
+		</p>
+		<ul>
+			<li>
+				<p>Accessible descriptions should be informative but succinct. We recommend not exceeding around 200 characters.</p>
+			</li>
+			<li>
+				<p>Avoid saying words like "headshot", "photo", "image", etc. As this is a page of speakers, there is an assumption that such images will be present. If your speaker image is a cartoon or digital avatar, do mention that.</p>
+			</li>
+			<li>
+				<p>Describe what is most important in the image. How do you want to come across in the description? What would you want a sighted person to take away from the image?  It is important to not describe everything but only what matters most.</p>
+			</li>
+			<li>
+				<p>Emotion matters. Convey the mood your picture is showing. Is your smile friendly and welcoming or does it reveal a bit of mischief? Are you having fun in the photo or are you stoically serious? Sharing these aspects enriches the alt text experience.</p>
+		
+				<p>Describe any actions in the photo. Are you holding or wielding something? Hanging upside down from monkey bars? These add to the emotion of the image.</p>
+			</li>
+			<li>
+				<p>As far as you are comfortable, convey any of your identities such as race, ethnicity, gender, visual disabilities, etc. Sighted users can readily ascertain the diversity of a conference's speakers but screen reader users have to reply on what is stated in alt text or make assumptions based on a name. Otherwise, misinterpretations and defaulting to the majority may happen.</p>
+		
+				<p>For describing race, one can describe their skin color or explicitly identify with a race. Similarly, for gender, one can explicitly name their gender or describe aspects of gender such as hair, makeup, and clothing. The level of detail is up to you.</p>
+			</li>
+			
+			<li><p>Ultimately, you decide what and how much of your appearance you wish to share.</li>
+
+		</ul>
+		
+		<p>
+			If you have any questions on writing your speaker image alt text, please send your questions to <a style="text-decoration: underline" href="mailto:code4lib.accessibility@gmail.com">code4lib.accessibility AT gmail.com</a>.
+		</p>
+		
+		<h2 id="form" style="clear: both" class="sr-only">
+			Speaker Image Description Form
+		</h2>
+		<div id="form-container">
+			<div class="col-12" id="ff-compose">
+
+			</div>
+		</div>
+		<script async defer src="https://formfacade.com/include/117166105954580564598/form/1FAIpQLSf-1qXPkD4n97tJ-ckQzLP3xngnFHD3_Xd1VW8iX-TT46qJJw/classic.js?div=ff-compose"></script>
+
+		<script>
+			window.addEventListener('load', function(event) { 
+				document.getElementById('speaker-example-toggle').addEventListener('click', function(evt) {
+					if(evt.target.getAttribute('aria-expanded') == 'false') {
+						// show
+						evt.target.setAttribute('aria-expanded','true');
+						document.getElementById('speaker-example').classList.remove('hide');
+					}
+					else {
+						// show
+						evt.target.setAttribute('aria-expanded','false');
+						document.getElementById('speaker-example').classList.add('hide');
+					}
+				});
+			});
+			
+			var windowWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			
+		
+		
+		</script>
+		
+	</div>
+</div>
+
+

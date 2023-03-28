@@ -1,0 +1,311 @@
+---
+layout: default
+title: Schedule
+---
+
+<div class="container">
+    <div class="row">
+        <h1 class="sr-only">Schedule</h1>
+        <div class="col-12 sched-date">
+            <h2>{{site.data.conf.days[0].weekday}}, {{site.data.conf.days[0].date}}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>9AM to 4:30PM
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h3><a href="/workshops">Pre-Conference Workshops</a></h3>
+            <p>
+                Pre-conference details are available
+                {% if site.data.registration.workshop-only.url != nil %}
+                    on the <a href="{{site.data.registration.workshop-only.url}}">registration site</a> and
+                {% endif %}
+                on the <a href="/workshops">Pre-Conference Workshops</a> page.
+            </p>
+        </div>
+    </div>
+
+    {% if site.data.conf.community-gathering.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.community-gathering.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <!-- <h4><a href="/general-info/social/#gathering">Community Gathering</a></h4> -->
+            <h4>Community Gathering</h4>
+            <p>
+               {{ site.data.conf.community-gathering.description }}
+            </p>
+            {% if site.data.conf.community-gathering.sign-up-url != '' %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.community-gathering.sign-up-url }}">{{ site.data.conf.community-gathering.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.conf.newcomer-dinner.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>Evening</h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4><a href="/general-info/venues/#dinner">Newcomer Dinner</a></h4>
+            <p>
+                It is a Code4Lib tradition to welcome those who are new to the conference by organizing dinner groups on the night before the general conference begins.
+                Sign-up is organized by the <a href="https://wiki.code4lib.org/Code4Lib_{{site.data.conf.year}}_Conference_Committees#Social_Activities_Committee">Social Activities Committee</a>
+                on the wiki, and we try to mix a few newcomers with a few veterans
+                who can offer an informal introduction to the conference. Great for making new friends!
+            </p>
+            {% if site.data.conf.newcomer-dinner.signup-url != '' %}
+            <p>
+                <a class="btn ct-btn-light" href="{{ site.data.conf.newcomer-dinner.signup-url }}">Sign-up for the Newcomer Dinner</a>
+            </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-12 sched-date">
+            <h2>{{site.data.conf.days[1].weekday}}, {{site.data.conf.days[1].date}}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>9AM to 5:15PM
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4><a href="/schedule/day-1">General Conference, Day One</a></h4>
+            <p>
+                Talks have been selected by the community.
+            </p>
+            {% if site.data.conf.have-menus %}
+              <p><a class="btn ct-btn-light" href="/schedule/food/day1-menus.html">View Menu</a></p>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if site.data.conf.reception.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.reception.times }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>
+                <a href="/general-info/venues/#reception">Reception</a>
+            </h4>
+            <p>
+                All attendees are invited to join us for the reception at the {{ site.data.conf.reception.venue }}. See the <a href="/general-info/venues/#reception" alt="Venues">Venues</a> page for more details.
+            </p>
+            {% if site.data.conf.have-menus %}
+              <p><a class="btn ct-btn-light" href="/schedule/food/day1-menus.html#reception">View Menu</a></p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+   <div class="row">
+        <div class="col-12 sched-date">
+            <h2>{{site.data.conf.days[2].weekday}}, {{site.data.conf.days[2].date}}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>9AM to 5:10PM
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4><a href="/schedule/day-2">General Conference, Day Two</a></h4>
+            <p>
+                Talks have been selected by the community.
+            </p>
+            {% if site.data.conf.have-menus %}
+              <p><a class="btn ct-btn-light" href="/schedule/food/day2-menus.html">View Menu</a></p>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if site.data.conf.simulation.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.simulation.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Simulation Workshop</h4>
+            <p>
+                See the <a href="/general-info/social/#simulation">Social Activities</a> page for more details.
+            </p>
+            {% if site.data.conf.simulation.sign-up-url != '' %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.simulation.sign-up-url }}">{{ site.data.conf.simulation.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.conf.game-night.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.game-night.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>
+                <a href="/general-info/social/#game-night">Game Night</a>
+            </h4>
+            <p>
+            {{ site.data.conf.game-night.description }}
+            </p>
+            {% if site.data.conf.game-night.sign-up-url != '' %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.game-night.sign-up-url }}">{{ site.data.conf.game-night.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.conf.libtech-women.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{site.data.conf.libtech-women.time}}</h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>
+                {% if site.data.conf.libtech-women.url %}
+                    <a href="{{site.data.conf.libtech-women.url}}">
+                {% endif %}
+                LibTech Women
+                {% if site.data.conf.libtech-women.url %}</a>{% endif %}
+            </h4>
+            <p>
+              <a href="http://libtechwomen.org/">LibTechWomen</a> is a supportive space for women and their friends to network, develop skills, build confidence, and lead positive change. Are you a lurker? Are you a newcomer? All are welcome! Come meet wonderful colleagues in library technology{%- if site.data.conf.game-night.location -%}
+              &nbsp;at {{site.data.conf.game-night.location}}
+              {%- endif -%}!
+            </p>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.conf.karaoke-night.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.karaoke-night.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Karaoke Night</h4>
+            <p>
+               {{ site.data.conf.karaoke-night.description }}
+            </p>
+            {% if site.data.conf.karaoke-night.sign-up-url != '' %}
+            <p>
+                <a class="btn ct-btn-light" href="{{ site.data.conf.karaoke-night.sign-up-url }}">{{ site.data.conf.karaoke-night.sign-up-button-text }}</a>
+            </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-12 sched-date">
+            <h2>{{site.data.conf.days[3].weekday}}, {{site.data.conf.days[3].date}}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>9AM to 12:55PM
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4><a href="/schedule/day-3">General Conference, Day Three</a></h4>
+            <p>
+                Keynote #2 closes out the conference. Talks have been selected by the community.
+            </p>
+            {% if site.data.conf.have-menus %}
+              <p><a class="btn ct-btn-light" href="/schedule/food/day3-menus.html">View Menu</a></p>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if site.data.conf.tours.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.tours.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Tours</h4>
+            <p>
+                See the <a href="/general-info/social/#tours">Social Activities</a> page for more details.
+            </p>
+            {% if site.data.conf.tours.sign-up-url %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.tours.sign-up-url }}">{{ site.data.conf.tours.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.conf.trivia-night.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.trivia-night.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Trivia Night</h4>
+            <p>
+               {{ site.data.conf.trivia-night.description }}
+            </p>
+            {% if site.data.conf.trivia-night.sign-up-url != '' %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.trivia-night.sign-up-url }}">{{ site.data.conf.trivia-night.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% comment %}
+        <!-- BoF hangouts section, move to right date/time -->
+        <div class="row">
+            <div class="col-12 col-md-3 text-right">
+                <h3>Afternoon</h3>
+            </div>
+            <div class="col-12 col-md-9 sched-well">
+                <h4>Birds-of-a-Feather Hangouts?</h4>
+                <p>
+                    The general conference is over, but if you have a bunch of inspired nerds with common interests in one spot, why not organize a little hackfest or meetup?  You are on your own to organize at this point, but feel free to contact the
+                    <a href="http://wiki.code4lib.org/2017_Conference_Committees#Local_Planning_Committee">Local Planning Committee</a> if you would like assistance securing space.
+                </p>
+            </div>
+        </div>
+    {% endcomment %}
+
+</div>

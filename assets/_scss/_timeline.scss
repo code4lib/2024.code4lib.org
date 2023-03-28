@@ -1,0 +1,432 @@
+// --------------------------------------
+// Modules - reusable parts of our design
+// --------------------------------------
+
+.keynote-link {
+  color: $primary;
+  &:hover {
+    color: $primary-dark;
+    text-decoration: underline;
+  }
+}
+
+.cd-container {
+  // this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 90%;
+}
+
+.cd-container::after {
+  // clearfix
+  clear: both;
+  content: '';
+  display: table;
+}
+
+// ----------------
+// Main components
+// ----------------
+
+#cd-timeline {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding: 2em 0;
+  position: relative;
+}
+
+#cd-timeline::before {
+  // this is the vertical line
+  background: $timeline-line-color;
+  content: '';
+  height: 100%;
+  left: 18px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+@media only screen and (min-width: 1170px) {
+  #cd-timeline {
+    margin-bottom: 3em;
+    margin-top: 3em;
+  }
+}
+
+.cd-timeline-block {
+  margin: 2em 0;
+  position: relative;
+}
+
+.cd-timeline-block:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-block {
+    margin: 4em 0;
+  }
+
+  .cd-timeline-block:first-child {
+    margin-top: 0;
+  }
+
+  .cd-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cd-timeline-img {
+  background: $timeline-clock-bg;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px $timeline-clock-border, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+  height: 60px;
+  left: -11px;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  padding: 5px;
+}
+
+.cd-timeline-img img {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (min-width: 970px) {
+  .cssanimations .cd-timeline-img.is-hidden {
+    visibility: hidden;
+  }
+
+  .cssanimations .cd-timeline-img.bounce-in {
+    -moz-animation: cd-bounce-1 .6s;
+    -webkit-animation: cd-bounce-1 .6s;
+    animation: cd-bounce-1 .6s;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes cd-bounce-1 {
+
+  0% {
+    -webkit-transform: scale(.5);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes cd-bounce-1 {
+  0% {
+    -moz-transform: scale(.5);
+    opacity: 0;
+  }
+
+  60% {
+    -moz-transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  60% {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.cd-timeline-content {
+  background-color: $card-bg;
+  color: $gray-900;
+  border-radius: .25em;
+  box-shadow: 4px 5px 0px $timeline-content-shadow;
+  margin-left: 70px;
+  padding: 1em;
+  position: relative;
+}
+
+.cd-timeline-content:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.cd-timeline-content-title {
+  color: $gray-base;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.cd-timeline-content p,
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
+  font-size: 14px;
+}
+
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
+  display: inline-block;
+}
+
+.cd-timeline-content p {
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+.cd-timeline-content .cd-date {
+  float: left;
+  opacity: .7;
+  padding: .8em 0;
+}
+
+.cd-timeline-content::before {
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 100%;
+  top: 16px;
+  width: 0;
+}
+@media only screen and (min-width: 768px) {
+  .cd-timeline-content h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .cd-timeline-content p {
+    font-size: 16px;
+  }
+
+  .cd-timeline-content .cd-read-more,
+  .cd-timeline-content .cd-date {
+    font-size: 14px;
+  }
+}
+
+.speaker-overlay:after,
+.speaker-overlay:before {
+  -webkit-transition: all .5s;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .5s;
+}
+
+.speaker-overlay:after {
+  background: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  bottom: .2em;
+  box-sizing: content-box;
+  content: '\A';
+  display: block;
+  height: 94px;
+  width: 94px;
+}
+
+.speaker-overlay:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $white;
+  content: attr(data-content);
+  height: 85px;
+  text-align: center;
+  top: 2em;
+  width: 85px;
+  z-index: 1;
+}
+
+.speaker-overlay:hover:after,
+.speaker-overlay:hover:before {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 970px) {
+  // inverse bounce effect on even content blocks
+  .cssanimations .cd-timeline-block .cd-timeline-content.bounce-in {
+    -moz-animation: cd-bounce-2-inverse .6s;
+    -webkit-animation: cd-bounce-2-inverse .6s;
+    animation: cd-bounce-2-inverse .6s;
+  }
+
+  .cssanimations .cd-timeline-content.is-hidden {
+    visibility: hidden;
+  }
+
+  .cssanimations .cd-timeline-content.bounce-in {
+    -moz-animation: cd-bounce-2 .6s;
+    -webkit-animation: cd-bounce-2 .6s;
+    animation: cd-bounce-2 .6s;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes cd-bounce-2 {
+  0% {
+    -webkit-transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: translateX(20px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes cd-bounce-2 {
+  0% {
+    -moz-transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  60% {
+    -moz-transform: translateX(20px);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-2 {
+  0% {
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  60% {
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes cd-bounce-2-inverse {
+  0% {
+    -webkit-transform: translateX(100px);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: translateX(-20px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes cd-bounce-2-inverse {
+  0% {
+    -moz-transform: translateX(100px);
+    opacity: 0;
+  }
+
+  60% {
+    -moz-transform: translateX(-20px);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-2-inverse {
+  0% {
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  60% {
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

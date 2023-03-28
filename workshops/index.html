@@ -1,0 +1,52 @@
+---
+layout: default
+title: Pre-Conference Workshops
+day: day0
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+    {% if site.data.conf.have-schedule %}
+        {% include schedule_nav.html param=page.day %}
+    {% endif %}
+    <div class="row">
+        <div class="col-12 col-sm-12">
+            <p>Half-day workshops will start at either 9:00 a.m. or 1:30 p.m.</p>
+        </div>
+    </div>
+    <div class="row" id="workshop-sorting-div">
+        <div class="col-12 col-sm-6">
+            <div class="btn-group" role="group" aria-label="filter workshop list by time of day">
+                <button type="button" class="btn btn-light sort-workshop-time page-link active" id="all">All</button>
+                <button type="button" class="btn btn-light sort-workshop-time page-link" id="am">AM</button>
+                <button type="button" class="btn btn-light sort-workshop-time page-link" id="pm">PM</button>
+                <!-- <button type="button" class="btn btn-light sort-workshop-time page-link" id="full">Full Day</button> -->
+            </div>
+        </div>
+        <!--
+        <div class="col-12 col-sm-6">
+            <select class="form-control sort-workshop-locale" aria-label="sort by workshop location">
+                <option value="all">All Locations</option>
+                {% for location in site.data.locations %}
+                    <option value="{{ location.id }}">{{ location.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        -->
+    </div>
+    <div class="row">
+        <div class="col-12 sequence">
+            {% assign posts = site.posts | where: 'type', 'workshop' | sort: 'title' %}
+            {% for post in posts %}
+                {% include workshops/card.html workshop=post %}
+            {% endfor %}
+            {% if posts.size == 0 %}
+                <p class="alert alert-warning">We don't have workshops information yet, but when we do it will appear right here.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>

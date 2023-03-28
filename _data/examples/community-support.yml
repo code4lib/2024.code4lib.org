@@ -1,0 +1,23 @@
+surname:
+    name: Full Name
+    img: /assets/img/nopics/nopic2.jpg
+    img_alt: "A beautiful soul whose eyes betray their very unoriginal name"
+    slack_handle: fnslack
+    onsite: true
+    online: false
+
+othersurname:
+    name: Community Support
+    img: /assets/img/nopics/nopic3.jpg
+    img_alt:
+    slack_handle: communitysupport
+    onsite: true
+    online: false
+
+drrobot:
+    name: Dr Robot
+    img: /assets/img/nopics/nopic1.jpg
+    img_alt: "Metal box with googly eyes glued on and a Mr. Potato Head nose"
+    slack_handle: drrobot
+    onsite: false
+    online: true

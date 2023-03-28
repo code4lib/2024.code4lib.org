@@ -1,0 +1,405 @@
+# MERGE TEST
+###################
+# "Global" Vars
+###################
+
+year: 2023
+hashtag: 'c4l23'
+location: 'Princeton, New Jersey'
+timezone: 'Eastern'
+search: false
+online-only-conference: false
+welcome-message:
+catchline:
+
+###########################
+# Hero
+###########################
+# Place hero image in /assets/img/theme-images/. Includes optional webp format.
+hero-image-filename: 'princeton.jpg'
+hero-image-source: 'https://unsplash.com/photos/JYqLCa-rv7o'
+hero-image-filename-webp: 'princeton.webp'
+hero-image-alt: 'Princeton University campus'
+
+image-attributions:
+  - attribution:
+    creator: 'Tim Alex (@thelondoner)'
+    image-title: 'Nassau Hall, Princeton University'
+    image-url: 'https://unsplash.com/photos/JYqLCa-rv7o'
+    license-name: 'Unsplash License'
+    license-url: 'https://unsplash.com/license'
+
+########################
+# Program & Schedule
+#######################
+# These booleans affect the main menu links in the ways described below, as well
+# as displays in a few other places.
+# if true Speakers link -> /speakers/, if false -> /speakers/past-keynotes
+have-talks: true
+have-workshops: true
+# if true Schedule link -> /schedule/, if false -> /schedule/timeline
+have-schedule: true
+have-menus: true
+
+# day 0 = preconf day
+days:
+  - weekday: Tuesday
+    date: March 14th
+    # date in a form that JS Date() constructor understands
+    date-data: 2023-03-14T23:59
+  - weekday: Wednesday
+    date: March 15th
+    date-data: 2023-03-15T23:59
+  - weekday: Thursday
+    date: March 16th
+    date-data: 2023-03-16T23:59
+  - weekday: Friday
+    date: March 17th
+    date-data: 2023-03-17T23:59
+
+####################
+# Venue Information
+####################
+
+# Short Form for location
+city-state: 'Princeton, NJ'
+city: 'Princeton'
+state: 'NJ'
+
+venue:
+  name: 'Princeton University'
+  street: 'Frist Campus Center'
+  postal-code: '08544'
+  phone:
+  image: 'frist-campus-center.jpg'
+  website: 'https://www.princeton.edu/'
+  floorplan: 'https://www.princeton.edu/frist/floorplans/floorplansBc.html'
+  directions: 'https://www.princeton.edu/meet-princeton/visit-us'
+  a11y: ''
+  hotel:
+    show: true
+    multiple-hotels: true
+    multiple-hotels-map: https://www.google.com/maps/d/viewer?mid=15yvj8MVkJpo8DtSdhPks_UauH8OqMbA
+    name:
+    reserved-room-block: false
+    cost:
+    with-tax-cost:
+    cost-cutoff-date: 
+    check-in-time:
+    check-out-time:
+    self-parking-fee:
+    valet-parking-fee:
+
+################
+# C4l Links
+################
+
+#twitter and instagram are both managed using the code4lib hashtag data
+social-links:
+  slack: 'http://code4lib.slack.com/'
+  irc: 'http://code4lib.org/irc'
+  youtube: 'https://www.youtube.com/user/code4lib/videos'
+
+#############################
+# Various Emails/contact info
+#############################
+
+main-conf-email: 'code4lib@concentra-cms.com'
+sponsor-contact-email: 'code4lib.sponsorship@gmail.com'
+scholarship-contact-email: 'code4libaward@gmail.com'
+workshop-contact-email: 'Code4Lib.Workshops@gmail.com'
+lpc-contact-email: 'code4liblpc@gmail.com'
+accessibility-email: 'code4libaccessibility@googlegroups.com'
+# when empty, community support volunteers page will use main-conf-email
+community-support-email: 'c4lcommunitysupport@googlegroups.com'
+# community-support-phone: '510-423-3356'
+anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
+
+###################
+# Homepage section
+# Values can be one of
+# - pre :   displays the _includes/homepage/timeline.html partial
+#           this section provides an overview of important conference dates.
+# - peri:   for display during the conference. provides homepage links to conference schedule, talks, livestream, etc.
+# - post:   for after the conference is over
+#
+####################
+homepage-display: post
+
+livestream:
+  show: false
+  button-label: 'Join Livestream'
+  url: 'https://www.youtube.com/c/Code4Lib'
+
+slides:
+  show: false
+  url: 'https://osf.io/meetings/c4l23'
+  contact: ''
+  email: ''
+
+slide-template:
+  url: '/assets/C4L2023-template.pptx'
+
+closed-captioning:
+  url:
+
+workshops:
+  show: true
+  location: rabinowitz
+
+# Peri display descriptions and titles
+peri:
+  day0:
+    am:
+      title: 'Pre-Conference'
+      desc: 'Workshops'
+      link: '/workshops'
+    pm:
+      title: 'Newcomer Dinner'
+      desc: 'Dine-Around'
+      link: '/general-info/venues/#dinner'
+  day1:
+    am:
+      title: 'Conference, Day 1'
+      desc: 'Opening Keynote & Talks'
+      link: '/schedule/day-1'
+    pm:
+      title: 'Reception'
+      desc: 'Palmer House'
+      link: '/general-info/venues/#reception'
+  day2:
+    am:
+      title: 'Conference, Day 2'
+      desc: 'Awesome Talks'
+      link: '/schedule/day-2'
+    pm:
+      title: 'Game Night'
+      desc: 'Board or Card Games'
+      link: '/general-info/venues/#gaming'
+  day3:
+    am:
+      title: 'Conference, Day 3'
+      desc: 'Closing Keynote & Talks'
+      link: '/schedule/day-3'
+
+###########
+# Sponsors
+###########
+# If false, hides sponsors link in navigation and footer
+show-sponsors: true
+# Toggles whether prospectus button displays on homepage and sponsor pages
+sponsor-buttons: true
+# URL to document
+prospectus-document: https://drive.google.com/file/d/1J6oOSqwsXQSGFs9AUHH2LW8IJDwX2AFN/view?usp=sharing
+sponsor-btn-link: 'https://www.concentra-cms.com/c4l23sponsorreg.html'
+
+##########
+# !!!NOTE!!! All 'end-date' vars should be in the following format: YYYY-MM-DD
+# e.g., 2013-11-29
+##########
+
+###########
+# Proposals
+###########
+
+keynote-proposals:
+  show: false
+  submission-form: 'https://wiki.code4lib.org/2023_Keynote_Speakers_Nominations'
+  end-date: '2022-11-29'
+
+workshop-proposals:
+  show: false
+  submission-form: 'https://forms.gle/e1fgutRMHRxJJwVQ7'
+  end-date: '2022-11-30'
+
+talk-proposals:
+  show: false
+  submission-form: 'https://forms.gle/nBvxVhndmeLAJRkN9'
+  end-date: '2022-11-14'
+
+panel-proposals:
+  show: false
+  submission-form: ''
+  end-date: ''
+
+poster-proposals:
+  show: false
+  submission-form: 'https://forms.gle/hXvf72euaf85ECoF6'
+  end-date: '2023-01-13'
+
+shirt-proposals:
+  show: false
+  submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSdBM1qojE9uQQKVxpIup5zmLIcmm9-XVs6AKEgRgvefvLRY6g/viewform'
+  end-date: '2023-01-09'
+
+host-proposals:
+  show: false
+  submission-form: ''
+  end-date: ''
+
+###########
+# Voting
+###########
+
+keynote-voting:
+  show: false
+  url: 'https://forms.gle/Ve1M6YcSDwujAVYd8'
+  end-date: '2022-12-12'
+
+workshop-voting:
+  show: false
+  url: ''
+  end-date: ''
+
+talk-voting:
+  show: false
+  url: 'https://forms.gle/hhwJJW4NMLW3ZysK8'
+  end-date: '2022-12-05'
+
+panel-voting:
+  show: false
+  url: ''
+  end-date:
+
+poster-voting:
+  show: false
+  url: ''
+  end-date: ''
+
+shirt-voting:
+  show: false
+  url: 'https://docs.google.com/forms/d/e/1FAIpQLScahcvQUOQ1EDp7SnNNENoqGocjjCn55weBhyVtmEAlmfkJIQ/viewform'
+  end-date: '2023-01-21'
+
+##################
+# Schedule events
+##################
+
+# usually on the wiki
+#social-activities-url: '/general-info/social/'
+
+diy-social:
+  show: true
+
+newcomer-dinner:
+  show: true
+  signup-url: "https://docs.google.com/document/d/1Mxd2N399rOz7UTUk2T4FUfUtlTJcCuPI2NocRVzeGMI/edit"
+  date: "2023-03-14"
+
+reception:
+  show: true
+  venue: Palmer House
+  street: 1 Bayard Lane
+  postal-code: 08542
+  phone: 609-258-3715
+  image: palmer-house.png
+  image_title: "Palmer House in Princeton, New Jersey"
+  contact: https://www.princeton.edu/palmerhouse/
+  floorplans: https://www.princeton.edu/palmerhouse/floorplans.html
+  date: "2023-03-15"
+  times: "6PM to 8PM"
+  special-notes: Pedestrian entrance is on Nassau Street between Bank Street and Mercer Street.
+
+tours:
+  show: true
+  time: 2PM to 4PM
+  tours:
+    - name: 'Special Collections Visit'
+      date: '2023-03-17'
+      time: '2:00PM to 3:00PM'
+      location: 'Princeton University Special Collections'
+      description: "The Department of Special Collections is one of the premier repositories of its kind. Its holdings span five millennia and five continents, and include around 300,000 rare or significant printed works; 30,000 linear feet of textual materials, ranging from cuneiform tablets to contemporary manuscripts; a wealth of prints, drawings, photographs, maps, coins, and other visual materials; the Cotsen Children's Library; and the Princeton University Archives. Capacity for this tour is 45 people, and sign-up at the time of registration is required."
+      event-url:
+      event-url-button-text:
+      sign-up-url:
+      sign-up-button-text:
+    - name: 'Firestone Library Tour'
+      date: '2023-03-17'
+      time: '2:00PM to 3:00PM and 3:00PM to 4:00PM'
+      location: 'Princeton University Firestone Library'
+      description: "Tour of Firestone Library, Princeton University Library's main branch and the primary location of our humanities and social science collections, and our Special Collections department. Firestone Library opened in 1948 as the first large undergraduate library constructed after World War II. We have recently completed a 10 year renovation which focused on creating a building that is well-suited to support modern library services and contemporary approaches to scholarship, while also providing inspiring, flexible study and work spaces. Capacity for each of these tours is 15 people, and sign-up at the time of registration is required."
+      event-url:
+      event-url-button-text:
+      sign-up-url:
+      sign-up-button-text:
+
+game-night:
+  show: true
+  date: '2023-03-16'
+  time: '7PM to 11PM'
+  location: 'Frist Campus Center, A-Floor seating area.'
+  description: 'Play games? Come join your fellow code4libers in a few board or card games! Games night will take place at the Frist Campus Center. Outside food and drinks are allowed.'
+  event-url: ''
+  event-url-button-text: ''
+  sign-up-url: 'https://docs.google.com/spreadsheets/d/1waq5Qz4tXwnNbNmxe3lQq5mwnrmM1dvJzsTRYtUxLbU/edit#gid=0'
+  sign-up-button-text: 'Sign Up for Game Night'
+
+###############
+# Volunteer
+###############
+
+volunteer-committee:
+  show: false
+  url: ''
+  end-date: ''
+
+volunteer-dutyoff:
+  show: false
+  url: ''
+  end-date: ''
+
+# for volunteers during conference like MCs, mic-minders, etc.
+volunteer-onsite:
+  show: false
+  url: ''
+  end-date: ''
+
+################
+# Scholarships
+################
+
+criteria:
+  # if you have this year's eligibility requirements, show criteria section on general-info/scholarships
+  show: true
+
+angel-fund:
+  show: false
+  # whether to show the "donation thermometer" & Google Spreadsheet key for it
+  # NOTE: spreadsheet needs to be "published to the web"
+  thermometer: false
+  spreadsheet-key: ''
+  url: ''
+
+diversity-scholarship-applications:
+  show: false
+  url: '/general-info/scholarships#how-to-apply'
+  url-text: 'How to Apply'
+  end-day: 'Friday'
+  end-date: '2023-01-13'
+  end-time: ''
+  notification-date: '2023-01-22'
+  apply-url: 'https://forms.gle/m3ePcbbCRiYNts2s6'
+  committee-wiki-url: ''
+  max-scholarship-award: ''
+  max-international-award: ''
+
+# show sponsors for diversity scholarships on general-info/scholarships
+diversity-scholarship-sponsors:
+  seeking: false
+  show: true
+
+################
+# Other
+################
+
+live-captioning:
+  show: false
+  service: ''
+
+quiet-room:
+  show: true
+  # Room number(s)
+  location: 'Frist A03 (Class of 1952 Room)'
+
+public-transportation:
+  show: true

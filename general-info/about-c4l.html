@@ -1,0 +1,47 @@
+---
+layout: secondary-nav
+title: General Info
+nav: general-info
+active: About Code4Lib
+---
+
+<section class="general-info">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1>Who is Code4Lib?</h1>
+                <img src="{{ "/assets/img/persistent/chicago-uncropped.jpg" | relative_url }}" title="credit: Ray Schwartz, Flickr" alt="Code4LibConference" class="img-fluid">
+                <p class="text-right small"><a href="https://www.flickr.com/photos/schwartzray/12121269326/in/album-72157640116429213/">photo: Ray Schwartz on Flickr</a></p>
+                <h2>Code4Lib is a vibrant and diverse community.</h2>
+                <p>
+                    We are developers and technologists for libraries, museums, and
+                    archives who have a strong commitment to open technologies.
+                    <a href="https://code4lib.org/">Code4Lib</a> began as a simple
+                    <a href="https://wiki.code4lib.org/MailingList">mailing list</a>
+                    in 2003 and held its first face-to-face meeting in 2005 in Chicago.
+                    The first official annual conference was held in 2006 in Corvallis,
+                    Oregon.
+                    Nowadays, the Code4Lib community gravitates around the same listserv,
+                    an annual conference with hundreds of attendees, as well as
+                    <a href="https://code4lib.org/irc/">IRC and Slack channels</a>
+                    that are open for anyone to join.
+                    We are dedicated to being a diverse and inclusive community of
+                    technologists seeking to share ideas and build collaboration.
+                    You can <a href="https://github.com/code4lib/code-of-conduct/blob/main/code_of_conduct.md">
+                    read our Code of Conduct here</a>.
+                </p>
+                <p>View some of our past conference websites:</p>
+                <ul>
+                {% comment %}
+                Cast year string to int then iterate down, we can go back as far
+                as the first Jekyll site from 2016 (Philadelphia).
+                {% endcomment %}
+                {% assign conf_year = site.data.conf.year | minus: 0 %}
+                {% for i in (1..4) %}
+                    <li><a href="https://{{ conf_year | minus: i }}.code4lib.org">Code4Lib {{ conf_year | minus: i }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

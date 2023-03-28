@@ -1,0 +1,35 @@
+- id: rabinowitz
+  name: 'Julis Romo Rabinowitz Hall'
+  google_maps: 'https://goo.gl/maps/KALguVAEWt2DiRWM8'
+  # only provide a URL, we make our own responsive iframe around it
+  embed_code: ''
+  rooms:
+    - id: A01
+      name: A01
+    - id: A12
+      name: A12
+    - id: A17
+      name: A17
+    - id: A87
+      name: A87
+    - id: A97
+      name: A97
+    - id: A98
+      name: A98
+
+- id: frist
+  name: 'Frist Campus Center'
+  google_maps: 'https://goo.gl/maps/Kp8DiNSyyFSn8X3S6'
+  rooms:
+    - id: mpr
+      name: Multi-Purpose Room (B-Floor)
+    - id: a03
+      name: "A03: Class of 1952 Room (A-Floor)"
+
+- id: prospect
+  name: 'Prospect House'
+  google_maps: 'https://goo.gl/maps/UQYHJAurFxGZjPRm9'
+
+- id: palmer
+  name: 'Palmer House'
+  google_maps: 'https://goo.gl/maps/CQKZ8N3LPLa3dfZo9'

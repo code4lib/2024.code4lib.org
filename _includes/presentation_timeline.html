@@ -1,0 +1,92 @@
+<script src="{{ "/assets/js/placeholder.js" | relative_url }}"></script>
+<div id="cd-timeline" class="cd-container">
+    {% assign sorted_events = include.events | sort: "time" %}
+    {% for event in sorted_events %}
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img">
+                <img src="/assets/img/clockface/{{ event.timeImg }}" alt="">
+            </div>
+
+            <div class="cd-timeline-content">
+                <div class="row">
+                    <div class="col-sm-7 col-12">
+                        {% if event.groupId == 'key-open' %}
+                            {% assign keynote = site.posts | where:"group",event.groupId %}
+                            <h2 class="cd-timeline-content-title"><a class="keynote-link" href="{{ keynote[0].url }}">{{ event.title }}</a></h2>
+                        {% elsif event.groupId == 'key-close' %}
+                            {% assign keynote = site.posts | where:"group",event.groupId %}
+                            <h2 class="cd-timeline-content-title"><a class="keynote-link" href="{{ keynote[0].url }}">{{ event.title }}</a></h2>
+                        {% else %}
+                            <h2 class="cd-timeline-content-title">{{ event.title }}</h2>
+                            <p>{{ event.description }}</p>
+                            {% if event.link %}
+                                <p>
+                                    <a class="btn ct-btn-light" href="{{ event.link }}">{{ event.button_label }}</a>
+                                </p>
+                            {% else %}
+                            {% endif %}
+                            {% if event.menu %}
+                                <a href="/schedule/food/{{ event.menu }}.html#{{ event.submenu }}" class="btn ct-btn-light" >View Menu</a>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-5 col-12 text-right">
+                        <h2 class="cd-timeline-content-title">
+                            {% capture eventTime %}{{ event.time | replace: '-', ' ' }}{% endcapture %}
+                            {% capture beginTime %}{{ eventTime | truncatewords: 1, '' }}{% endcapture %}
+                            {% capture endTime %}{{ eventTime | replace: beginTime, '' }}{% endcapture %}
+                            {{ beginTime | date: "%l:%M%p" | strip }} to {{ endTime | date: "%l:%M%p" | strip }}
+                        </h2>
+                        <div class="timezone">{{ site.data.conf.timezone }} Time</div>
+                    </div>
+                </div>
+                {% if event.groupId %}
+                    {% assign talks = site.posts | where:"group",event.groupId | where:"type","talk" | sort:"spot" %}
+                    {% for talk in talks %}
+                        <div class="row talk-row">
+                            <div class="col-12">
+                                {% if event.groupId == 'key-open' %}
+                                {% elsif event.groupId == 'key-close' %}
+                                {% else %}
+                                    <h3 class="h4 talk-title"><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
+                                {% endif %}
+                            </div>
+                            <div class="col-12 d-none d-md-flex flex-wrap">
+                                {% for speaker_id in talk.speakers %}
+                                    {% assign speaker = site.data.speakers | where: 'id', speaker_id | first %}
+                                    {% if speaker %}
+                                        <div class="col-sm-3 text-center">
+                                            <a href="/speakers/#{{ speaker.id }}-id">
+                                                {% if event.groupId != 'key-open' and event.groupId != 'key-close' %}
+                                                    <span>{{ speaker.name }}
+                                                    {% if speaker.pronouns %} ({{ speaker.pronouns }}){% endif %}
+                                                    </span>
+                                                {% endif %}
+                                                {% if speaker.image_alt and speaker.image_src %}
+                                                    <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="{{ speaker.image_alt }}">
+                                                {% elsif speaker.image_src %}
+                                                    <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="Profile image for {{ speaker.name }}">
+                                                {% else %}
+                                                    <script>
+                                                        placeholderImage("clip-circle-speaker",
+                                                            " {{ speaker.name }} ",
+                                                            "/assets/img/nopics/nopic#.jpg",
+                                                            "Random placeholder for {{ speaker.name }}",
+                                                            10);
+                                                    </script>
+                                                {% endif %}
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+                <div class="clearfix"></div>
+
+            </div>
+        </div> <!-- cd-timeline-block -->
+    {% endfor %}
+</div> <!-- cd-timeline -->

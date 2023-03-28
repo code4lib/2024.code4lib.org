@@ -1,0 +1,217 @@
+# Registration
+- timeImg: 8.00.png
+  title: Registration and Breakfast
+  day1: true
+  time: 08:00-09:00
+  menu: day1-menus
+  submenu: Breakfast
+
+- timeImg: 8.00.png
+  title: Registration and Breakfast
+  day2: true
+  time: 08:00-09:00
+  menu: day2-menus
+  submenu: Breakfast
+
+- timeImg: 8.00.png
+  title: Registration and Breakfast
+  day3: true
+  time: 08:00-09:00
+  menu: day3-menus
+  submenu: Breakfast
+
+
+# Announcements
+- timeImg: 9.00.png
+  title: Announcements and Welcome
+  day1: true
+  time: 09:00-09:15
+
+- timeImg: 1.15.png
+  title: Announcements
+  day1: true
+  day2: true
+  time: 13:15-13:30
+
+- timeImg: 9.00.png
+  title: Announcements
+  day2: true
+  day3: true
+  time: 09:00-09:15
+
+# Keynotes
+- timeImg: 9.15.png
+  title: Opening Keynote
+  day1: true
+  groupId: key-open
+  time: 09:15-10:00
+
+- timeImg: 9.15.png
+  title: Closing Keynote
+  day3: true
+  groupId: key-close
+  time: 09:15-10:00
+
+# Breaks
+- timeImg: 10.00.png
+  title: Morning Break
+  day1: true
+  time: 10:00-10:15
+  #menu: day1-menus
+  submenu: Morning
+
+- timeImg: 2.45.png
+  title: Afternoon Break
+  day1: true
+  time: 14:45-15:00
+  #menu: day1-menus
+  submenu: Afternoon
+
+- timeImg: 10.00.png
+  title: Morning Break
+  day2: true
+  time: 10:00-10:15
+  #menu: day2-menus
+  submenu: Morning
+
+- timeImg: 2.45.png
+  title: Afternoon Break
+  day2: true
+  time: 15:15-15:30
+  #menu: day2-menus
+  submenu: Afternoon
+
+- timeImg: 10.00.png
+  title: Morning Break
+  day3: true
+  time: 10:00-10:15
+  #menu: day3-menus
+  submenu: Morning
+
+# Breakouts
+- timeImg: 2.15.png
+  title: Breakout Sessions 1
+  day2: true
+  time: 14:15-15:15
+  link: https://wiki.code4lib.org/Code4Lib2023_Breakout_Sessions
+  button_label: View sessions
+
+- timeImg: 10.05.png
+  title: Breakout Sessions 2
+  day3: true
+  time: 11:00-11:45
+  link: https://wiki.code4lib.org/Code4Lib2023_Breakout_Sessions
+  button_label: View sessions
+
+# Lightning Talks
+- timeImg: 3.00.png
+  title: Lightning Talks 1
+  day1: true
+  time: 15:00-16:15
+
+- timeImg: 10.15.png
+  title: Lightning Talks 2
+  day2: true
+  time: 10:15-11:00
+
+- timeImg: 10.15.png
+  title: Lightning Talks 3
+  day3: true
+  time: 10:15-11:00
+
+# Poster Session
+- timeImg: 3.30.png
+  title: Poster Session
+  day2: true
+  time: 15:30 - 16:00
+  link: "/posters"
+  button_label: View poster information
+
+# Closing
+- timeImg: 5.00.png
+  title: Closing
+  day1: true
+  time: 17:00-17:15
+
+- timeImg: 4.55.png
+  title: Closing
+  day2: true
+  time: 16:55-17:10
+
+- timeImg: 12.30.png
+  title: Wrap-up
+  day3: true
+  time: 12:30-12:55
+
+# Lunch
+- timeImg: 12.00.png
+  title: Lunch at Prospect House
+  day1: true
+  time: 12:00-13:15
+  menu: day1-menus
+  submenu: Lunch
+
+- timeImg: 12.00.png
+  title: Lunch at Prospect House
+  day2: true
+  time: 12:00-13:15
+  menu: day2-menus
+  submenu: Lunch
+
+# Reception
+- timeImg: 6.00.png
+  title: Reception at Palmer House
+  location: Plamer House
+  day1: true
+  time: 18:00-20:00
+  menu: day1-menus
+  submenu: Reception
+
+# Talks
+- timeImg: 10.15.png
+  title: Group 1&#58; 100 minutes (6 talks)
+  day1: true
+  groupId: 1
+  time: 10:15-11:55
+
+- timeImg: 1.30.png
+  title: Group 2&#58; 70 minutes (5 talks)
+  day1: true
+  groupId: 2
+  time: 13:30-14:45
+
+- timeImg: 4.15.png
+  title: Group 3&#58; 45 minutes (3 talks)
+  day1: true
+  groupId: 3
+  time: 16:15-17:00
+
+- timeImg: 9.15.png
+  title: Group 4&#58; 45 minutes (3 talks)
+  day2: true
+  groupId: 4
+  time: 09:15-10:00
+
+- timeImg: 11.00.png
+  title: Group 5&#58; 60 minutes (4 talks)
+  day2: true
+  groupId: 5
+  time: 11:00-12:00
+
+- timeImg: 1.30.png
+  title: Group 6&#58; 45 minutes (4 talks)
+  day2: true
+  groupId: 6
+  time: 13:30-14:15
+
+- timeImg: 4.00.png
+  title: Group 7&#58; 55 minutes (4 talks)
+  day2: true
+  groupId: 7
+  time: 16:00-16:55
+
+- timeImg: 11.45.png
+  title: Group 8&#58; 45 minutes (3 talks)
+  day3: true
+  groupId: 8
+  time: 11:45-12:30
