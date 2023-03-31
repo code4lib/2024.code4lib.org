@@ -1,18 +1,9 @@
 ---
 layout: presentation
 speakers-text: Dr. Lydia Tang
-speakers:
-- lydia-tang
-day: 1
-group: key-open
-spot: 1
-length: 45
-type: key-open
-startTime: 2023-03-15T09:15
-categories: keynotes
-title: Dr. Lydia Tang Keynote
-slides:
-youtube_key:
+speaker: lydia-tang
+categories: past-keynote
+title: Reimagining a More Accessible Future
 ---
 
 Dr. Lydia Tang is an Outreach and Engagement Coordinator for LYRASIS. Previously, she

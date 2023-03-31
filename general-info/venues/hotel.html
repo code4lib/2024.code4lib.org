@@ -55,9 +55,7 @@
         {% endif %}
 
         {% if site.data.conf.venue.hotel.multiple-hotels %}
-            <p>
-                Due to the nature of hosting this conference on campus, in {{ site.data.conf.year }} there will not be a centralized hotel location. The hotels closest to Princeton University are:
-            </p>
+<!--
             {%- comment -%} Princeton hotels, slight indent for section {%- endcomment -%}
             <section class="col-md-8">
                 <p>
@@ -74,35 +72,8 @@
                     <a href="tel:1-609-924-1707">(609) 924-1707</a><br>
                     <a href="https://www.peacockinn.com/">https://www.peacockinn.com/</a>
                 </p>
-                <p>
-                    <strong class="font-bold">Hyatt Regency Princeton</strong><br>
-                    102 Carnegie Center<br>
-                    Princeton, NJ 08540<br>
-                    <a href="tel:1-609-987-1234">(609) 987-1234</a><br>
-                    <a href="https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-princeton/princ">https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-princeton/princ</a>
-                </p>
-                <p>
-                    <strong class="font-bold">Chauncey Conference Center</strong><br>
-                    One Chauncey Road<br>
-                    Princeton, NJ 08541<br>
-                    <a href="tel:1-609-921-3600">(609) 921-3600</a><br>
-                    <a href="https://www.acc-chaunceyconferencecenter.com/accommodations">https://www.acc-chaunceyconferencecenter.com/accommodations</a>
-                </p>
-                <p>
-                    <strong class="font-bold">Residence Inn Princeton at Carnegie Center</strong><br>
-                    3563 US Highway 1<br>
-                    Princeton, NJ 08540<br>
-                    <a href="tel:1-609-799-0550">(609) 799-0550</a><br>
-                    <a href="https://www.marriott.com/en-us/hotels/ttnww-residence-inn-princeton-at-carnegie-center/overview">https://www.marriott.com/en-us/hotels/ttnww-residence-inn-princeton-at-carnegie-center/overview</a>
-                </p>
-                <p>
-                    <strong class="font-bold">Hyatt Place Princeton</strong><br>
-                    3565 US Highway 1<br>
-                    Princeton, NJ 08540<br>
-                    <a href="tel:1-609-720-0200">(609) 720-0200</a><br>
-                    <a href="https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-place-princeton/ewrzp">https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-place-princeton/ewrzp</a>
-                </p>
             </section>
+-->
 
             {% if site.data.conf.venue.hotel.multiple-hotels-map %}
                 <p>
@@ -126,60 +97,7 @@
 	<div class="col-12">
 		<h3 id="transportation">Transportation</h3>
 		{% if site.data.conf.public-transportation.show %}
-        <p><b>Princeton Junction</b> is the closest train station to Princeton campus on the Northeast
-        Corridor main line. Both <a href="https://www.njtransit.com/airport">NJ Transit</a> and
-        <a href="https://www.amtrak.com/home.html">Amtrak</a> trains stop at Princeton Junction,
-        but the Amtrak trains are much more expensive and not much faster.</p>
-
-        <p><b>Princeton Station</b> is the train station on Princeton campus, with a shuttle service
-        called the <a href="https://www.njtransit.com/dinky">"Dinky"</a> connecting to Princeton
-        Junction. Princeton Station is the best station for coming directly to campus or the hotels
-        withing walking distance (Nassau Inn, Peacock Inn). For other hotels on Route 1, taking an
-        Uber/Lyft from Princeton Junction is better.</p>
-
-		<p>The <a href="https://www.njtransit.com/trip-planner-to">NJTransit Trip Planner</a> can
-        be used to help you determine the best way for you to travel to campus. When using the
-        planner, be careful to avoid confusing Princeton Station and Princeton Junction.</p>
-
-
-        <p>Using the NJTransit app (<a href="https://play.google.com/store/apps/details?id=com.njtransit.njtapp">Google</a>,
-        <a href="https://itunes.apple.com/us/app/nj-transit-mobile-app/id589549928?ls=1&mt=8">Apple</a>)
-        is the easiest way to buy tickets but paper tickets are also available for purchase at all
-        stations at vending machines with cash or credit/debit card. Tickets don't expire and
-        are valid in either direction between the endpoints printed on the ticket. Tickets are
-        non-refundable and there are no on/off-peak hours. Trains are rarely crowded, though
-        you may need to walk to the front of the train to find a seat at peak times.</p>
-
-        <h4>From Newark Liberty International Airport</h4>
-		<p>Newark Airport is the closest airport to Princeton, and there is a short monorail
-        ("airtrain") that connects the terminals to the Northeast Corridor train station, where you
-        can catch NJ Transit trains southbound to Princeton Junction. You will need to show your
-        train ticket twice (once on the airtrain, and then again on the NJ Transit train).</p>
-
-        <h4>From Philadelphia</h4>
-		<p><a href="https://www5.septa.org/">SEPTA</a> and Amtrak trains connect Philadelphia to
-        both Trenton and Princeton Junction. From the Trenton Transit Center, the NJTransit #606
-        bus offers transportation to campus on a regular schedule (tickets must be purchased in
-        advance or with exact change in cash upon boarding).</p>
-
-        <h4>Other Cities on the Northeast Corridor</h4>
-        <p><a href="https://www.amtrak.com/home.html">Amtrak</a> service connects Princeton Junction to Washington, D.C., Boston and the greater northeast.</p>
-
-        <h4>TigerTransit and Local Transportation</h4>
-		<p>Princeton's <a href="https://transportation.princeton.edu/getting-around/tigertransit/routes-schedules">TigerTransit shuttles</a> also connect Prinecton Junction with Princeton University campus via Alexander road, which can also be used by Code4Lib attendees staying at the Hyatt Regency hotel to get to campus.</p>
-		<p>For more information about parking, lodging, and transportation, see <a href="https://www.princeton.edu/meet-princeton/visit-us">Princeton University's "Visit Us" website</a>.</p>
-		<p>For more information about accessible public transit in the Princeton area, see the accessibility sites of <a href="https://www.njtransit.com/railaccessibility">New Jersey Transit</a> and <a href="https://www.amtrak.com/accessible-travel-services">Amtrak</a>.</p>
-		{% else %}
-		<p>More information forthcoming. </p>
-		{% endif %}
+                  <p>Transporation info here.</p>
+                {% endif %}
 	</div>
-
-
-
-	<div class="col-12">
-		<h3 id="parking">Parking</h3>
-		<p>Free parking is available at the <a href="https://goo.gl/maps/CnvwvMMAYLRfhUrf8">Stadium Drive Garage</a> on Princeton campus. Please pre-register at the university's <a href="https://transportation.princeton.edu/parking/visiting-campus-events/visitor-parking">visitor parking information</a> page.</p>
-	</div>
-
-
 </section>

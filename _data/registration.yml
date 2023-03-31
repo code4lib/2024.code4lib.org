@@ -7,39 +7,39 @@
 conference:
   # "show" means display information on the home page and /general-info/attend
   show: false
-  url: 'https://concentracms.regfox.com/code4lib-2023'
-  start-date: '2023-01-05'
-  end-date: '2023-02-21'
-  cancellation-date: '2023-02-21'
+  url: ''
+  start-date: ''
+  end-date: ''
+  cancellation-date: ''
   # "open" means people can register
   open: false
-  cost: '$200'
-  late-cost: '$260'
-  workshop-half-day-cost: '$40'
-  workshop-full-day-cost: '$80'
+  cost: ''
+  late-cost: ''
+  workshop-half-day-cost: ''
+  workshop-full-day-cost: ''
   limited-capacity: true
   waitlist: false
 
 workshop-only:
   # "show" only toggles the display of info in the registration bullets on the general-info/attend page
-  show: true
+  show: false
   # "show-button" only affects a button on the general-info/attend page
   show-button: false
   undecided: false
   undecided-text: "Depending on availability, Pre-Conference ONLY registration may open at the beginning of May."
-  url: 'https://concentracms.regfox.com/code4lib-2023'
+  url: ''
   # precon-only registration cost may differ from precons with general registration
-  half-day-cost: '$50'
-  full-day-cost: '$100'
-  start-date: '2023-02-08'
-  end-date: '2023-03-13'
+  half-day-cost: ''
+  full-day-cost: ''
+  start-date: ''
+  end-date: ''
 
 t-shirt-only:
   show: false
-  start-date: '2023-01-05'
-  cost: '$29'
+  start-date: ''
+  cost: ''
   # should be one or the other: have to purchase by last-date or cost changes after late-date
-  last-date: '2023-02-21'
+  last-date: ''
   # late-date: ''
   # late-cost: ''
 

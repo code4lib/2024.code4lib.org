@@ -6,18 +6,18 @@ cards:
     - header: 'Session Recordings'
       icon: video
       subtitle: 'View on YouTube'
-      link: 'https://www.youtube.com/playlist?list=PLw-ls5JXzeNY29Uasg_gVL8r394crOHiw'
+      link: ''
       description:
           View the full recordings of the conference from the livestream!
     - header: 'Session Slides'
       icon: slides
       subtitle: ''
-      link: https://osf.io/meetings/c4l23/
+      link: https://osf.io/meetings/c4l24/
       description:
-          View the <a href="https://osf.io/meetings/c4l23/">Open Science Foundation repository</a> with slides and materials from the presentations.
+          View the <a href="https://osf.io/meetings/c4l24/">Open Science Foundation repository</a> with slides and materials from the presentations.
     - header: 'What Comes Next?'
       icon: future
-      subtitle: 'Code4Lib 2024'
-      link: 'https://forms.gle/nMceHLfcnfNRTMXg9'
+      subtitle: 'Code4Lib 2025'
+      link: ''
       description:
-          Attendees, fill out <a href="https://forms.gle/nMceHLfcnfNRTMXg9">the post-conference survey</a>!
+          Attendees, fill out <a href="XXX">the post-conference survey</a>!

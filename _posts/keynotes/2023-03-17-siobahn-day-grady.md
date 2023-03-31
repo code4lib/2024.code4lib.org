@@ -1,18 +1,9 @@
 ---
 layout: presentation
 speakers-text: Dr. Siobahn Day Grady
-speakers:
-- siobahn-day-grady
-day: 3
-group: key-close
-spot: 1
-length: 45
-type: key-close
-startTime: 2023-03-17T09:15
-categories: keynotes
-title: Dr. Siobahn Day Grady Keynote
-slides:
-youtube_key:
+speaker: siobahn-day-grady
+categories: past-keynotes
+title: The Future Is ...
 ---
 
 Dr. Siobahn Grady is an Assistant Professor of Library and Information Sciences and the director

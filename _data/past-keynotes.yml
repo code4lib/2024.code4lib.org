@@ -296,4 +296,45 @@
   institution: Michigan State University Libraries
   image_src: /assets/img/keynotes/regina-gong.jpg
   bio: Regina Gong is actively involved in the open education community and has done numerous national presentations and webinars on OER and open education. She is strongly committed to advancing open practices, equity, inclusion, and access to better serve students. <br/><br/>Before coming to MSU, Regina was the OER Project Manager at Lansing Community College where she led and implemented a successful OER program. Prior to her stint at academic libraries, she worked as a systems librarian at Innovative Interfaces Inc. where she provided support for its cataloging, acquisitions, and serials modules. <br/><br/>Currently, Regina serves on the Steering Committee of the Open Education Conference, SPARC Open Education Advisory Group, and past member of the SPARC Steering Committee, and the Community College Consortium for Open Educational Resources (CCCOER) where she served as VP for professional development for three years. She is also the chair of the MI OER Network Steering Committee, a community of practice, and a coalition of OER advocates across P-20 in Michigan. Regina was a recipient of the OER Research Group Fellowship and a member of the Global OER-Graduate Network (GO-GN). She obtained her Masters in Library and Information Science (MLIS) at Wayne State University and is currently pursuing a Ph.D. in Higher Education Administration. Regina’s doctoral research will examine the lived experiences of people of color leading OER projects at post-secondary institutions.
+  year: 2021
+
+- id: crystal-lee
+  name: Crystal Lee
+  last: Lee
+  institution: MIT
+  position-title: Senior Fellow in Responsible Computer Science at Mozilla
+  bio: 'Crystal Lee is a PhD candidate at MIT and a Senior Fellow in Responsible Computer Science at Mozilla. Her work investigates what she calls the “life-cycle of data representations,” or the process by which datasets are curated, cleaned, visualized, and circulated. In other words, she works on a wide scope of things: from the history of disability and human-computer interaction to theories about data visualization. This research has been supported by fellowships from the National Science Foundation, Social Science Research Council, and the MIT Programs for Digital Humanities. She is also a research affiliate at the Berkman Klein Center at Harvard, where she co-lead the Ethical Tech Working Group. Previously, she has worked as a visiting research scientist at the European Commission and graduated with high honors from Stanford University.'
+  image_alt: "A medium-skinned Asian woman with a pixie cut wearing a gray shirt and round eyeglasses with black frames. Trees and other greenery are behind her."
+  image_src: /assets/img/keynotes/crystal-lee.jpg
   year: 2022
+
+- id: lauren-chambers
+  name: Lauren Chambers
+  last: Chambers
+  institution: UC Berkeley
+  position-title: Ph.D. student at the UC Berkeley School of Information
+  bio: |
+    Lauren Chambers is a Ph.D. student at the UC Berkeley School of Information. Advised by technology law expert Prof. Deirdre Mulligan, she studies the intersection of data, technology, and sociopolitical advocacy.<br/><br/>
+    Previously Lauren was the staff technologist at the ACLU of Massachusetts, where she explored government data in order to inform citizens and lawmakers about the effects of legislation and political leadership on our civil liberties. Her projects included tracking the disparate effects of COVID-19 on vulnerable populations, analyzing policing budgets and practices, and advocating for regulation of government facial surveillance.<br/><br/>
+    Lauren received her Bachelor's degree from Yale in 2017, where she double-majored in astrophysics and African American studies. Her undergraduate African American studies thesis, "A Different Kind of Dark Energy: Placing Race and Gender in Physics" examines how physics and astronomy theory and praxis are influenced by race, gender, and identity. After graduating, Lauren spent two years in Baltimore supporting NASA’s James Webb Space Telescope mission as a software developer.
+  image_src: /assets/img/keynotes/lauren-chambers.png
+  image_alt: "A woman smiling with long curly brown hair, wearing a purple cardigan and large lavender earrings."
+  year: 2022
+
+- id: lydia-tang
+  name: Dr. Lydia Tang
+  last: Tang
+  institution: Lyrasis
+  bio: "Dr. Lydia Tang is an Outreach and Engagement Coordinator for Lyrasis. Previously, she held archivist positions at Michigan State University, the Library of Congress, and numerous graduate positions at the University of Illinois, where she received her MLIS and Doctor of Musical Arts degree.  Passionate about accessibility and disability representation in archives, she served on the Task Force to Revise the Best Practices on Accessible Archives for People with Disabilities and spearheaded founding the Society of American Archivists’ (SAA) Accessibility & Disability Section (ADS). She is the 2020 recipient of SAA’s Mark A. Greene Emerging Leader Award and was recognized in three SAA Council resolutions as a co-founder of the Archival Workers Emergency Fund, for spearheading the Accessibility & Disability Section’s “Archivists at Home” document, and for the “Guidelines for Accessible Archives for People with Disabilities.” In addition to her professional service with SAA, she has contributed to accessibility initiatives within DLF Digital Accessibility Working Group and the ArchivesSpace open source software community by leading the Staff Interface Enhancement Working Group, Development Prioritization subteam, founding the Usability subteam, and chairing the Users Advisory Council. She has written about accessible physical archival spaces, hiring and advancement practices, and is currently co-editing a book with Dr. Gracen Brilmeyer, Preserving Disability: Disability and the Archival Profession."
+  image_src: /assets/img/keynotes/lydia-tang.jpg
+  image_alt: "A smiling half-Chinese half white woman with long dark brown hair."
+  year: 2023
+
+- id: siobahn-day-grady
+  name: Dr. Siobahn Day Grady
+  last: Grady
+  institution: North Carolina Central University
+  bio: "Dr. Siobahn Grady is an Assistant Professor of Library and Information Sciences and the director of the Laboratory for Artificial Intelligence and Equity Research (LAIER) at North Carolina Central University, the only ALA-Accredited Library School at an HBCU (Historically Black College or University). Dr. Grady’s research is focused on using machine learning to identify sources of misinformation on social media, and on improving fault detection in autonomous vehicles. Dr. Grady is an IF/THEN Ambassador for the American Association for the Advancement of Science, a program which seeks to bring more women and minorities into hard sciences, technology, engineering and mathematics. Dr. Grady was the first woman to graduate with a computer science Ph.D. from N.C. A&T State University, and through her teaching, research, philanthropy and public speaking she is a passionate supporter of HBCUs and the students they serve. Code4Lib would benefit from learning about her work at LAIER and about her vision for minority girls’ and women’s futures in technology fields."
+  image_src: /assets/img/keynotes/siobahn-grady.jpg
+  image_alt:
+  year: 2023
