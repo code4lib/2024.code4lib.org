@@ -1,47 +1,49 @@
 <div class="col-12">
 
     <!-- Registation -->
-    <div class="row expo-row">
-        <div class="col-12">
-            <h3 class="expo">Registration</h3>
+    {% if site.data.registration.show %}
+        <div class="row expo-row">
+            <div class="col-12">
+                <h3 class="expo">Registration</h3>
 
-    {% if site.data.registration.conference.open %}
-        {% comment %} registration is open! {% endcomment %}
-        {% include homepage/going_on_block.html
-            primary=true
-            title='Registration is open!'
-            more-info-link='/general-info/attend'
-            more-info-text='Fees & additional information'
-            end-date=site.data.registration.conference.end-date
-            start-date=site.data.registration.conference.start-date
-            url=site.data.registration.conference.url
-            url-text='Register!'
-        %}
-    {% elsif site.data.registration.workshop-only.show %}
-        {% comment %} conference-only registration is open! {% endcomment %}
-        {% include homepage/going_on_block.html
-            primary=true
-            title='Pre-Conference Registration'
-            more-info-link='/general-info/attend'
-            more-info-text='<b>The main conference is sold out</b>, but registration for pre-conference-only workshops is still open.'
-            end-date=site.data.registration.workshop-only.end-date
-            start-date=site.data.registration.workshop-only.start-date
-            url=site.data.registration.conference.url
-            url-text='Pre-Conference Registration'
-        %}
-    {% else %}
-        {% comment %} details known/announced but can't register yet {% endcomment %}
-        {% include homepage/going_on_block.html
-            primary=true
-            title='Conference Registration'
-            more-info-link='/general-info/attend'
-            more-info-text='Fees & additional information'
-            end-date=site.data.registration.conference.end-date
-            start-date=site.data.registration.conference.start-date
-        %}
-    {% endif %}
+        {% if site.data.registration.conference.open %}
+            {% comment %} registration is open! {% endcomment %}
+            {% include homepage/going_on_block.html
+                primary=true
+                title='Registration is open!'
+                more-info-link='/general-info/attend'
+                more-info-text='Fees & additional information'
+                end-date=site.data.registration.conference.end-date
+                start-date=site.data.registration.conference.start-date
+                url=site.data.registration.conference.url
+                url-text='Register!'
+            %}
+        {% elsif site.data.registration.workshop-only.show %}
+            {% comment %} conference-only registration is open! {% endcomment %}
+            {% include homepage/going_on_block.html
+                primary=true
+                title='Pre-Conference Registration'
+                more-info-link='/general-info/attend'
+                more-info-text='<b>The main conference is sold out</b>, but registration for pre-conference-only workshops is still open.'
+                end-date=site.data.registration.workshop-only.end-date
+                start-date=site.data.registration.workshop-only.start-date
+                url=site.data.registration.conference.url
+                url-text='Pre-Conference Registration'
+            %}
+        {% else %}
+            {% comment %} details known/announced but can't register yet {% endcomment %}
+            {% include homepage/going_on_block.html
+                primary=true
+                title='Conference Registration'
+                more-info-link='/general-info/attend'
+                more-info-text='Fees & additional information'
+                end-date=site.data.registration.conference.end-date
+                start-date=site.data.registration.conference.start-date
+            %}
+        {% endif %}
             </div>
         </div>
+    {% endif %}
 
 
 
