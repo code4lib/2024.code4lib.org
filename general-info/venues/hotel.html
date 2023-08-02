@@ -17,7 +17,7 @@
                 {% if site.data.conf.venue.phone != nil %}
                     <a href="tel:{{site.data.conf.venue.phone}}">{{site.data.conf.venue.phone}}</a> |
                 {% endif %}
-                {% if site.data.conf.venue.website %}
+                {% if site.data.conf.venue.website != nil %}
                     <a href="{{site.data.conf.venue.website}}">Website</a>
                 {% endif %}
                 {% if site.data.conf.venue.floorplan != nil %}

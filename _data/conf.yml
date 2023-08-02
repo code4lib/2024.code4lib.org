@@ -72,8 +72,8 @@ venue:
   postal-code: ''
   phone:
   image: ''
-  website: ''
-  floorplan: ''
+  website:
+  floorplan:
   directions: ''
   a11y: ''
   hotel:
