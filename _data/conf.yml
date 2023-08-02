@@ -5,8 +5,8 @@
 
 year: 2024
 hashtag: 'c4l24'
-location: ''
-timezone: ''
+location: 'Ann Arbor, Michigan'
+timezone: 'Eastern'
 search: false
 online-only-conference: false
 welcome-message:
@@ -44,30 +44,30 @@ have-menus: false
 # day 0 = preconf day
 days:
   - weekday: Tuesday
-    date: March 14th
+    date: May 7th
     # date in a form that JS Date() constructor understands
-    date-data: 2024-03-14T23:59
+    date-data: 2024-05-07T23:59
   - weekday: Wednesday
-    date: March 15th
-    date-data: 2024-03-15T23:59
+    date: May 8th
+    date-data: 2024-05-08T23:59
   - weekday: Thursday
-    date: March 16th
-    date-data: 2024-03-16T23:59
+    date: May 9th
+    date-data: 2024-05-09T23:59
   - weekday: Friday
-    date: March 17th
-    date-data: 2024-03-17T23:59
+    date: May 10th
+    date-data: 2024-05-10T23:59
 
 ####################
 # Venue Information
 ####################
 
 # Short Form for location
-city-state: ''
-city: ''
-state: ''
+city-state: 'Ann Arbor, MI'
+city: 'Ann Arbor'
+state: 'MI'
 
 venue:
-  name: ''
+  name: 'University of Michigan'
   street: ''
   postal-code: ''
   phone:
@@ -84,7 +84,7 @@ venue:
     reserved-room-block: false
     cost:
     with-tax-cost:
-    cost-cutoff-date: 
+    cost-cutoff-date:
     check-in-time:
     check-out-time:
     self-parking-fee:
@@ -96,8 +96,8 @@ venue:
 
 #twitter and instagram are both managed using the code4lib hashtag data
 social-links:
-  slack: 'http://code4lib.slack.com/'
-  irc: 'http://code4lib.org/irc'
+  slack: 'https://code4lib.slack.com/'
+  irc: 'https://code4lib.org/irc'
   youtube: 'https://www.youtube.com/user/code4lib/videos'
 
 #############################
