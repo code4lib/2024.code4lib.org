@@ -43,19 +43,19 @@ have-menus: false
 
 # day 0 = preconf day
 days:
-  - weekday: Tuesday
-    date: May 7th
+  - weekday: Monday
+    date: May 13th
     # date in a form that JS Date() constructor understands
-    date-data: 2024-05-07T23:59
+    date-data: 2024-05-13T23:59
+  - weekday: Tuesday
+    date: May 14th
+    date-data: 2024-05-14T23:59
   - weekday: Wednesday
-    date: May 8th
-    date-data: 2024-05-08T23:59
+    date: May 15th
+    date-data: 2024-05-15T23:59
   - weekday: Thursday
-    date: May 9th
-    date-data: 2024-05-09T23:59
-  - weekday: Friday
-    date: May 10th
-    date-data: 2024-05-10T23:59
+    date: May 16th
+    date-data: 2024-05-16T23:59
 
 ####################
 # Venue Information
