@@ -393,4 +393,4 @@ quiet-room:
   location: ''
 
 public-transportation:
-  show: false
+  show: true
