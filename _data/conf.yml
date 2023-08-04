@@ -279,7 +279,7 @@ shirt-voting:
 #social-activities-url: '/general-info/social/'
 
 diy-social:
-  show: false
+  show: true
 
 newcomer-dinner:
   show: false
@@ -393,4 +393,4 @@ quiet-room:
   location: ''
 
 public-transportation:
-  show: false
+  show: true
