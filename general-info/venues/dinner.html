@@ -2,7 +2,13 @@
 <section class="general-info">
   <div class="col-12">
       <h2 id="dinner">Newcomer Dinner</h2>
-      <p><strong>When: </strong>{{site.data.conf.newcomer-dinner.date | date: '%A, %B %-d, %Y'}}</p>
+
+      {% if site.data.conf.newcomer-dinner.date != nil %}
+          <p><strong>When:</strong> {{site.data.conf.newcomer-dinner.date | date: '%A, %B %-d, %Y'}}</p>
+      {% else %}
+          <p><strong>When:</strong> <abbr title="To Be Determined">TBD</abbr>. Newcomer's Dinner is typically held during the first night of the conference, after preconferences.</p>
+      {% endif %}
+
       <p>
           The Newcomer Dinner is an opportunity for veterans of the code4lib conference to meet and welcome first-timers. Attendees sign up to join others for dinner the night before the main sessions of conference begin.
           {% if site.data.conf.newcomer-dinner.signup-url != '' %}
