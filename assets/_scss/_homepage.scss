@@ -133,16 +133,3 @@
     height: 550px;
   }
 }
-
-// "Welcome to..." section of the home page
-.welcome a {
-  @include link-styles;
-  color: $accent !important;
-
-  &:hover,
-  &:focus,
-  &:active {
-    @include link-styles-states;
-    color: $primary !important;
-  }
-}
