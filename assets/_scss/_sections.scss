@@ -21,18 +21,13 @@ section:nth-of-type(3n+2) {
   border-top: 2px solid $gray-light;
 }
 
-section:nth-of-type(3n+3) {
+// <a> rules don't have enough specificity w/o `body .content`
+body .content section:nth-of-type(3n+3) {
   background: $section-3-bg;
   color: $section-3-color;
 
   a {
     color: $section-3-link;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $section-3-hover;
-    }
   }
 }
 
@@ -56,5 +51,3 @@ section .general-info a {
     }
   }
 }
-
-
