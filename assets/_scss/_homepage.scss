@@ -9,7 +9,7 @@
 }
 
 #conferenceInfo {
-  background-color: $princeton-orange;
+  background-color: $accent;
 
   h1 {
     background-color: fade-out($primary-light, .35);
@@ -71,7 +71,7 @@
   height: 100%;
   width: auto;
   object-fit: cover;
-  object-position: top right; 
+  object-position: top right;
 }
 
 /*
