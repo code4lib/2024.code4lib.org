@@ -16,18 +16,18 @@ catchline:
 # Hero
 ###########################
 # Place hero image in /assets/img/theme-images/. Includes optional webp format.
-hero-image-filename: ''
+hero-image-filename: 'hero.jpg'
 hero-image-source: ''
-hero-image-filename-webp: ''
-hero-image-alt: ''
+hero-image-filename-webp: 'hero.webp'
+hero-image-alt: "Drone aerial photo of University of Michigan's Central Campus"
 
-#image-attributions:
-#  - attribution:
-#    creator: 'Tim Alex (@thelondoner)'
-#    image-title: 'Nassau Hall, Princeton University'
-#    image-url: 'https://unsplash.com/photos/JYqLCa-rv7o'
-#    license-name: 'Unsplash License'
-#    license-url: 'https://unsplash.com/license'
+image-attributions:
+ - attribution:
+   creator: 'Michigan Photography'
+   image-title: "Drone aerial photo of University of Michigan's Central Campus"
+   image-url: 'https://photography.umich.edu/'
+   license-name: 'Copyright'
+   license-url: 'https://photography.umich.edu/about/#child--copyright'
 
 ########################
 # Program & Schedule
