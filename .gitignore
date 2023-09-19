@@ -6,6 +6,7 @@ npm-debug.log
 nbproject/*
 .sass-cache/*
 .ruby-version
+.tool-versions
 .vscode/*
 .vendor/*
 vendor/*
