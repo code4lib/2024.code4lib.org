@@ -1,5 +1,5 @@
 $bootstrap-sass-asset-helper: true !default;
-$transparent: transparent !important;
+$transparent: transparent;
 
 //
 // Variables
@@ -7,7 +7,6 @@ $transparent: transparent !important;
 
 //== Colors
 
-$princeton-orange: #e77500;
 $cultured-white: #F5F5F5;
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -40,11 +39,11 @@ $gray-lighter:           $gray-200 !default; // #eee
 
 //End of gray setting
 
-$primary:                 #050505;
+$primary:                 #00274c;
 $primary-dark:            darken($primary, 10%) !default;
 $primary-light:           lighten($primary, 10%) !default;
 
-$accent:                  #f3d03e;
+$accent:                  #ffcb05;
 $accent-dark:             darken($accent, 10%) !default;
 $accent-light:            lighten($accent, 10%);
 $accent-darker:           darken($accent, 20%);

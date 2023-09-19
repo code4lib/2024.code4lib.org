@@ -9,7 +9,7 @@
 }
 
 #conferenceInfo {
-  background-color: $princeton-orange;
+  background-color: $accent;
 
   h1 {
     background-color: fade-out($primary-light, .35);
@@ -71,7 +71,7 @@
   height: 100%;
   width: auto;
   object-fit: cover;
-  object-position: top right; 
+  object-position: top right;
 }
 
 /*
@@ -131,18 +131,5 @@
 @media (min-width: 1600px) {
   .hero-image {
     height: 550px;
-  }
-}
-
-// "Welcome to..." section of the home page
-.welcome a {
-  @include link-styles;
-  color: $accent !important;
-
-  &:hover,
-  &:focus,
-  &:active {
-    @include link-styles-states;
-    color: $primary !important;
   }
 }
