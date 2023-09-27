@@ -29,13 +29,13 @@ title: code4lib 2024
 <section class="welcome">
     <div class="container">
         <div class="row section">
-            <div class="col-lg-9 col-md-7 col-xs-12">
+            <div class="col-lg-12 col-md-7 col-xs-12">
                 <h2>Welcome to {{site.data.conf.location}}{% if site.data.conf.catchline %}, {{site.data.conf.catchline}}{% endif %}</h2>
                 {% if site.data.conf.welcome-message %}<p>{{site.data.conf.welcome-message}}</p>{% endif %}
                 {% if site.data.conf.venue.name != nil %}
                 <p>
-                    The conference will take place at <a href="{{site.data.conf.venue.website}}">{{site.data.conf.venue.name}}</a>,
-                    in {{ site.data.conf.location }}.
+                    The conference will take place at {{site.data.conf.venue.name}},
+                    in {{ site.data.conf.location }}. It's hosted by the <a href="https://www.si.umich.edu/">University of Michigan School of Information</a> and <a href="https://lib.umich.edu/">University of Michigan Library</a>.
                 </p>
                 {% endif %}
             </div>

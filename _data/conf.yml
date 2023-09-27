@@ -8,7 +8,7 @@ location: 'Ann Arbor, Michigan'
 timezone: 'Eastern'
 search: false
 online-only-conference: false
-welcome-message: "This conference is hosted by the <a href='https://www.si.umich.edu/'>University of Michigan School of Information</a> and <a href='https://lib.umich.edu/'>University of Michigan Library</a>."
+welcome-message: 
 
 catchline:
 
