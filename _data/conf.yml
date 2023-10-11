@@ -213,9 +213,9 @@ workshop-proposals:
   end-date: ''
 
 talk-proposals:
-  show: false
-  submission-form: ''
-  end-date: ''
+  show: true
+  submission-form: 'https://forms.gle/ddQKksWfA6PYYCDL6'
+  end-date: '2023-10-20'
 
 panel-proposals:
   show: false
