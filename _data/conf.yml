@@ -190,7 +190,7 @@ show-sponsors: false
 # Toggles whether prospectus button displays on homepage and sponsor pages
 sponsor-buttons: false
 # URL to document
-prospectus-document: ''
+prospectus-document: 'https://drive.google.com/file/d/1XY0RPNv_25SykOnvcTB3yipilUTWKb-E/view?usp=sharing'
 sponsor-btn-link: 'https://www.concentra-cms.com/c4l24sponsorreg.html'
 
 ##########
