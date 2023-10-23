@@ -213,7 +213,7 @@ workshop-proposals:
   end-date: ''
 
 talk-proposals:
-  show: true
+  show: false
   submission-form: 'https://forms.gle/ddQKksWfA6PYYCDL6'
   end-date: '2023-10-20'
 
