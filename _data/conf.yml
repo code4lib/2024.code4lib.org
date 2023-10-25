@@ -8,7 +8,7 @@ location: 'Ann Arbor, Michigan'
 timezone: 'Eastern'
 search: false
 online-only-conference: false
-welcome-message: 
+welcome-message:
 
 catchline:
 
@@ -189,6 +189,9 @@ peri:
 show-sponsors: true
 # Toggles whether prospectus button displays on homepage and sponsor pages
 sponsor-buttons: true
+# if true, the nav/footer links go to /prospectus/ instead of /sponsors/
+# for use early on when we are looking for, but do not have many, sponsors
+sponsors-links-to-prospectus: true
 # URL to document
 prospectus-document: 'https://drive.google.com/file/d/1XY0RPNv_25SykOnvcTB3yipilUTWKb-E/view?usp=sharing'
 sponsor-btn-link: 'https://www.concentra-cms.com/c4l24sponsorreg.html'

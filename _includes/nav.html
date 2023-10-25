@@ -36,13 +36,14 @@
                 {% link speakers/index.html %}{% else %}{% link speakers/past-keynotes.html %}
                 {% endif %}" class="nav-link">Speakers</a></li>
 
-                {% comment %}
-                when looking for sponsors before conf, send users to prospectus
-                close to / during conf, send to the list of sponsors page
-                {% endcomment %}
-
                 {% if site.data.conf.show-sponsors%}
-                    <li class="nav-item"><a href="{{ site.baseurl }}{% link sponsors/index.html %}" class="nav-link">Sponsors</a></li>
+                    <li class="nav-item">
+                    {% if site.data.conf.sponsors-links-to-prospectus %}
+                        <a class="nav-link" href="{{ site.baseurl }}{% link prospectus/index.html %}">Sponsors</a>
+                    {% else %}
+                        <a class="nav-link" href="{{ site.baseurl }}{% link sponsors/index.html %}">Sponsors</a>
+                    {% endif %}
+                    </li>
                 {% endif %}
 
                 <li class="nav-item"><a href="{{ site.baseurl }}{% link general-info/attend.html %}" class="nav-link">General Info</a></li>
