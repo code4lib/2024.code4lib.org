@@ -186,7 +186,7 @@ peri:
 # Sponsors
 ###########
 # If false, hides sponsors link in navigation and footer
-show-sponsors: false
+show-sponsors: true
 # Toggles whether prospectus button displays on homepage and sponsor pages
 sponsor-buttons: true
 # URL to document
