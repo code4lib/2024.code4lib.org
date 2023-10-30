@@ -208,9 +208,9 @@ keynote-proposals:
   end-date: '2023-11-16'
 
 workshop-proposals:
-  show: false
-  submission-form: ''
-  end-date: ''
+  show: true
+  submission-form: 'https://forms.gle/XxG9n5G5wVskwK8v7'
+  end-date: '2023-11-30'
 
 talk-proposals:
   show: false
