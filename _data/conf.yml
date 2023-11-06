@@ -38,11 +38,15 @@ image-attributions:
 have-talks: false
 have-workshops: false
 # if true Schedule link -> /schedule/, if false -> /schedule/timeline
-have-schedule: false
+have-schedule: true
+have-schedule-details: false
 have-menus: false
 
-# day 0 = preconf day
+# day 0 = dummy day so JS indexing can line up with human-readable semantics of which day of the conference something is happening
 days:
+  - weekday: Sunday
+    date: May 12th
+    date-data: 2024-05-12T23:59
   - weekday: Monday
     date: May 13th
     # date in a form that JS Date() constructor understands
@@ -151,36 +155,36 @@ workshops:
 peri:
   day0:
     am:
-      title: 'Pre-Conference'
-      desc: 'Workshops'
-      link: '/workshops'
+      title: 'Conference, Day 1'
+      desc: 'Opening Keynote & Talks'
+      link: '/schedule/day-1'
     pm:
       title: 'Newcomer Dinner'
       desc: 'Dine-Around'
       link: '/general-info/venues/#dinner'
   day1:
     am:
-      title: 'Conference, Day 1'
-      desc: 'Opening Keynote & Talks'
-      link: '/schedule/day-1'
+      title: 'Conference, Day 2'
+      desc: 'Awesome Talks'
+      link: '/schedule/day-2'
     pm:
       title: 'Reception'
       desc: 'Palmer House'
       link: '/general-info/venues/#reception'
   day2:
     am:
-      title: 'Conference, Day 2'
-      desc: 'Awesome Talks'
-      link: '/schedule/day-2'
+      title: 'Conference, Day 3'
+      desc: 'Closing Keynote & Talks'
+      link: '/schedule/day-3'
     pm:
       title: 'Game Night'
       desc: 'Board or Card Games'
       link: '/general-info/venues/#gaming'
   day3:
     am:
-      title: 'Conference, Day 3'
-      desc: 'Closing Keynote & Talks'
-      link: '/schedule/day-3'
+      title: 'Post-Conference'
+      desc: 'Workshops'
+      link: '/workshops'
 
 ###########
 # Sponsors
