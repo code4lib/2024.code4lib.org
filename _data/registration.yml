@@ -26,9 +26,9 @@ workshop-only:
   # "show-button" only affects a button on the general-info/attend page
   show-button: false
   undecided: false
-  undecided-text: "Depending on availability, Post-Conference ONLY registration may open at the beginning of May."
+  undecided-text: "Depending on availability, Workshop-ONLY registration may open at the beginning of May."
   url: 
-  # post-conference-only registration cost may differ from post-conference registration with general registration
+  # workshop-only registration cost may differ from workshop registration with general registration
   half-day-cost: ''
   full-day-cost: ''
   start-date: ''
