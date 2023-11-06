@@ -6,14 +6,16 @@
 
         {% if site.data.conf.venue.image %}
         <div class="col-6">
-            <img class="img-fluid" src="/assets/img/theme-images/{{ site.data.conf.venue.image }}" alt="{{ site.data.conf.venue.name }}">
+            <img class="img-fluid" src="{{ site.data.conf.venue.image }}" alt="{{ site.data.conf.venue.name }}">
         </div>
         {% endif %}
 
         <div class="col-6">
             <p>
-                {{site.data.conf.venue.street}}<br>
-                {{site.data.conf.city-state}} {{site.data.conf.venue.postal-code}}<br>
+                {% if site.data.conf.venue.street != nil %}
+                    {{site.data.conf.venue.street}}<br>
+                    {{site.data.conf.city-state}} {{site.data.conf.venue.postal-code}}<br>
+                {% endif %}
                 {% if site.data.conf.venue.phone != nil %}
                     <a href="tel:{{site.data.conf.venue.phone}}">{{site.data.conf.venue.phone}}</a> |
                 {% endif %}

@@ -8,7 +8,7 @@ location: 'Ann Arbor, Michigan'
 timezone: 'Eastern'
 search: false
 online-only-conference: false
-welcome-message: 
+welcome-message:
 
 catchline:
 
@@ -68,18 +68,18 @@ state: 'MI'
 
 venue:
   name: 'University of Michigan'
-  street: ''
-  postal-code: ''
+  street:
+  postal-code:
   phone:
-  image: ''
+  image: /assets/img/theme-images/hatcher-library-in-spring.jpg
   website:
   floorplan:
-  directions: ''
-  a11y: ''
+  directions:
+  a11y:
   hotel:
     show: false
     multiple-hotels: false
-    multiple-hotels-map: ''
+    multiple-hotels-map:
     name:
     reserved-room-block: false
     cost:
