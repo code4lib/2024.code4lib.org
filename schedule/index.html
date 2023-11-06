@@ -7,25 +7,24 @@ title: Schedule
     <div class="row">
         <h1 class="sr-only">Schedule</h1>
         <div class="col-12 sched-date">
-            <h2>{{site.data.conf.days[0].weekday}}, {{site.data.conf.days[0].date}}</h2>
+            <h2>{{site.data.conf.days[1].weekday}}, {{site.data.conf.days[1].date}}</h2>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>9AM to 4:30PM
+            <h3>1PM to 5:30PM
                 <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
             </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
-            <h3><a href="/workshops">Pre-Conference Workshops</a></h3>
+            <h4><a href="/schedule/day-1">General Conference, Day One</a></h4>
             <p>
-                Pre-conference details are available
-                {% if site.data.registration.workshop-only.url != nil %}
-                    on the <a href="{{site.data.registration.workshop-only.url}}">registration site</a> and
-                {% endif %}
-                on the <a href="/workshops">Pre-Conference Workshops</a> page.
+                Keynote #1 opens the conference. Talks will be selected by the community.
             </p>
+            {% if site.data.conf.have-menus %}
+              <p><a class="btn ct-btn-light" href="/schedule/food/day1-menus.html">View Menu</a></p>
+            {% endif %}
         </div>
     </div>
 
@@ -75,23 +74,23 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 sched-date">
-            <h2>{{site.data.conf.days[1].weekday}}, {{site.data.conf.days[1].date}}</h2>
+            <h2>{{site.data.conf.days[2].weekday}}, {{site.data.conf.days[2].date}}</h2>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>9AM to 5:15PM
+            <h3>9AM to 5:30PM
                 <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
             </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
-            <h4><a href="/schedule/day-1">General Conference, Day One</a></h4>
+            <h4><a href="/schedule/day-2">General Conference, Day Two</a></h4>
             <p>
-                Talks have been selected by the community.
+                Talks will be selected by the community.
             </p>
             {% if site.data.conf.have-menus %}
-              <p><a class="btn ct-btn-light" href="/schedule/food/day1-menus.html">View Menu</a></p>
+              <p><a class="btn ct-btn-light" href="/schedule/food/day2-menus.html">View Menu</a></p>
             {% endif %}
         </div>
     </div>
@@ -119,23 +118,23 @@ title: Schedule
 
    <div class="row">
         <div class="col-12 sched-date">
-            <h2>{{site.data.conf.days[2].weekday}}, {{site.data.conf.days[2].date}}</h2>
+            <h2>{{site.data.conf.days[3].weekday}}, {{site.data.conf.days[3].date}}</h2>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>9AM to 5:10PM
+            <h3>9AM to 5:30PM
                 <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
             </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
-            <h4><a href="/schedule/day-2">General Conference, Day Two</a></h4>
+            <h4><a href="/schedule/day-3">General Conference, Day Three</a></h4>
             <p>
-                Talks have been selected by the community.
+                Keynote #2 closes out the conference. Talks will be selected by the community.
             </p>
             {% if site.data.conf.have-menus %}
-              <p><a class="btn ct-btn-light" href="/schedule/food/day2-menus.html">View Menu</a></p>
+              <p><a class="btn ct-btn-light" href="/schedule/food/day3-menus.html">View Menu</a></p>
             {% endif %}
         </div>
     </div>
@@ -229,24 +228,25 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 sched-date">
-            <h2>{{site.data.conf.days[3].weekday}}, {{site.data.conf.days[3].date}}</h2>
+            <h2>{{site.data.conf.days[4].weekday}}, {{site.data.conf.days[4].date}}</h2>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>9AM to 12:55PM
+            <h3>9AM to 4:30PM
                 <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
             </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
-            <h4><a href="/schedule/day-3">General Conference, Day Three</a></h4>
+            <h3><a href="/workshops">Post-Conference Workshops</a></h3>
             <p>
-                Keynote #2 closes out the conference. Talks have been selected by the community.
+                Post-conference details will be
+                {% if site.data.registration.workshop-only.url != nil %}
+                    on the <a href="{{site.data.registration.workshop-only.url}}">registration site</a> and
+                {% endif %}
+                on the <a href="/workshops">Post-Conference Workshops</a> page when available. All workshops will be in-person only.
             </p>
-            {% if site.data.conf.have-menus %}
-              <p><a class="btn ct-btn-light" href="/schedule/food/day3-menus.html">View Menu</a></p>
-            {% endif %}
         </div>
     </div>
 

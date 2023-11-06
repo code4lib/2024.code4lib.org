@@ -12,7 +12,11 @@
                 {% include schedule_nav.html param=page.day %}
                 {{ content }}
                 {% assign events = site.data.schedule | where:page.day, true %}
-                {% include presentation_timeline.html events=events %}
+	            {% if site.data.conf.have-schedule-details %}
+    	            {% include presentation_timeline.html events=events %}
+	            {% else %}
+	            <p class="alert alert-warning">We don't have the day's details yet, but when we do, they will appear right here.</p>
+	            {% endif %}
                 {% include schedule_nav.html param=page.day %}
             {% else %}
                 <p>The schedule for Code4Lib {{site.data.conf.year}} has not been finalized yet.</p>
