@@ -19,7 +19,7 @@ active: Attend Code4Lib
                             <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Register Now!</a>
                           {% endif %}
                         {% elsif site.data.registration.workshop-only.show %}
-                            <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Post-Conference Registration</a>
+                            <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Workshop Registration</a>
                         {% else %}
                             <p>Registration will open
                                 at 11 a.m. EST / 8 a.m. PST
@@ -40,8 +40,8 @@ active: Attend Code4Lib
                     <p>All attendees are expected to abide by the University of Michigan's <a href="https://healthresponse.umich.edu/policies-guidance/">COVID-19 Policies & Guidance</a>.</p>
 
                     {% if site.data.registration.workshop-only.show-button %}
-                        <h3>Post-Conference Workshops</h3>
-                        <p><a class="btn btn-lg btn-warning" href="{{ site.data.registration.workshop-only.url }}">Post-Conference Registration</a></p>
+                        <h3>Workshops</h3>
+                        <p><a class="btn btn-lg btn-warning" href="{{ site.data.registration.workshop-only.url }}">Workshop Registration</a></p>
                     {% endif %}
             </div>
         </div>
@@ -57,15 +57,15 @@ active: Attend Code4Lib
 
                     {% if site.data.registration.post-conference.show %}
                         {% if site.data.registration.post-conference.workshop-half-day-cost %}
-                            <li><span class="font-weight-bold">Post-Conference</span>: {{ site.data.registration.post-conference.workshop-half-day-cost }} per workshop</li>
+                            <li><span class="font-weight-bold">Workshops</span>: {{ site.data.registration.post-conference.workshop-half-day-cost }} per workshop</li>
                         {% else %}
-                            <li><span class="font-weight-bold">Post-Conference</span>: Pricing & Details Coming Soon</li>
+                            <li><span class="font-weight-bold">Workshop</span>: Pricing & Details Coming Soon</li>
                         {% endif %}
                     {% else %}
-                        <li><span class="font-weight-bold">Post-Conferences (with main conference registration)</span>: {{ site.data.registration.conference.workshop-half-day-cost }} per half day ({{ site.data.registration.conference.workshop-full-day-cost }} for full day)</li>
+                        <li><span class="font-weight-bold">Workshops (with main conference registration)</span>: {{ site.data.registration.conference.workshop-half-day-cost }} per half day ({{ site.data.registration.conference.workshop-full-day-cost }} for full day)</li>
 
                         {% if site.data.registration.workshop-only.show %}
-                            <li><span class="font-weight-bold">Post-Conference Only</span>: {{ site.data.registration.workshop-only.half-day-cost }} per half day. {% if site.data.registration.workshop-only.full-day-cost != nil %} ({{ site.data.registration.workshop-only.full-day-cost }} for full day).{% endif %} {% if site.data.registration.workshop-only.start-date != nil %} Opens {{ site.data.registration.workshop-only.start-date | date: "%B %-d" }}.{% endif %}</li>
+                            <li><span class="font-weight-bold">Workshops Only</span>: {{ site.data.registration.workshop-only.half-day-cost }} per half day. {% if site.data.registration.workshop-only.full-day-cost != nil %} ({{ site.data.registration.workshop-only.full-day-cost }} for full day).{% endif %} {% if site.data.registration.workshop-only.start-date != nil %} Opens {{ site.data.registration.workshop-only.start-date | date: "%B %-d" }}.{% endif %}</li>
                         {% endif %}
                     {% endif %}
 
@@ -117,10 +117,10 @@ active: Attend Code4Lib
 
                 {%- comment -%}
                 <p>
-                    When you register, you will be able to select two half-day workshops. As with past Code4Lib conferences, it will be possible to register for the main conference, the main conference + post-conference(s), or only for the post-conference workshop(s)
+                    When you register, you will be able to select two half-day workshops. As with past Code4Lib conferences, it will be possible to register for the main conference, the main conference + workshop(s), or only for the workshop(s)
                 </p>
                 <p>
-                    <span class="font-weight-bold">Post-conference only registration will not open this year due to limited sessions and capacity.</span>
+                    <span class="font-weight-bold">Workshop-only registration will not open this year due to limited sessions and capacity.</span>
                 </p>
                 {%- endcomment -%}
             </div>
@@ -210,7 +210,7 @@ active: Attend Code4Lib
                     <li><span class="font-weight-bold">Option 1</span> - Watch the presentations streamed to the code4lib YouTube channel and subscribe to the #code4libcon Slack channel to engage in discussions with all attendees during the conference. There is no fee for this option and no registration required.</li>
                     <li><span class="font-weight-bold">Option 2</span> - Register online as a “Conference T-Shirt ONLY Attendee”, pay the appropriate registration fee based on your registration date (see above for fees), and receive the same conference t-shirt that in-person attendees receive. If you choose this registration type, you'll watch and engage in the conference in the same manner as outlined in Option 1, above. NOTE: “Conference T-Shirt ONLY Attendee” registration is NOT required to participate in the conference, as outlined in Option 1 above.</li>
                 </ul>
-                <p>Post-conference workshops will be in-person only.</p>
+                <p>Workshops will be in-person only.</p>
 
                 <h3>Social Media and "Back Channels"</h3>
                 <p>

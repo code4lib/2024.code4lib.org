@@ -182,7 +182,7 @@ peri:
       link: '/general-info/venues/#gaming'
   day3:
     am:
-      title: 'Post-Conference'
+      title: 'Workshops'
       desc: 'Workshops'
       link: '/workshops'
 

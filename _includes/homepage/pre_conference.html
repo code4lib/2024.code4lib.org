@@ -22,13 +22,13 @@
             {% comment %} conference-only registration is open! {% endcomment %}
             {% include homepage/going_on_block.html
                 primary=true
-                title='Post-Conference Registration'
+                title='Workshop Registration'
                 more-info-link='/general-info/attend'
-                more-info-text='<b>The main conference is sold out</b>, but registration for post-conference-only workshops is still open.'
+                more-info-text='<b>The main conference is sold out</b>, but registration for workshops only is still open.'
                 end-date=site.data.registration.workshop-only.end-date
                 start-date=site.data.registration.workshop-only.start-date
                 url=site.data.registration.conference.url
-                url-text='Post-Conference Registration'
+                url-text='Workshop Registration'
             %}
         {% else %}
             {% comment %} details known/announced but can't register yet {% endcomment %}
