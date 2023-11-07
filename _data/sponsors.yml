@@ -1,0 +1,35 @@
+# Example
+# - name: ebsco
+  # img: assets/img/sponsors/ebsco.svg
+  # link: http://www.google.com
+  # level: platinum
+  # diversity: true
+  # transcription: false
+  # annotation: extra note here
+
+# if img is omitted, the name will be displayed instead.
+
+# The annotation key can be used to specify a qualifier next
+# to the sponsor's name/logo (e.g., "Closed Captioning")
+
+# diversity key indicates sponsors that should show up
+# on the diversity scholarships section of the site
+
+# Available Levels
+# - adamantium
+# - platinum
+# - diamond
+# - gold
+# - silver
+# - bronze
+# - contributor
+# - supporter
+
+- name: Blacklight
+  img: /assets/img/sponsors/blacklight-logo-vectorized.svg
+  link: https://projectblacklight.org
+  level: platinum
+- name: Penn Libraries
+  link: https://www.library.upenn.edu/
+  level: bronze
+  annotation: Captioning Sponsor
