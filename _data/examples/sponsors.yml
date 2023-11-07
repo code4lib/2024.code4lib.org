@@ -5,6 +5,7 @@
   # level: platinum
   # diversity: true
   # transcription: false
+  # annotation: extra note here
 
 # if img is omitted, the name will be displayed instead.
 
@@ -25,7 +26,7 @@
 # - supporter
 
 - name: Logan's Cutlery
-  img: /assets/img/examples/sponsors/one.svg
+  img: assets/img/examples/sponsors/one.svg
   link: https://www.google.com
   level: adamantium
 
@@ -35,19 +36,19 @@
   diversity: true
 
 - name: Imani's Computer Repair
-  img: /assets/img/examples/sponsors/two.svg
+  img: assets/img/examples/sponsors/two.svg
   link: https://www.google.com
   level: diamond
   diversity: true
 
 - name: Gabirel's Sporting Goods
-  img: /assets/img/examples/sponsors/three.svg
+  img: assets/img/examples/sponsors/three.svg
   link: https://www.google.com
   level: gold
   transcription: true
 
 - name: Oskar's Finery
-  img: /assets/img/examples/sponsors/one.svg
+  img: assets/img/examples/sponsors/one.svg
   level: silver
 
 - name: Li Wei's Pizzeria
@@ -55,23 +56,23 @@
   annotation: "Closed Captioning"
 
 - name: Chucks's Nursery
-  img: /assets/img/examples/sponsors/two.svg
+  img: assets/img/examples/sponsors/two.svg
   level: supporter
   annotation: "Closed Captioning"
 
 - name: oXygen XML
-  img: /assets/img/sponsors/oxygennn.png
+  img: assets/img/sponsors/oxygennn.png
   link: https://www.oxygenxml.com
   level: giveaway
 
 - name: Johns Hopkins Sheridan Libraries
-  img: /assets/img/sponsors/johnshopkinsss.jpg
+  img: assets/img/sponsors/johnshopkinsss.jpg
   link: https://www.library.jhu.edu
   level: bronze
   annotation: 'Childcare'
 
 - name: Balsamiq
-  img: /assets/img/sponsors/balsamiqqq.png
+  img: assets/img/sponsors/balsamiqqq.png
   link: https://balsamiq.com/
   level: giveaway
   diversity: true
