@@ -4,7 +4,7 @@
         {% if site.data.conf.workshops.show %}
         {% assign location = site.data.locations | where: 'id', site.data.conf.workshops.location | first %}
         <p>
-            All workshops will be held {{ site.data.conf.days[3].weekday }}, {{ site.data.conf.days[3].date-data | date: "%B %-d, %Y" }}{% if location %} in <a href="{{ location.google_maps }}">{{ location.name }}</a>{% endif %}. Please see the <a href="/workshops/">schedule</a> for more information.
+            All workshops will be held {{ site.data.conf.days[4].weekday }}, {{ site.data.conf.days[4].date-data | date: "%B %-d, %Y" }}{% if location %} in <a href="{{ location.google_maps }}">{{ location.name }}</a>{% endif %}. Please see the <a href="/workshops/">schedule</a> for more information.
         </p>
         {% else %}
         <p>
