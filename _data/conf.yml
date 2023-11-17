@@ -207,7 +207,7 @@ sponsor-btn-link: 'https://www.concentra-cms.com/c4l24sponsorreg.html'
 ###########
 
 keynote-proposals:
-  show: true
+  show: false
   submission-form: 'https://wiki.code4lib.org/2024_Keynote_Speakers_Nominations'
   end-date: '2023-11-16'
 
