@@ -24,6 +24,7 @@
 # - bronze
 # - contributor
 # - supporter
+# - exhibitor
 
 - name: Blacklight
   img: /assets/img/sponsors/blacklight-logo-vectorized.svg
@@ -38,3 +39,22 @@
   img: /assets/img/sponsors/gvsu.png
   link: https://www.gvsu.edu/
   level: supporter
+- name: University of Pittsburgh - University Library System
+  img: /assets/img/sponsors/upittlibsystem.png
+  link: http://www.library.pitt.edu/
+  level: bronze
+- name: ICPSR (University of Michigan)
+  img: /assets/img/sponsors/icpsr.png
+  link: http://www.icpsr.umich.edu/
+  level: bronze
+- name: UBC School of Information
+  img: /assets/img/sponsors/ubc.jpeg
+  link: https://ischool.ubc.ca/
+  level: supporter
+- name: ArchivesSpace
+  link: https://archivesspace.org/
+  level: exhibitor
+- name: EBSCO Information Services
+  img: /assets/img/sponsors/ebsco.png
+  link: https://www.ebsco.com/
+  level: gold
