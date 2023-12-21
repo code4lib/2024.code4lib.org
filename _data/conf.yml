@@ -246,7 +246,7 @@ host-proposals:
 ###########
 
 keynote-voting:
-  show: true
+  show: false
   url: 'https://docs.google.com/forms/d/e/1FAIpQLSeLRCymzhxerfvujseIkJebjwQ04cjURDgS-DI-h3p_c9feWw/viewform'
   end-date: '2023-12-20'
 
