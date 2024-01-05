@@ -6,6 +6,14 @@
   # diversity: true
   # transcription: false
   # annotation: extra note here
+# Boilerplate
+#- name: 
+#  img: 
+#  link: 
+#  level: 
+#  diversity: 
+#  transcription: 
+#  annotation: 
 
 # if img is omitted, the name will be displayed instead.
 
