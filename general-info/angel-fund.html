@@ -4,11 +4,36 @@
 			{% if site.data.conf.angel-fund.show %}
 			<h2>Individual Giving</h2>
 			<p>
-				The Angel Fund has proven over the years to be a successful way for individuals in the community to support the Diversity and Inclusion Scholarships. We would like to continue accepting donations from individuals who would like to support this year's Financial Assistance Program. Individual donors will be thanked below, though anonymous donation is also possible. All funds raised will help pay the conference registration costs for anyone in the community requesting financial assistance for our annual conference.
+				Angel Funds are an opportunity for individuals in the community to support Diversity and Inclusion Scholarships. These
+				scholarships provide funding for travel costs & conference fees for qualified applicants from groups typically
+				underrepresented at the conference. Individual donors will be thanked below. If you prefer to donate anonymously, please note NA in the "Donated in the Name Of" text box on the payment page.
 			</p>
+			{%  if site.data.conf.angel-fund.url %}
+				<div>
+					<a class="btn ct-btn-light btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel
+						Fund today!</a>
+				</div><br>
+			{% endif %}
+
+			{%  comment  %} Stripe payment buttons from Concentra, these will change every year {% endcomment %}
 			<div>
-				<a class="btn ct-btn-light btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel Fund today!</a>
-			</div><br>
+				<script async src="https://js.stripe.com/v3/buy-button.js">
+				</script>
+				{%  comment  %} 25, 50, 100, name-your-price buttons  {% endcomment %}
+				<stripe-buy-button buy-button-id="buy_btn_1OV10iHJ5CvRBfpw1GBEthqy"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<stripe-buy-button buy-button-id="buy_btn_1OV12bHJ5CvRBfpwVQ08m2km"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<stripe-buy-button buy-button-id="buy_btn_1OME07HJ5CvRBfpwHybRcKtt"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<stripe-buy-button buy-button-id="buy_btn_1OV13SHJ5CvRBfpwWKEZRs2v"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<p>The final button lets you choose any payment amount in five-dollar increments.</p>
+			</div>
 			{% endif %}
 
 			<div id="donation-total"></div>

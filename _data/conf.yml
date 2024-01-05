@@ -358,12 +358,12 @@ criteria:
   show: true
 
 angel-fund:
-  show: false
+  show: true
   # whether to show the "donation thermometer" & Google Spreadsheet key for it
   # NOTE: spreadsheet needs to be "published to the web"
   thermometer: false
   spreadsheet-key: ''
-  url: ''
+  url:
 
 diversity-scholarship-applications:
   show: false
