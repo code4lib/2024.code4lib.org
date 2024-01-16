@@ -36,42 +36,12 @@
 			</div>
 			{% endif %}
 
-			<div id="donation-total"></div>
-
 			{% if site.data.conf.angel-fund.thermometer %}
-				<div id="donation-thermometers"></div>
-
-				<!-- thermometer HTML/CSS based on https://codepen.io/robotballoon/pen/Fjnyp -->
-				<template id="thermometer">
-				    <div class=countdown-wrap>
-				      <div class="goal-title">
-				          <div class="label">{{label}}</div>
-				          <div class="goal">{{goal}}</div>
-				      </div>
-				      <div class="glass">
-				        <div class="progress">
-				        </div>
-				      </div>
-				      <div class="goal-stat">
-				        <span class="goal-number percent">{{percent}}</span>
-				        <span class="goal-label">Funded</span>
-				      </div>
-				      <div class="goal-stat">
-				        <span class="goal-number total">{{total}}</span>
-				        <span class="goal-label">Raised</span>
-				      </div>
-				      <div class="goal-stat">
-				        <span class="goal-number donations">{{donations}}</span>
-				        <span class="goal-label">Donations</span>
-				      </div>
-				    </div>
-				</template>
+				<div>
+					<iframe width="259" height="371" style="display: block; margin: 0 auto;" seamless frameborder="0" scrolling="no"
+						src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScg-Hgi73wOFxJ5yLxoJiOifVaJ7CuW1lSwawsOei2uZEu4sg2I0ZelVzrs1blmTDHBv8rwZbOEyjW/pubchart?oid=2098545654&amp;format=interactive"></iframe>
+				</div>
 			{% endif %}
 		</div>
 	</div>
 </div>
-
-{% if site.data.conf.angel-fund.thermometer %}
-	<script src="{{ "/assets/js/thermometer.js" | relative_url }}"></script>
-	<style>@import url('{{ "/assets/css/thermometer.css" | relative_url }}') screen;</style>
-{% endif %}
