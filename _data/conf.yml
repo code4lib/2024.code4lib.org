@@ -110,7 +110,7 @@ social-links:
 
 main-conf-email: 'code4lib@concentra-cms.com'
 sponsor-contact-email: 'code4lib.sponsorship@gmail.com'
-scholarship-contact-email: 'code4libaward@gmail.com'
+scholarship-contact-email: 'code4lib-scholarships@googlegroups.com'
 workshop-contact-email: 'Code4Lib.Workshops@gmail.com'
 lpc-contact-email: 'code4liblpc@gmail.com'
 accessibility-email: 'code4libaccessibility@googlegroups.com'
@@ -365,17 +365,17 @@ angel-fund:
   url:
 
 diversity-scholarship-applications:
-  show: false
+  show: true
   url: '/general-info/scholarships#how-to-apply'
   url-text: 'How to Apply'
   end-day: 'Friday'
-  end-date: ''
-  end-time: ''
-  notification-date: ''
-  apply-url: ''
-  committee-wiki-url: ''
-  max-scholarship-award: ''
-  max-international-award: ''
+  end-date: 'February 9th 2024'
+  end-time: '11:59 PM PST'
+  notification-date: 'February 23rd 2024'
+  apply-url: 'https://docs.google.com/forms/d/e/1FAIpQLScLrU4g4U_TPI1bpGFnYTjc1v0Tr7oORaXQPHhCY3eV_tgVvQ/viewform'
+  committee-wiki-url: 'https://wiki.code4lib.org/2024_Scholarship_Documents'
+  max-scholarship-award: '1500'
+  max-international-award: '3000'
 
 # show sponsors for diversity scholarships on general-info/scholarships
 diversity-scholarship-sponsors:
