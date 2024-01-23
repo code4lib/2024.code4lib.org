@@ -1,0 +1,56 @@
+# this lacks most of the fields we use, see _data/examples/speakers.yml
+- id: "andreas-orphanides"
+  name: Andreas Orphanides
+  last: Orphanides
+  img_src: /assets/img/nopics/nopic1.jpg
+  keynote: false
+- id: "eric-lease-morgan"
+  name: Eric Lease Morgan
+  last: Morgan
+  img_src: /assets/img/nopics/nopic2.jpg
+  keynote: false
+- id: "robin-davis"
+  name: Robin Davis
+  last: Davis
+  img_src: /assets/img/nopics/nopic3.jpg
+  keynote: false
+- id: "elena-colon-marrero"
+  name: Elena Colon-Marrero
+  last: Colon-Marrero
+  img_src: /assets/img/nopics/nopic4.jpg
+  keynote: false
+- id: "justin-m-coyne"
+  name: Justin M Coyne
+  last: Coyne
+  img_src: /assets/img/nopics/nopic5.jpg
+  keynote: false
+- id: "nathan-kelber"
+  name: Nathan Kelber
+  last: Kelber
+  img_src: /assets/img/nopics/nopic6.jpg
+  keynote: false
+- id: "matthew-lincoln"
+  name: Matthew Lincoln
+  last: Lincoln
+  img_src: /assets/img/nopics/nopic6.jpg
+  keynote: false
+- id: "olivia-wikle"
+  name: Olivia Wikle
+  last: Wikle
+  img_src: /assets/img/nopics/nopic7.jpg
+  keynote: false
+- id: "michael-b-klein"
+  name: Michael B. Klein
+  last: Klein
+  img_src: /assets/img/nopics/nopic8.jpg
+  keynote: false
+- id: "ken-varnum"
+  name: Ken Varnum
+  last: Varnum
+  img_src: /assets/img/nopics/nopic9.jpg
+  keynote: false
+- id: "eric-phetteplace"
+  name: Eric Phetteplace
+  last: Phetteplace
+  img_src: /assets/img/nopics/nopic0.jpg
+  keynote: false
