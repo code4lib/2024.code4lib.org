@@ -9,6 +9,7 @@ conference:
   show: true
   url: 'https://concentracms.regfox.com/code4lib-2024'
   start-date: '2024-01-30'
+  start-time: 'noon EST / 9 a.m. PST'
   end-date: '2024-04-16'
   cancellation-date: '2024-04-16'
   # "open" means people can register
