@@ -1,0 +1,6 @@
+# a stub until we have more location details, see _data/examples/locations.yml
+- id: TBD
+  name: TBD
+  rooms:
+    - id: TBD
+      name: To Be Determined

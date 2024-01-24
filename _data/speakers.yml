@@ -1,0 +1,45 @@
+# this lacks most of the fields we use, see _data/examples/speakers.yml
+- id: "andreas-orphanides"
+  name: Andreas Orphanides
+  last: Orphanides
+  keynote: false
+- id: "eric-lease-morgan"
+  name: Eric Lease Morgan
+  last: Morgan
+  keynote: false
+- id: "robin-davis"
+  name: Robin Davis
+  last: Davis
+  keynote: false
+- id: "elena-colon-marrero"
+  name: Elena Colon-Marrero
+  last: Colon-Marrero
+  keynote: false
+- id: "justin-m-coyne"
+  name: Justin M Coyne
+  last: Coyne
+  keynote: false
+- id: "nathan-kelber"
+  name: Nathan Kelber
+  last: Kelber
+  keynote: false
+- id: "matthew-lincoln"
+  name: Matthew Lincoln
+  last: Lincoln
+  keynote: false
+- id: "olivia-wikle"
+  name: Olivia Wikle
+  last: Wikle
+  keynote: false
+- id: "michael-b-klein"
+  name: Michael B. Klein
+  last: Klein
+  keynote: false
+- id: "ken-varnum"
+  name: Ken Varnum
+  last: Varnum
+  keynote: false
+- id: "eric-phetteplace"
+  name: Eric Phetteplace
+  last: Phetteplace
+  keynote: false
