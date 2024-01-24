@@ -81,8 +81,8 @@ venue:
   directions:
   a11y:
   hotel:
-    show: false
-    multiple-hotels: false
+    show: true
+    multiple-hotels: true
     multiple-hotels-map:
     name:
     reserved-room-block: false
