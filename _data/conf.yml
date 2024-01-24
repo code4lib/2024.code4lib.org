@@ -36,7 +36,7 @@ image-attributions:
 # as displays in a few other places.
 # if true Speakers link -> /speakers/, if false -> /speakers/past-keynotes
 have-talks: false
-have-workshops: false
+have-workshops: true
 # if true Schedule link -> /schedule/, if false -> /schedule/timeline
 have-schedule: true
 have-schedule-details: false
@@ -148,8 +148,8 @@ closed-captioning:
   url:
 
 workshops:
-  show: false
-  location: ''
+  show: true
+  location: '/workshops'
 
 # Peri display descriptions and titles
 peri:
