@@ -28,9 +28,14 @@
 
             <div class="col-12">
                 <h3>Reception Details</h3>
-                <p><strong>When: </strong>
-                    {{site.data.conf.reception.date | date: '%A, %B %-d, %Y'}} <!-- from {{site.data.conf.reception.times}} -->
-                </p>
+                {% if site.data.conf.reception.date %}
+                  <p><strong>When: </strong>
+                    {{site.data.conf.reception.date | date: '%A, %B %-d, %Y'}}
+                    {% if site.data.conf.reception.times %}
+                      from {{site.data.conf.reception.times}}
+                    {% endif %}
+                  </p>
+                {% endif %}
                 {% if site.data.conf.reception.special-notes %}
                 <p><strong>Note: </strong>
                     {{site.data.conf.reception.special-notes}}
