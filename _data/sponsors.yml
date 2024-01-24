@@ -7,13 +7,13 @@
   # transcription: false
   # annotation: extra note here
 # Boilerplate
-#- name: 
-#  img: 
-#  link: 
-#  level: 
-#  diversity: 
-#  transcription: 
-#  annotation: 
+#- name:
+#  img:
+#  link:
+#  level:
+#  diversity:
+#  transcription:
+#  annotation:
 
 # if img is omitted, the name will be displayed instead.
 
@@ -91,3 +91,13 @@
   img: /assets/img/sponsors/devs4diversity.png
   link: https://github.com/pulibrary
   level: silver
+
+- name: Princeton University Library
+  img: /assets/img/sponsors/princeton.png
+  link: https://library.princeton.edu/
+  level: contributor
+  diversity: true
+
+- name: Ubiquity
+  link: https://ubiquity.pub/
+  level: exhibitor
