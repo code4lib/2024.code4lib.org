@@ -22,7 +22,7 @@ active: Attend Code4Lib
                             <a href="{{ site.data.registration.conference.url }}" class="btn ct-btn-light btn-lg">Workshop Registration</a>
                         {% else %}
                             <p>Registration will open
-                                at noon EST / 9 a.m. PST
+                                at {{ site.data.registration.conference.start-time }}
                                 on <span class="font-weight-bold">{{ site.data.registration.conference.start-date | date: '%A, %B %-d, %Y' }}</span>.</p>
                         {% endif %}
                     {% else %}
