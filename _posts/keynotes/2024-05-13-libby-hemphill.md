@@ -9,7 +9,7 @@ length: 45
 type: key-open
 startTime: 2024-05-13T14:15
 categories: keynote
-title: TITLE TK
+title:
 slides:
 youtube_key:
 
