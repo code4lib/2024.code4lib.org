@@ -11,6 +11,7 @@
   name: Robin Davis
   last: Davis
   keynote: false
+  institution: NC State University Libraries
 - id: "elena-colon-marrero"
   name: Elena Colon-Marrero
   last: Colon-Marrero
@@ -42,4 +43,285 @@
 - id: "eric-phetteplace"
   name: Eric Phetteplace
   last: Phetteplace
+  keynote: false
+- id: kristian-allen
+  name: Kristian Allen
+  last: Allen
+  institution: UCLA
+  keynote: false
+- id: addison-ashworth
+  name: Addison Ashworth
+  last: Ashworth
+  institution: University of Texas at Austin Libraries
+  keynote: false
+- id: erik-beck
+  name: Erik Beck
+  last: Beck
+  institution: Sacramento State University
+  keynote: false
+- id: magnus-berg
+  name: Magnus Berg
+  last: Berg
+  institution: University of Toronto, Mississauga Library
+  keynote: false
+- id: henna-d-bhramdat
+  name: Henna D. Bhramdat
+  last: Bhramdat
+  institution: Department of Anthropology, University of Florida
+  keynote: false
+- id: raiden-van-bronkhorst
+  name: Raiden van Bronkhorst
+  last: Bronkhorst
+  institution: California Digital Library
+  keynote: false
+- id: bridget-burke
+  name: Bridget Burke
+  last: Burke
+  institution: University of Michigan Library
+  keynote: false
+- id: sephra-byrne
+  name: Sephra Byrne
+  last: Byrne
+  institution: University of North Texas Libraries
+  keynote: false
+- id: bodeene-amyot-cairdeas
+  name: Bodeene Amyot Cairdeas
+  last: Cairdeas
+  institution: James Madison University
+  keynote: false
+- id: brian-clark
+  name: Brian Clark
+  last: Clark
+  institution: University of Alabama
+  keynote: false
+- id: justin-de-la-cruz
+  name: Justin de la Cruz
+  last: Cruz
+  institution: Network of the National Library of Medicine, National Center for Data Services
+  keynote: false
+- id: nicole-currens
+  name: Nicole Currens
+  last: Currens
+  institution: University of Texas at Austin Libraries
+  keynote: false
+- id: christina-cutler
+  name: Christina Cutler
+  last: Cutler
+  institution: University of Toronto
+  keynote: false
+- id: katherine-kate-deibel
+  name: Katherine "Kate" Deibel
+  last: Deibel
+  institution: Philadelphia College of Osteopathic Medicine
+  keynote: false
+- id: bobbi-fox
+  name: Bobbi Fox
+  last: Fox
+  keynote: false
+- id: rebecca-french
+  name: Rebecca French
+  last: French
+  institution: James Madison University
+  keynote: false
+- id: nicolas-gauthier
+  name: Nicolas Gauthier
+  last: Gauthier
+  institution: Florida Museum of Natural History, University of Florida
+  keynote: false
+- id: arran-griffith
+  name: Arran Griffith
+  last: Griffith
+  institution: Fedora
+  keynote: false
+- id: emily-porter
+  name: Emily Porter
+  last: Porter
+  institution: Emory University Libraries
+  keynote: false
+- id: corey-halpin
+  name: Corey Halpin
+  last: Halpin
+  keynote: false
+- id: ryan-harpo-harbert
+  name: Ryan "Harpo" Harbert
+  last: Harbert
+  institution: GBH Archives (WGBH Educational Foundation)
+  keynote: false
+- id: greta-heng
+  name: Greta Heng
+  last: Heng
+  keynote: false
+- id: kate-holvoet
+  name: Kate Holvoet
+  last: Holvoet
+  keynote: false
+- id: susan-hoover
+  name: Susan Hoover
+  last: Hoover
+  institution: University of Houston
+  keynote: false
+- id: jesse-johnston
+  name: Jesse Johnston
+  last: Johnston
+  keynote: false
+- id: sarang-joshi
+  name: Sarang Joshi
+  last: Joshi
+  institution: NYPL
+  keynote: false
+- id: owen-c-king
+  name: Owen C. King
+  last: King
+  institution: GBH Archives (WGBH Educational Foundation)
+  keynote: false
+- id: mark-lane
+  name: Mark Lane
+  last: Lane
+  institution: James Madison University
+  keynote: false
+- id: ella-li
+  name: Ella Li
+  last: Li
+  keynote: false
+- id: nerissa-lindsey
+  name: Nerissa Lindsey
+  last: Lindsey
+  keynote: false
+- id: stephanie-mannheim
+  name: Stephanie Mannheim
+  last: Mannheim
+  institution: New York Public Library
+  keynote: false
+- id: scott-mcclellan
+  name: Scott McClellan
+  last: McClellan
+  institution: Drexel Metadata Research Center
+  keynote: false
+- id: steve-meyer
+  name: Steve Meyer
+  last: Meyer
+  institution: UW-Madison
+  keynote: false
+- id: siddique-motala
+  name: Siddique Motala
+  last: Motala
+  institution: University of Cape Town
+  keynote: false
+- id: grayson-murphy
+  name: Grayson Murphy
+  last: Murphy
+  institution: University of Alabama at Birmingham
+  keynote: false
+- id: chad-nelson
+  name: Chad Nelson
+  last: Nelson
+  institution: California Digital Library
+  keynote: false
+- id: leigh-phan
+  name: Leigh Phan
+  last: Phan
+  institution: UCLA
+  keynote: false
+- id: kio-polson
+  name: Kio Polson
+  last: Polson
+  institution: Drexel Metadata Research Center
+  keynote: false
+- id: melani-polutta
+  name: Melani Polutta
+  last: Polutta
+  keynote: false
+- id: wilhelmina-randtke
+  name: Wilhelmina Randtke
+  last: Randtke
+  institution: Georgia Southern University
+  keynote: false
+- id: bess-sadler
+  name: Bess Sadler
+  last: Sadler
+  institution: Princeton University Library
+  keynote: false
+- id: phil-salvador
+  name: Phil Salvador
+  last: Salvador
+  institution: Video Game History Foundation
+  keynote: false
+- id: matthew-sherman
+  name: Matthew Sherman
+  last: Sherman
+  institution: Drexel University
+  keynote: false
+- id: scott-st-louis
+  name: Scott St. Louis
+  last: St. Louis
+  institution: Federal Reserve Bank of St. Louis
+  keynote: false
+- id: tiffany-tawzer
+  name: Tiffany Tawzer
+  last: Tawzer
+  institution: Loyola University Chicago, Health Sciences Library
+  keynote: false
+- id: zoe-tucker
+  name: Zoe Tucker
+  last: Tucker
+  institution: UCLA
+  keynote: false
+- id: kirsten-vallee
+  name: Kirsten Vallee
+  last: Vallee
+  institution: University of Chicago
+  keynote: false
+- id: david-a-wallace
+  name: David A. Wallace
+  last: Wallace
+  institution: University of Michigan
+  keynote: false
+- id: larry-yang
+  name: Larry Yang
+  last: Yang
+  institution: University of Texas at Austin Libraries
+  keynote: false
+- id: andromeda-yelton
+  name: Andromeda Yelton
+  last: Yelton
+  keynote: false
+- id: borui-zhang
+  name: Borui Zhang
+  last: Zhang
+  institution: George A Smathers Libraries, University of Florida
+  keynote: false
+- id: travis-brown
+  name: Travis Brown
+  last: Brown
+  institution: Video Game History Foundation
+  keynote: false
+- id: meredith-wynn
+  name: Meredith Wynn
+  last: Wynn
+  institution: NC State University Libraries
+  keynote: false
+- id: karen-harker
+  name: Karen Harker
+  last: Harker
+  institution: University of North Texas Libraries
+  keynote: false
+- id: jane-greenberg
+  name: Jane Greenberg
+  last: Greenberg
+  institution: Drexel Metadata Research Center
+  keynote: false
+- id: christopher-berger
+  name: Christopher Berger
+  last: Berger
+  institution: Loyola University Chicago, Health Sciences Library
+  keynote: false
+- id: charlie-collett
+  name: Charlie Collett
+  last: Collett
+  institution: California Digital Library
+  keynote: false
+- id: brent-nelson
+  name: Brent Nelson
+  last: Nelson
+  institution: Drexel University
   keynote: false
