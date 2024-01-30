@@ -11,8 +11,8 @@
             {% if post.speaker %}
                 {% assign speaker = site.data.past-keynotes | where:"id",post.speaker | first %}
                 <div class="col-sm-4 d-none d-sm-block text-center">
-                    <a href="/speakers/past-keynotes.html#{{ speaker.name | slugify }}-info" class="speaker-overlay" data-content="{{ speaker.name }}">
-                        <img class="clip-circle" src="{{ speaker.image_src | relative_url }}" alt="{{ speaker.name }}">
+                    <a href="/speakers/past-keynotes.html#{{ speaker.name | slugify }}-info" class="speaker-overlay" data-content="{{ speaker.name | escape }}">
+                        <img class="clip-circle" src="{{ speaker.image_src | relative_url }}" alt="{{ speaker.name | escape }}">
                     </a>
                 </div>
             {% endif %}
