@@ -35,11 +35,11 @@ image-attributions:
 # These booleans affect the main menu links in the ways described below, as well
 # as displays in a few other places.
 # if true Speakers link -> /speakers/, if false -> /speakers/past-keynotes
-have-talks: false
+have-talks: true
 have-workshops: true
 # if true Schedule link -> /schedule/, if false -> /schedule/timeline
 have-schedule: true
-have-schedule-details: false
+have-schedule-details: true
 have-menus: false
 
 # day 0 = dummy day so JS indexing can line up with human-readable semantics of which day of the conference something is happening
