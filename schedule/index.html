@@ -20,7 +20,9 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-1">General Conference, Day One</a></h4>
             <p>
-                Keynote #1 opens the conference. Talks will be selected by the community.
+                Keynote #1 opens the conference. Talks
+                {% if site.data.conf.have-talks %} have been {% else %} will be {% endif %}
+                selected by the community.
             </p>
             {% if site.data.conf.have-menus %}
               <p><a class="btn ct-btn-light" href="/schedule/food/day1-menus.html">View Menu</a></p>
@@ -87,7 +89,9 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-2">General Conference, Day Two</a></h4>
             <p>
-                Talks will be selected by the community.
+                Talks
+                {% if site.data.conf.have-talks %} have been {% else %} will be {% endif %}
+                selected by the community.
             </p>
             {% if site.data.conf.have-menus %}
               <p><a class="btn ct-btn-light" href="/schedule/food/day2-menus.html">View Menu</a></p>
@@ -131,7 +135,9 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-3">General Conference, Day Three</a></h4>
             <p>
-                Keynote #2 closes out the conference. Talks will be selected by the community.
+                Keynote #2 closes out the conference. Talks
+                {% if site.data.conf.have-talks %} have been {% else %} will be {% endif %}
+                selected by the community.
             </p>
             {% if site.data.conf.have-menus %}
               <p><a class="btn ct-btn-light" href="/schedule/food/day3-menus.html">View Menu</a></p>
@@ -241,11 +247,13 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h3><a href="/workshops">Workshops</a></h3>
             <p>
-                Workshop details will be
+                Workshop details
+                {% if site.data.conf.have-workshops %} are {% else %} will be {% endif %}
                 {% if site.data.registration.workshop-only.url != nil %}
                     on the <a href="{{site.data.registration.workshop-only.url}}">registration site</a> and
                 {% endif %}
-                on the <a href="/workshops">Workshops</a> page when available. All workshops will be in-person only.
+                on the <a href="/workshops">Workshops</a> page{% if site.data.conf.have-workshops %}{% else %} when available{% endif %}.
+                All workshops will be in-person only.
             </p>
         </div>
     </div>
