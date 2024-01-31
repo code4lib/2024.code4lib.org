@@ -43,6 +43,12 @@
 - id: "eric-phetteplace"
   name: Eric Phetteplace
   last: Phetteplace
+  institution: California College of the Arts
+  position-title: Systems Librarian
+  image_src: /assets/img/speakers/eric-phetteplace.jpg
+  image_alt:
+    "A bearded, bald man with a wide-eyed, wild look holding a green copy of Ulysses by James Joyce which matches his t-shirt."
+  bio: "Eric is a Systems Librarian who manages a wide variety of library and learning technology systems. His professional interests include digital preservation, web development, workflow automation, integrating systems using APIs, and user experience. He loves reading, walking in cities and in nature, and worries continuously about climate change."
   keynote: false
 - id: kristian-allen
   name: Kristian Allen
