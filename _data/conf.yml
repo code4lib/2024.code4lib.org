@@ -35,11 +35,11 @@ image-attributions:
 # These booleans affect the main menu links in the ways described below, as well
 # as displays in a few other places.
 # if true Speakers link -> /speakers/, if false -> /speakers/past-keynotes
-have-talks: false
-have-workshops: false
+have-talks: true
+have-workshops: true
 # if true Schedule link -> /schedule/, if false -> /schedule/timeline
 have-schedule: true
-have-schedule-details: false
+have-schedule-details: true
 have-menus: false
 
 # day 0 = dummy day so JS indexing can line up with human-readable semantics of which day of the conference something is happening
@@ -81,8 +81,8 @@ venue:
   directions:
   a11y:
   hotel:
-    show: false
-    multiple-hotels: false
+    show: true
+    multiple-hotels: true
     multiple-hotels-map:
     name:
     reserved-room-block: false
@@ -148,8 +148,8 @@ closed-captioning:
   url:
 
 workshops:
-  show: false
-  location: ''
+  show: true
+  location: '/workshops'
 
 # Peri display descriptions and titles
 peri:
@@ -291,18 +291,19 @@ newcomer-dinner:
   date:
 
 reception:
-  show: false
-  venue: ''
-  street: ''
-  postal-code: ''
-  phone: ''
+  show: true
+  venue: 'Fowling Warehouse'
+  street: '3050 Washtenaw Ave'
+  city-state: 'Ypsilanti, MI'
+  postal-code: '48197'
+  phone: '(734) 499-3695'
   image: ''
   image_title: ''
-  contact: ''
+  contact: 'https://fowlingwarehouse.com/ypsiannarbor/'
   floorplans: ''
-  date: ''
-  times: ''
-  special-notes: ''
+  date: '2024-05-14'
+  times:
+  special-notes: 'All attendees are invited to join us for a complimentary reception Tuesday evening at the <a href="https://fowlingwarehouse.com/ypsiannarbor/">Fowling Warehouse</a>. What is Fowling? Fowling is The Original Football Bowling Pin Game. It started as a one-lane mashup of football and bowling while tailgating at the 2001 Indy 500. It’s as easy as throwing a football at ten bowling pins until someone knocks them all down.'
 
 tours:
   show: false

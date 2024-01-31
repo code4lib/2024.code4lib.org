@@ -1,0 +1,175 @@
+# Announcements
+- timeImg: 1.00.png
+  title: Announcements
+  day1: true
+  time: 13:00-13:15
+
+- timeImg: 9.00.png
+  title: Announcements
+  day2: true
+  day3: true
+  time: 09:00-09:15
+
+- timeImg: 1.15.png
+  title: Announcements
+  day2: true
+  time: 13:15-13:30
+
+- timeImg: 1.25.png
+  title: Announcements
+  day3: true
+  time: 13:20-13:35
+
+# Breaks
+- timeImg: 3.00.png
+  title: Break/Social
+  day1: true
+  time: 15:00-15:15
+
+- timeImg: 10.05.png
+  title: Break/Social
+  day2: true
+  time: 10:05-10:20
+
+- timeImg: 3.15.png
+  title: Break/Social
+  day2: true
+  time: 15:15-15:30
+
+- timeImg: 10.00.png
+  title: Break/Social
+  day3: true
+  time: 10:00-10:15
+
+- timeImg: 3.20.png
+  title: Break/Social
+  day3: true
+  time: 15:20-15:35
+
+# NOTE: first-timers page uses the link properties of the first events with
+# titles like "Breakout Sessions" and "Lightning Talks"
+# Breakouts
+- timeImg: 2.15.png
+  title: Breakouts
+  day2: true
+  time: 14:15-15:15
+  link:
+
+- timeImg: 2.35.png
+  title: Breakouts
+  day3: true
+  time: 14:35-15:20
+  link:
+
+# lightning
+- timeImg: 10.20.png
+  title: Lightning Talks
+  day2: true
+  time: 10:20-11:05
+  link:
+
+- timeImg: 10.15.png
+  title: Lightning Talks
+  day3: true
+  time: 10:15-11:15
+  link:
+
+- timeImg: 1.35.png
+  title: Lightning Talks
+  day3: true
+  time: 13:35-14:35
+  link:
+
+# Poster Session
+- timeImg: 3.30.png
+  title: Poster Session
+  day2: true
+  time: 15:30 - 16:00
+  link:
+
+# wrap ups
+- timeImg: 5.15.png
+  title: Closing
+  day1: true
+  day2: true
+  day3: true
+  time: 17:15-17:30
+
+# lunches
+- timeImg: 12.00.png
+  title: Lunch
+  day2: true
+  time: 12:00-13:15
+
+- timeImg: 12.05.png
+  title: Lunch
+  day3: true
+  time: 12:05-13:20
+
+# keynotes
+- timeImg: 1.15.png
+  title: Opening Keynote
+  day1: true
+  groupId: key-open
+  time: 13:15-14:00
+
+- timeImg: 2.00.png
+  title: Transition to prepared talks
+  day1: true
+  groupId: key-open
+  time: 14:00-14:05
+
+- timeImg: 9.15.png
+  title: Closing Keynote
+  day3: true
+  groupId: key-close
+  time: 09:15-10:00
+
+# groups
+- timeImg: 2.05.png
+  title: Group 1&#58; 55 minutes (4 talks)
+  day1: true
+  groupId: 1
+  time: 14:05-15:00
+
+- timeImg: 3.15.png
+  title: Group 2&#58; 100 minutes (8 talks)
+  day1: true
+  groupId: 2
+  time: 15:15-16:55
+
+- timeImg: 9.15.png
+  title: Group 3&#58; 50 minutes (4 talks)
+  day2: true
+  groupId: 3
+  time: 09:15-10:05
+
+- timeImg: 11.05.png
+  title: Group 4&#58; 55 minutes (4 talks)
+  day2: true
+  groupId: 4
+  time: 11:05-12:00
+
+- timeImg: 1.30.png
+  title: Group 5&#58; 45 minutes (3 talks)
+  day2: true
+  groupId: 5
+  time: 13:30-14:15
+
+- timeImg: 4.00.png
+  title: Group 6&#58; 60 minutes (4 talks)
+  day2: true
+  groupId: 6
+  time: 16:00-17:00
+
+- timeImg: 11.15.png
+  title: Group 7&#58; 50 minutes (4 talks)
+  day3: true
+  groupId: 7
+  time: 11:15-12:05
+
+- timeImg: 3.35.png
+  title: Group 8&#58; 65 minutes (5 talks)
+  day3: true
+  groupId: 8
+  time: 15:35-16:40

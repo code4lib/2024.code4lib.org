@@ -18,7 +18,7 @@
                     <p>
                         {{site.data.conf.reception.venue}}<br />
                         {{site.data.conf.reception.street}}<br />
-                        {{site.data.conf.city-state}} {{site.data.conf.reception.postal-code}}<br />
+                        {{site.data.conf.reception.city-state}} {{site.data.conf.reception.postal-code}}<br />
                         <a href="tel:{{site.data.conf.reception.phone}}">{{site.data.conf.reception.phone}}</a> or <a
                             href="{{site.data.conf.reception.contact}}">contact online</a>{% if site.data.conf.reception.floorplan != nil %}
                         | <a href="{{site.data.conf.reception.floorplan}}">Floor Plan</a> {% endif %}<br />
@@ -28,9 +28,14 @@
 
             <div class="col-12">
                 <h3>Reception Details</h3>
-                <p><strong>When: </strong>
-                    {{site.data.conf.reception.date | date: '%A, %B %-d, %Y'}} from {{site.data.conf.reception.times}}
-                </p>
+                {% if site.data.conf.reception.date %}
+                  <p><strong>When: </strong>
+                    {{site.data.conf.reception.date | date: '%A, %B %-d, %Y'}}
+                    {% if site.data.conf.reception.times %}
+                      from {{site.data.conf.reception.times}}
+                    {% endif %}
+                  </p>
+                {% endif %}
                 {% if site.data.conf.reception.special-notes %}
                 <p><strong>Note: </strong>
                     {{site.data.conf.reception.special-notes}}
@@ -44,7 +49,7 @@
                 <h4>Transit</h4>
                 <p>Using technology:</p>
                 <div style="margin: auto; max-width: 900px;" class="embed-responsive embed-responsive-4by3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.6973206822017!2d-74.6642593!3d40.34906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e6bf4ff1a925%3A0x1ee9277928d94a5b!2sPalmer%20House!5e0!3m2!1sen!2sus!4v1675090783055!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.2859535803777!2d-83.6587505!3d42.2510656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883ca946ec13c25d%3A0x7a0294e45d5a26cd!2sFowling%20Warehouse%20Ypsi%20Ann%20Arbor!5e0!3m2!1sen!2sus!4v1706124805149!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         {% endunless %}
