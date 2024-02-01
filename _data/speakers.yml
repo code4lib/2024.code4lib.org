@@ -223,6 +223,9 @@
   last: Nelson
   institution: California Digital Library
   keynote: false
+  image_src: /assets/img/speakers/chad-nelson.jpg
+  image_alt: "White man with glasses hiddent slightly behind a green bush and some pink flowers"
+  bio: "Tech Lead at California Digital Library. Angeleno. Erstwhile Librarian. Photographer. Aspiring Bassist. Maker of weird web stuff. Real time jingle blaster. Low key gooner."
 - id: leigh-phan
   name: Leigh Phan
   last: Phan
