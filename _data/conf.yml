@@ -381,7 +381,7 @@ diversity-scholarship-applications:
 # show sponsors for diversity scholarships on general-info/scholarships
 diversity-scholarship-sponsors:
   seeking: false
-  show: false
+  show: true
 
 ################
 # Other

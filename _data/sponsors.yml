@@ -43,25 +43,31 @@
   link: https://www.library.upenn.edu/
   level: bronze
   annotation: Captioning Sponsor
+
 - name: Grand Valley State University
   img: /assets/img/sponsors/gvsu.png
   link: https://www.gvsu.edu/
   level: supporter
+
 - name: University of Pittsburgh - University Library System
   img: /assets/img/sponsors/upittlibsystem.png
   link: http://www.library.pitt.edu/
   level: bronze
+
 - name: ICPSR (University of Michigan)
   img: /assets/img/sponsors/icpsr.png
   link: http://www.icpsr.umich.edu/
   level: bronze
+
 - name: UBC School of Information
   img: /assets/img/sponsors/ubc.jpeg
   link: https://ischool.ubc.ca/
   level: supporter
+
 - name: ArchivesSpace
   link: https://archivesspace.org/
   level: exhibitor
+
 - name: EBSCO Information Services
   img: /assets/img/sponsors/ebsco.png
   link: https://www.ebsco.com/
@@ -101,3 +107,8 @@
 - name: Ubiquity
   link: https://ubiquity.pub/
   level: exhibitor
+
+- name: Innovative
+  img: /assets/img/sponsors/innovative.png
+  link: https://www.iii.com/
+  diversity: true
