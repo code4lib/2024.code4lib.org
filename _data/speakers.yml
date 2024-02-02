@@ -1,4 +1,8 @@
 # this lacks most of the fields we use, see _data/examples/speakers.yml
+- id: "jody-fagan"
+  name: Jody Fagan
+  last: Fagan
+  keynote: false
 - id: "andreas-orphanides"
   name: Andreas Orphanides
   last: Orphanides
