@@ -5,6 +5,9 @@ categories: workshop
 speakers-text: Ken Varnum
 speakers:
   - ken-varnum
+  - robyn-ness
+  - ben-howell
+  - albert-bertram
 location: TBD
 room: TBD
 slugTitle: local-discovery-layers
