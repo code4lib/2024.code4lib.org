@@ -366,7 +366,7 @@ angel-fund:
   url:
 
 diversity-scholarship-applications:
-  show: true
+  show: false
   url: '/general-info/scholarships#how-to-apply'
   url-text: 'How to Apply'
   end-day: 'Friday'
