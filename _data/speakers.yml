@@ -31,6 +31,11 @@
 - id: "matthew-lincoln"
   name: Matthew Lincoln
   last: Lincoln
+  institution: JSTOR Labs
+  position-title: Software Engineering Manager
+  bio: "Matthew is a software engineer and manager who leads the technical team for JSTOR Labs. He's originally an art historian and digital humanist and interested in all things cultural heritage data."
+  img_src: /assets/img/speaker/matthew-lincoln.jpeg
+  image_alt: "A man with black thick-rimmed glasses and short hair"
   keynote: false
 - id: "olivia-wikle"
   name: Olivia Wikle
