@@ -34,7 +34,7 @@
   institution: JSTOR Labs
   position-title: Software Engineering Manager
   bio: "Matthew is a software engineer and manager who leads the technical team for JSTOR Labs. He's originally an art historian and digital humanist and interested in all things cultural heritage data."
-  img_src: /assets/img/speaker/matthew-lincoln.jpeg
+  img_src: /assets/img/speakers/matthew-lincoln.jpeg
   image_alt: "A man with black thick-rimmed glasses and short hair"
   keynote: false
 - id: "olivia-wikle"
@@ -55,8 +55,7 @@
   institution: California College of the Arts
   position-title: Systems Librarian
   image_src: /assets/img/speakers/eric-phetteplace.jpg
-  image_alt:
-    "A bearded, bald man with a wide-eyed, wild look holding a green copy of Ulysses by James Joyce which matches his t-shirt."
+  image_alt: "A bearded, bald man with a wide-eyed, wild look holding a green copy of Ulysses by James Joyce which matches his t-shirt."
   bio: "Eric is a Systems Librarian who manages a wide variety of library and learning technology systems. His professional interests include digital preservation, web development, workflow automation, integrating systems using APIs, and user experience. He loves reading, walking in cities and in nature, and worries continuously about climate change."
   keynote: false
 - id: kristian-allen
