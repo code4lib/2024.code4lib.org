@@ -16,6 +16,13 @@
   last: Davis
   keynote: false
   institution: NC State University Libraries
+  pronouns: she/her/hers
+  position-title: Associate Head, User Experience
+  bio: 'Robin Camille Davis is the Associate Head of User Experience at NC State University
+    Libraries, where she conducts user research, coordinates content strategy, and
+    advocates for accessible practices. '
+  slack:
+  image_src: "/assets/img/speakers/robin-davis.jpg"
 - id: "elena-colon-marrero"
   name: Elena Colon-Marrero
   last: Colon-Marrero
@@ -28,14 +35,24 @@
   name: Nathan Kelber
   last: Kelber
   keynote: false
+  pronouns: he/him/his
+  position-title: Education Manager
+  institution: Constellate
+  bio: PhD working for social justice and open educational resources in data science
+    and the digital humanities. Education Manager at Constellate and Director of the
+    Text Analysis Pedagogy Institute. https://nkelber.com
+  slack:
+  image_src: "/assets/img/speakers/nathan-kelber.jpg"
 - id: "matthew-lincoln"
   name: Matthew Lincoln
   last: Lincoln
   institution: JSTOR Labs
   position-title: Software Engineering Manager
-  bio: "Matthew is a software engineer and manager who leads the technical team for JSTOR Labs. He's originally an art historian and digital humanist and interested in all things cultural heritage data."
-  image_src: /assets/img/speakers/matthew-lincoln.jpeg
-  image_alt: "A man with black thick-rimmed glasses and short hair"
+  bio: Matthew is a software engineer and manager who leads the technical team for
+    JSTOR Labs. He's originally an art historian and digital humanist and interested
+    in all things cultural heritage data.
+  image_src: "/assets/img/speakers/matthew-lincoln.jpeg"
+  image_alt: A man with black thick-rimmed glasses and short hair
   keynote: false
 - id: "olivia-wikle"
   name: Olivia Wikle
@@ -54,303 +71,723 @@
   last: Phetteplace
   institution: California College of the Arts
   position-title: Systems Librarian
-  image_src: /assets/img/speakers/eric-phetteplace.jpg
-  image_alt: "A bearded, bald man with a wide-eyed, wild look holding a green copy of Ulysses by James Joyce which matches his t-shirt."
-  bio: "Eric is a Systems Librarian who manages a wide variety of library and learning technology systems. His professional interests include digital preservation, web development, workflow automation, integrating systems using APIs, and user experience. He loves reading, walking in cities and in nature, and worries continuously about climate change."
+  image_src: "/assets/img/speakers/eric-phetteplace.jpg"
+  image_alt: A bearded, bald man with a wide-eyed, wild look holding a green copy
+    of Ulysses by James Joyce which matches his t-shirt.
+  bio: Eric is a Systems Librarian who manages a wide variety of library and learning
+    technology systems. His professional interests include digital preservation, web
+    development, workflow automation, integrating systems using APIs, and user experience.
+    He loves reading, walking in cities and in nature, and worries continuously about
+    climate change.
   keynote: false
-- id: kristian-allen
+- id: "kristian-allen"
   name: Kristian Allen
   last: Allen
   institution: UCLA
   keynote: false
-- id: addison-ashworth
+  pronouns: he/him/his
+  position-title: Software Developer
+  bio:
+  slack:
+- id: "addison-ashworth"
   name: Addison Ashworth
   last: Ashworth
   institution: University of Texas at Austin Libraries
   keynote: false
-- id: erik-beck
+  pronouns: he/him/his
+  position-title: Software Developer
+  bio:
+  slack:
+- id: "erik-beck"
   name: Erik Beck
   last: Beck
   institution: Sacramento State University
   keynote: false
-- id: magnus-berg
+  pronouns: He/Him/His
+  position-title: Head of Library Systems and IT
+  bio: 'Erik Beck has served as department head of the Sacramento State University
+    Library''s IT Department since 2019.  Prior to that he was Digital Service Librarian
+    for the William A. Wise Law Library at the University of Colorado.  His specialties
+    are online publishing and management principles. '
+  slack:
+  image_src: "/assets/img/speakers/erik-beck.png"
+- id: "magnus-berg"
   name: Magnus Berg
   last: Berg
   institution: University of Toronto, Mississauga Library
   keynote: false
-- id: henna-d-bhramdat
+  pronouns: they/he
+  position-title: Digital Scholarship & Liaison Librarian
+  bio: 'Magnus Berg (they/he) is a Digital Scholarship & Liaison Librarian at the
+    University of Toronto, Mississauga where they manage and contribute to digitization
+    and digital scholarship projects both in the library and across campus. They are
+    particularly passionate about stewarding the library''s media and video game collections
+    and hold both a Master of Library and Information Science from Western University
+    and a Master of Arts in Film + Photography Preservation and Collections Management
+    from Toronto Metropolitan University. '
+  slack:
+  image_src: "/assets/img/speakers/magnus-berg.jpg"
+- id: "henna-d-bhramdat"
   name: Henna D. Bhramdat
   last: Bhramdat
   institution: Department of Anthropology, University of Florida
   keynote: false
-- id: raiden-van-bronkhorst
+  pronouns:
+  position-title:
+  bio:
+  slack:
+- id: "raiden-van-bronkhorst"
   name: Raiden van Bronkhorst
   last: Bronkhorst
   institution: California Digital Library
   keynote: false
-- id: bridget-burke
+  pronouns: he/him/his
+  position-title: Software Engineer
+  bio: Raiden is a Software Engineer at the California Digital Library working on
+    machine learning applications and the metadata management system for the HathiTrust.
+    He received his B.S. in Computer Science from Western Washington University.
+  slack: "@rvanb"
+  image_src: "/assets/img/speakers/raiden-van-bronkhorst.jpg"
+- id: "bridget-burke"
   name: Bridget Burke
   last: Burke
   institution: University of Michigan Library
   keynote: false
-- id: sephra-byrne
+  pronouns: She/they
+  position-title: Sr. Front-end Developer & Accessibility Specialist
+  bio: Bridget Burke is Sr. Front-end Developer and Accessibility Specialist at the
+    University of Michigan Library where they focus on using web standards to create
+    user-centered, accessible interfaces in digital library applications. Bridget
+    is also co-creator and Lead of the U-M Library Design System. Bridget has been
+    making websites since the '90s and loves creative web work.
+  slack:
+- id: "sephra-byrne"
   name: Sephra Byrne
   last: Byrne
   institution: University of North Texas Libraries
   keynote: false
-- id: bodeene-amyot-cairdeas
+  pronouns: she/her/hers
+  position-title: Data Analyst
+  bio: Sephra Byrne works at the University of North Texas as a data analyst for the
+    Collection Assessment Department analyzing data about patrons and the library's
+    collections and developing better ways to collect, process, and store data about
+    our collections and their impact on student and faculty outcomes.
+  slack:
+- id: "bodeene-amyot-cairdeas"
   name: Bodeene Amyot Cairdeas
   last: Cairdeas
   institution: James Madison University
   keynote: false
-- id: brian-clark
+  pronouns: she/her/hers
+  position-title: Digital and Audiovisual Archivist
+  bio:
+  slack:
+- id: "brian-clark"
   name: Brian Clark
   last: Clark
   institution: University of Alabama
   keynote: false
-- id: justin-de-la-cruz
+  pronouns: he/him/his
+  position-title: Systems & Technical Processes Librarian
+  bio: Brian Clark is the Systems & Technical Processes Librarian at the University
+    of Alabama. He is the ILS and proxy server administrator and regularly works with
+    metadata in a variety of formats and the institutional repository.
+  slack:
+- id: "justin-de-la-cruz"
   name: Justin de la Cruz
   last: Cruz
-  institution: Network of the National Library of Medicine, National Center for Data Services
+  institution: Network of the National Library of Medicine, National Center for Data
+    Services
   keynote: false
-- id: nicole-currens
+  pronouns: he / him / his
+  position-title: Program Specialist, National Center for Data Services
+  bio: Justin has worked in public, academic, and medical libraries on topics in digital
+    literacy and educational technology. He studied at Florida State University and
+    Simmons University and lives in Asheville, NC.
+  slack: Justin de la Cruz
+  image_src: "/assets/img/speakers/justin-de-la-cruz.jpg"
+- id: "nicole-currens"
   name: Nicole Currens
   last: Currens
   institution: University of Texas at Austin Libraries
   keynote: false
-- id: christina-cutler
+  pronouns:
+  position-title: Senior Software Developer
+  bio:
+  slack:
+- id: "christina-cutler"
   name: Christina Cutler
   last: Cutler
   institution: University of Toronto
   keynote: false
-- id: katherine-kate-deibel
+  pronouns: She/Her/Hers
+  position-title: Data Librarian
+  bio: Christina has been an accessibility advocate among her library teams. These
+    teams include her previous role as a student working to make author's work openly
+    accessible on the University of Toronto's Institutional Repository TSpace. As
+    well as her current team with the University of Toronto's Map and Data Library.
+  slack: Christina Cutler
+- id: "katherine-kate-deibel"
   name: Katherine "Kate" Deibel
   last: Deibel
   institution: Philadelphia College of Osteopathic Medicine
   keynote: false
-- id: bobbi-fox
+  pronouns: she/her
+  position-title: Systems Librarian
+  bio: 'Dr. Kate Deibel is a longstanding advocate for accessibility and usability
+    in library technologies. She has a PhD in Computer Science from the University
+    of Washington but would much rather talk about web comics, chili peppers, her
+    cat, technology adoption, and changing the world. She briefly left libraries for
+    industry but is happily back working as PCOM Library''s systems librarian. '
+  slack: metageeky
+  image_src: "/assets/img/speakers/katherine-kate-deibel.png"
+- id: "bobbi-fox"
   name: Bobbi Fox
   last: Fox
   keynote: false
-- id: rebecca-french
+  pronouns: she/her/hers
+  position-title:
+  institution:
+  bio: Bobbi Fox is a software developer who has worked in the library/archives space
+    for more than a decade.  She has attended 12 previous code4lib conferences .
+  slack: bobbifox
+- id: "rebecca-french"
   name: Rebecca French
   last: French
   institution: James Madison University
   keynote: false
-- id: nicolas-gauthier
+  pronouns: she/her/hers
+  position-title: Head of Metadata Analysis & Operations
+  bio:
+  slack:
+- id: "nicolas-gauthier"
   name: Nicolas Gauthier
   last: Gauthier
   institution: Florida Museum of Natural History, University of Florida
   keynote: false
-- id: arran-griffith
+  pronouns:
+  position-title:
+  bio:
+  slack:
+- id: "arran-griffith"
   name: Arran Griffith
   last: Griffith
   institution: Fedora
   keynote: false
-- id: emily-porter
+  pronouns: She/Her/Hers
+  position-title: Fedora Program Manager
+  bio:
+  slack: Arran Griffith
+- id: "emily-porter"
   name: Emily Porter
   last: Porter
   institution: Emory University Libraries
   keynote: false
-- id: corey-halpin
+  pronouns: She/Her/Hers
+  position-title: Digital Repository Manager
+  bio:
+  slack:
+- id: "corey-halpin"
   name: Corey Halpin
   last: Halpin
   keynote: false
-- id: ryan-harpo-harbert
+  pronouns: he/him
+  position-title: Software Engineer
+  institution: Internet Scout Research Group, University of Wisconsin - Madison
+  bio: Corey Halpin is a software engineer at the Internet Scout Research Group in
+    the Department of Computer Sciences at UW-Madison. Scout works at the intersection
+    of Computer Science and Library and Information Science, creating digital resource
+    collections and software to support them. Prior to joining Scout, Corey earned
+    a PhD in Forestry from UW-Madison by using simulation models (written primarily
+    in C++, Perl, Lua, and GNU R) to understand the patterns of biomass development
+    in the forests of northern Wisconsin.
+  slack: crhalpin
+- id: "ryan-harpo-harbert"
   name: Ryan "Harpo" Harbert
   last: Harbert
   institution: GBH Archives (WGBH Educational Foundation)
   keynote: false
-- id: greta-heng
+  pronouns: he/him
+  position-title: Developer
+  bio: Ryan “Harpo” Harbert is a Developer for GBH Media Library & Archives, helping
+    to maintain the American Archive of Public Broadcasting, and other websites. His
+    experience extends beyond programming to media production, music performance,
+    theatrical design, and many others, with the mission of creating new tools to
+    enable the impossible!
+  slack:
+  image_src: "/assets/img/speakers/ryan-harpo-harbert.jpg"
+- id: "greta-heng"
   name: Greta Heng
   last: Heng
   keynote: false
-- id: kate-holvoet
+  pronouns: she/her/hers
+  position-title: Cataloging and Metadata Strategies Librarian
+  institution: San Diego State University
+  bio: 'Greta Heng is Cataloging and Metadata Strategies Librarian at San Diego State
+    University. Her research interests include linked open data, semantic web, identity
+    management, and information search behavior. '
+  slack:
+  image_src: "/assets/img/speakers/greta-heng.jpg"
+- id: "kate-holvoet"
   name: Kate Holvoet
   last: Holvoet
   keynote: false
-- id: susan-hoover
+  pronouns: she/her/hers
+  position-title: Scholarly Communication and Open Initiatives Librarian
+  institution: San Diego State University
+  bio:
+  slack:
+- id: "susan-hoover"
   name: Susan Hoover
   last: Hoover
   institution: University of Houston
   keynote: false
-- id: jesse-johnston
+  pronouns: she/they
+  position-title: Metadata Services Coordinator
+  bio: Susan Hoover is a former software engineer with experience on projects as diverse
+    as a military flight simulator, byte-level communications software, Bayesian forecasting,
+    and cloud devops. They love to figure out how things work. In their second career,
+    they are a second-year librarian with the freedom to learn and use tools for scripting
+    and automation.
+  slack: 'Slack: Susan Hoover'
+- id: "jesse-johnston"
   name: Jesse Johnston
   last: Johnston
   keynote: false
-- id: sarang-joshi
+  pronouns: he/him
+  position-title: Clinical Assistant Professor
+  institution: University of Michigan School of Information
+  bio: Jesse Johnston is a Clinical Assistant Professor who joined UMSI in 2022. Johnston
+    has been active in the cultural heritage field as an administrator, librarian,
+    archivist, and civil servant. As senior librarian for digital content at the Library
+    of Congress, he managed policy development and training initiatives at the Library's
+    Digital Collections Management unit established in 2018. Prior to that, he served
+    as a senior program officer for preservation and access at the National Endowment
+    for the Humanities, where coordinated a program portfolio that awarded $1.5 million
+    through competitive grants annually. He also created and coordinated the NEH's
+    first (and only) community archiving program, Common Heritage. From 2012 to 2013,
+    he was an archivist at the Ralph Rinzler Folklife Archives and Collections at
+    the Smithsonian Center for Cultural Heritage. He has also been an adjunct faculty
+    member at the University of Maryland iSchool, George Mason University, and Bowling
+    Green State University.
+  slack: jajohnst
+  image_src: "/assets/img/speakers/jesse-johnston.jpg"
+- id: "sarang-joshi"
   name: Sarang Joshi
   last: Joshi
   institution: NYPL
   keynote: false
-- id: owen-c-king
+  pronouns: he/him/his
+  position-title: Software Engineer
+  bio: Sarang Joshi is a backend Software Engineer at the New York Public Library.  He
+    loves riding his bike.
+  slack:
+- id: "owen-c-king"
   name: Owen C. King
   last: King
   institution: GBH Archives (WGBH Educational Foundation)
   keynote: false
-- id: mark-lane
+  pronouns: he/him
+  position-title: Metadata Operations Specialist
+  bio: Owen C. King is Metadata Operations Specialist at GBH Archives, working on
+    the American Archive of Public Broadcasting. He coordinates work on automated
+    processing and metadata workflows for archival television and radio programming.  Beyond
+    archives and information science, he has a background in philosophy, with research
+    and teaching in well-being and information ethics.
+  slack:
+  image_src: "/assets/img/speakers/owen-c-king.jpg"
+- id: "mark-lane"
   name: Mark Lane
   last: Lane
   institution: James Madison University
   keynote: false
-- id: ella-li
+  pronouns: he/him/his
+  position-title: Head of Digital Assets
+  bio:
+  slack:
+- id: "ella-li"
   name: Ella Li
   last: Li
   keynote: false
-- id: nerissa-lindsey
+  pronouns: she/her
+  position-title: Research Assistant
+  institution: University of Michigan School of Information
+  bio: Ella Li (she/her) is a graduate researcher at the University of Michigan School
+    of Information, dedicated to examining inequity within sociotechnical systems.
+    Her primary focus is on supporting marginalized and vulnerable communities, especially
+    sexual and gender minority (SGM) individuals. Ella explores the design and development
+    of ethical, inclusive, and equitable technologies aimed at bridging disparities.
+    This focus will continue to guide her future research. Ella also actively participates
+    in various social justice activities in her daily life. As a research assistant,
+    Ella contributes to the design and development of an automation tool for auditing
+    harmful content and conducts analyses on finding aids.
+  slack:
+  image_src: "/assets/img/speakers/ella-li.png"
+- id: "nerissa-lindsey"
   name: Nerissa Lindsey
   last: Lindsey
   keynote: false
-- id: stephanie-mannheim
+  pronouns: she/her/hers
+  position-title: Head of Content Organization and Management
+  institution: San Diego State University
+  bio:
+  slack:
+- id: "stephanie-mannheim"
   name: Stephanie Mannheim
   last: Mannheim
   institution: New York Public Library
   keynote: false
-- id: scott-mcclellan
+  pronouns: she/her
+  position-title: Senior Technical Project Manager, eReading
+  bio: Stephanie Mannheim is Senior Technical Project Manager for eReading at the
+    New York Public Library. She is currently co-chair of the ALA's GNCRT (Graphic
+    Novels and Comics Round Table) Metadata and Cataloging Committee. Stephanie previously
+    worked at Comixology and the Barnard College Library and Archives, where she worked
+    with metadata and cataloging for both digital and print materials.
+  slack:
+- id: "scott-mcclellan"
   name: Scott McClellan
   last: McClellan
   institution: Drexel Metadata Research Center
   keynote: false
-- id: steve-meyer
+  pronouns:
+  position-title: PhD Student
+  bio:
+  slack:
+- id: "steve-meyer"
   name: Steve Meyer
   last: Meyer
   institution: UW-Madison
   keynote: false
-- id: siddique-motala
+  pronouns: he/him/his
+  position-title: Data Strategist
+  bio:
+  slack:
+- id: "siddique-motala"
   name: Siddique Motala
   last: Motala
   institution: University of Cape Town
   keynote: false
-- id: grayson-murphy
+  pronouns: he/him/his
+  position-title: 'Senior Lecturer: Academic Development'
+  bio: Siddique Motala, PhD is a Senior Lecturer in Civil Engineering at the University
+    of Cape Town, South Africa. His research is on historical mapping and digital
+    storytelling, and socially just and innovative pedagogies in engineering education.
+  slack:
+  image_src: "/assets/img/speakers/siddique-motala.png"
+- id: "grayson-murphy"
   name: Grayson Murphy
   last: Murphy
   institution: University of Alabama at Birmingham
   keynote: false
-- id: chad-nelson
+  pronouns: he/him/his
+  position-title: Digital Preservation Librarian
+  bio:
+  slack:
+- id: "chad-nelson"
   name: Chad Nelson
   last: Nelson
   institution: California Digital Library
   keynote: false
-  image_src: /assets/img/speakers/chad-nelson.jpg
-  image_alt: "White man with glasses hiddent slightly behind a green bush and some pink flowers"
-  bio: "Tech Lead at California Digital Library. Angeleno. Erstwhile Librarian. Photographer. Aspiring Bassist. Maker of weird web stuff. Real time jingle blaster. Low key gooner."
-- id: leigh-phan
+  image_src: "/assets/img/speakers/chad-nelson.gif"
+  image_alt: White man with glasses hiddent slightly behind a green bush and some
+    pink flowers
+  bio: Tech Lead at California Digital Library. Angeleno. Erstwhile Librarian. Photographer.
+    Aspiring Bassist. Maker of weird web stuff. Real time jingle blaster. Low key
+    gooner.
+  pronouns: 'he/him '
+  position-title: Technical Team Manager
+  slack: bibliotechy
+- id: "leigh-phan"
   name: Leigh Phan
   last: Phan
   institution: UCLA
   keynote: false
-- id: kio-polson
+  pronouns: she/her/hers
+  position-title: Data Scientist
+  bio:
+  slack:
+- id: "kio-polson"
   name: Kio Polson
   last: Polson
   institution: Drexel Metadata Research Center
   keynote: false
-- id: melani-polutta
+  pronouns: they/them
+  position-title: MLIS Student
+  bio: Kio is an MLIS student at Drexel and definitely not a bona fide city nymph.
+    Kio has been coding since the 8th grade working on various personal projects,
+    and there has absolutely never been a personal project to charm privateers to
+    lose their stolen goods. In Kio’s spare time they enjoy acting, playing piano,
+    and never shape-shifting.
+  slack:
+- id: "melani-polutta"
   name: Melani Polutta
   last: Polutta
   keynote: false
-- id: wilhelmina-randtke
+  pronouns: she/her/hers
+  position-title: Cataloging policy specialist, Library of Congress, Policy, Training,
+    and Cooperative Programs Division
+  institution: Library of Congress
+  bio: 'Melanie Polutta started as a cataloger at the Library of Congress in 2000,
+    and became fascinated by metadata. At the same time, she continued to pursue a
+    parallel interest in computers, through linked data, coding, and data manipulation.
+    Learning about code empowers catalogers to use all that wonderful metadata that
+    they spend all that time recording, which turns out to be constantly useful in
+    Melanie''s work with cataloging policy and documentation.
+
+    '
+  slack:
+- id: "wilhelmina-randtke"
   name: Wilhelmina Randtke
   last: Randtke
   institution: Georgia Southern University
   keynote: false
-- id: bess-sadler
+  pronouns: they/them/their
+  position-title: Head of Libraries Technologies and Systems
+  bio: 'Wilhelmina Randtke has a background in law and technology. Her past roles
+    include legal research, technology oversight, and product manager for cloud based
+    publishing software. She is currently Head of Libraries Technologies and Systems
+    at the Georgia Southern University Libraries overseeing in-building technology
+    and online presences. '
+  slack:
+  image_src: "/assets/img/speakers/wilhelmina-randtke.jpg"
+- id: "bess-sadler"
   name: Bess Sadler
   last: Sadler
   institution: Princeton University Library
   keynote: false
-- id: phil-salvador
+  pronouns: they/them
+  position-title: Senior Library Software Engineer
+  bio: 'Bess has been building free and open source software for almost thirty years
+    and believes in the liberation potential of open culture, open science, and open
+    technology. Currently, they work building infrastructure to enable reproducible
+    open science.  '
+  slack: bess
+- id: "phil-salvador"
   name: Phil Salvador
   last: Salvador
   institution: Video Game History Foundation
   keynote: false
-- id: matthew-sherman
+  pronouns: he/him
+  position-title: Library Director
+  bio: Phil Salvador is the Library Director at the Video Game History Foundation.
+    His research on video game history and preservation has been featured on NPR,
+    The Verge, and Ars Technica. But most of all, he is a friend to all birds.
+  slack:
+  image_src: "/assets/img/speakers/phil-salvador.jpg"
+- id: "matthew-sherman"
   name: Matthew Sherman
   last: Sherman
   institution: Drexel University
   keynote: false
-- id: scott-st-louis
+  pronouns:
+  position-title: Digital Curation Librarian
+  bio: |-
+    Matt Sherman is the Digital Curation Librarian at the Drexel University Libraries where he plays a lead role in acquiring, managing, preserving and providing access to the University’s digital collections, including both born-digital and digitized materials. He also provides support for the Libraries’ scholarly communications services.
+
+    Prior to coming to Drexel, Matt worked as the Scholarly Communications Librarian at Tennessee State University in Nashville, and as the Digital Content Librarian at the University of Bridgeport. During his schooling, he held various digital collections and archives positions at the Wisconsin State Historical Society Archives and the University of Wisconsin Milwaukee Archives. Matt holds an MLIS from University of Wisconsin-Milwaukee and a BS in History from University of Wisconsin-Madison.
+  slack: mattsherman
+  image_src: "/assets/img/speakers/matthew-sherman.jpg"
+- id: "scott-st-louis"
   name: Scott St. Louis
   last: St. Louis
   institution: Federal Reserve Bank of St. Louis
   keynote: false
-- id: tiffany-tawzer
+  pronouns: he/him/his
+  position-title: Senior Librarian for Scholarly Communication and Discovery Services
+  bio: Scott St. Louis is the Senior Librarian for Scholarly Communication and Discovery
+    Services at the Federal Reserve Bank of St. Louis. He holds a master’s degree
+    in information science from the University of Michigan.
+  slack:
+- id: "tiffany-tawzer"
   name: Tiffany Tawzer
   last: Tawzer
   institution: Loyola University Chicago, Health Sciences Library
   keynote: false
-- id: zoe-tucker
+  pronouns: she/they
+  position-title: Access Services and Emerging Technology Librarian
+  bio: 'Tiffany Tawzer is the Access Services and Emerging Technology Librarian at
+    the Loyola University Chicago Health Sciences Library. They also serve as the
+    library’s assessment specialist, scholarly communication, and data services librarian.
+    Tiffany recently achieved a Level I Data Services Specialization through the Medical
+    Library Association. '
+  slack:
+  image_src: "/assets/img/speakers/tiffany-tawzer.jpg"
+- id: "zoe-tucker"
   name: Zoe Tucker
   last: Tucker
   institution: UCLA
   keynote: false
-- id: kirsten-vallee
+  pronouns: she/her/hers
+  position-title: Software Developer
+  bio:
+  slack:
+- id: "kirsten-vallee"
   name: Kirsten Vallee
   last: Vallee
   institution: University of Chicago
   keynote: false
-- id: david-a-wallace
+  pronouns: they/them/theirs
+  position-title: Repository Services Manager
+  bio: 'Kirsten Vallee is the Repository Services Manager at the University of Chicago.
+    They ensure scholarly resources are easily accessible, furthering the reach of
+    academic knowledge through Knowledge@UChicago. '
+  slack:
+- id: "david-a-wallace"
   name: David A. Wallace
   last: Wallace
   institution: University of Michigan
   keynote: false
-- id: larry-yang
+  pronouns: he/him/his
+  position-title: Clinical Associate Professort
+  bio: David A. Wallace is a Clinical Associate Professor at the School of Information,
+    University of Michigan. He teaches and conducts research in the areas  of archives,
+    records, community engagement and information ethics
+  slack:
+  image_src: "/assets/img/speakers/david-a-wallace.png"
+- id: "larry-yang"
   name: Larry Yang
   last: Yang
   institution: University of Texas at Austin Libraries
   keynote: false
-- id: andromeda-yelton
+  pronouns:
+  position-title:
+  bio:
+  slack:
+- id: "andromeda-yelton"
   name: Andromeda Yelton
   last: Yelton
   keynote: false
-- id: borui-zhang
+  pronouns: she/her/hers
+  position-title: Senior Software Engineer
+  institution: JSTOR Labs
+  bio: Andromeda Yelton is a librarian-flavored software engineer at JSTOR Labs. In
+    the past she has written code for the Library of Congress, the Berkman Klein Center,
+    the MIT Libraries, the Wikimedia Foundation, and bespoke knitting patterns, among
+    other things. She's probably thinking about planes.
+  slack: thatandromeda
+- id: "borui-zhang"
   name: Borui Zhang
   last: Zhang
   institution: George A Smathers Libraries, University of Florida
   keynote: false
-- id: travis-brown
+  pronouns:
+  position-title:
+  bio:
+  slack:
+- id: "travis-brown"
   name: Travis Brown
   last: Brown
   institution: Video Game History Foundation
   keynote: false
-- id: meredith-wynn
+  pronouns: he/him
+  position-title: Director of Technology
+  bio: Travis Brown is the Director of Technology at the Video Game History Foundation.
+    When he's not working on his day job as Director of Developer Relations at Live
+    Aware Labs, he's working on restoring arcade cabinets and vintage motorcycles.
+  slack:
+  image_src: "/assets/img/speakers/travis-brown.jpg"
+- id: "meredith-wynn"
   name: Meredith Wynn
   last: Wynn
   institution: NC State University Libraries
   keynote: false
-- id: karen-harker
+  pronouns: she/her/hers
+  position-title: Web Developer
+  bio: 'Meredith Wynn has been a web developer in NC State University Libraries’ User
+    Experience department since 2018. '
+  slack:
+  image_src: "/assets/img/speakers/meredith-wynn.jpg"
+- id: "karen-harker"
   name: Karen Harker
   last: Harker
   institution: University of North Texas Libraries
   keynote: false
-- id: jane-greenberg
+  pronouns: she/her/hers
+  position-title: Collection Assessment Librarian
+  bio: Karen Harker earned her MLS from Texas Woman’s University in 1999 and her MPH
+    from UT School of Public Health in 2007. From 2000 to 2009 she evaluated and developed
+    Web-based information systems for UT Southwestern Medical Center Library. After
+    three years as biostatistician for a psychiatry clinical trial, she returned to
+    librarianship in 2012 to serve as Collection Assessment Librarian for the University
+    of North Texas Libraries. She has applied her skills in research methods, statistical
+    analysis, and data management to the broad evaluation of library collections.
+  slack:
+- id: "jane-greenberg"
   name: Jane Greenberg
   last: Greenberg
   institution: Drexel Metadata Research Center
   keynote: false
-- id: christopher-berger
+  pronouns: she/her
+  position-title: Alice B. Kroeger Professor and Director
+  bio: 'From Drexel Website: Jane Greenberg is the Alice B. Kroeger Professor and
+    Director of the Metadata Research Center at the College of Computing & Informatics,
+    Drexel University. Her research activities focus on metadata, knowledge organization/semantics,
+    linked data, data science, and information economics. She serves on the advisory
+    board of the Dublin Core Metadata Initiative (DCMI) and the steering committee
+    for the NSF Northeast Big Data Innovation Hub (NEBDIH). She is the lead PI on
+    the Helping Interdisciplinary Vocabulary Engineering (HIVE) linked data project.'
+  slack:
+- id: "christopher-berger"
   name: Christopher Berger
   last: Berger
   institution: Loyola University Chicago, Health Sciences Library
   keynote: false
-- id: charlie-collett
+- id: "charlie-collett"
   name: Charlie Collett
   last: Collett
   institution: California Digital Library
   keynote: false
+  pronouns: he/him/his
+  position-title: Software Engineer
+  bio: Charlie is a Software Engineer for the California Digital Library at the University
+    of California. His current responsibilities include processing and managing metadata
+    for the HathiTrust, and collaborating on AI development and analysis.
+  slack: "@Charlie Collett"
 - id: "libby-hemphill"
   name: Libby Hemphill
   last: Hemphill
   institution: University of Michigan School of Information
-  bio: "Libby Hemphill (Associate Professor, University of Michigan School of Information, Research Associate Professor, U-M Institute for Social Research, and Director, ICPSR’s Resource Center for Minority Data and founding Director, ICPSR’s Social Media Archive) studies social computing and digital curation. Her research on social computing has demonstrated the impact of social media on Congressional behavior, has shown how social media platforms shape public discourse in virtual and IRL public spaces, and has developed a natural language processing approach to detecting and intervening to de-escalate abusive online behavior. Her research in digital curation has studied the responsible and ethical use and reuse of datasets in research, the design of infrastructure and technology to support research data archives, the importance of curation for improving the FAIRness of social media and other data, and the impact of data reuse. Her practice of digital curation at ICPSR has made available transformative data such as TransPop, the first national probability sample of transgender individuals in the United States, and SOMAR, a platform for transparent, reproducible preservation and ethical access to social media data. She has worked with the Anti-Defamation League to understand and respond to online hate, and she has created a post-baccalaureate program to diversify the pipeline of students engaged in computational social science research. She is a transformative scholar who has used her expertise and position to democratize data access."
+  bio: Libby Hemphill (Associate Professor, University of Michigan School of Information,
+    Research Associate Professor, U-M Institute for Social Research, and Director,
+    ICPSR’s Resource Center for Minority Data and founding Director, ICPSR’s Social
+    Media Archive) studies social computing and digital curation. Her research on
+    social computing has demonstrated the impact of social media on Congressional
+    behavior, has shown how social media platforms shape public discourse in virtual
+    and IRL public spaces, and has developed a natural language processing approach
+    to detecting and intervening to de-escalate abusive online behavior. Her research
+    in digital curation has studied the responsible and ethical use and reuse of datasets
+    in research, the design of infrastructure and technology to support research data
+    archives, the importance of curation for improving the FAIRness of social media
+    and other data, and the impact of data reuse. Her practice of digital curation
+    at ICPSR has made available transformative data such as TransPop, the first national
+    probability sample of transgender individuals in the United States, and SOMAR,
+    a platform for transparent, reproducible preservation and ethical access to social
+    media data. She has worked with the Anti-Defamation League to understand and respond
+    to online hate, and she has created a post-baccalaureate program to diversify
+    the pipeline of students engaged in computational social science research. She
+    is a transformative scholar who has used her expertise and position to democratize
+    data access.
   keynote: true
-  image_src: /assets/img/keynotes/libby-hemphill-sq.jpg
+  image_src: "/assets/img/keynotes/libby-hemphill-sq.jpg"
 - id: "dr-patricia-garcia"
   name: Dr. Patricia Garcia
   last: Garcia
   institution: University of Michigan School of Information
-  bio: "Dr. Patricia Garcia conducts qualitative research on the complex relationship between race, gender, technology, and justice. She is currently partnering with public libraries to study how a computational justice program model can support girls of color (ages 13-16) develop agentic computing identities. This research involves the design of computing education programs that support girls of color in situating their computing identities within broader self-concepts and in ways that highlight how the intersections of race and gender can function as sources of power, rather than simply sites of marginalization. Her other related work examines how harmful data practices perpetuate structural inequities along racialized and gendered lines, and she collaborates with data practitioners to imagine and enact more equitable data futures. Her work spans the fields of computing education, learning sciences, youth studies, and critical data studies."
+  bio: Dr. Patricia Garcia conducts qualitative research on the complex relationship
+    between race, gender, technology, and justice. She is currently partnering with
+    public libraries to study how a computational justice program model can support
+    girls of color (ages 13-16) develop agentic computing identities. This research
+    involves the design of computing education programs that support girls of color
+    in situating their computing identities within broader self-concepts and in ways
+    that highlight how the intersections of race and gender can function as sources
+    of power, rather than simply sites of marginalization. Her other related work
+    examines how harmful data practices perpetuate structural inequities along racialized
+    and gendered lines, and she collaborates with data practitioners to imagine and
+    enact more equitable data futures. Her work spans the fields of computing education,
+    learning sciences, youth studies, and critical data studies.
   keynote: true
-  image_src: /assets/img/keynotes/patricia-garcia-sq.jpg
+  image_src: "/assets/img/keynotes/patricia-garcia-sq.jpg"
 - id: "robyn-ness"
   name: Robyn Ness
   last: Ness
