@@ -728,11 +728,6 @@
     for the NSF Northeast Big Data Innovation Hub (NEBDIH). She is the lead PI on
     the Helping Interdisciplinary Vocabulary Engineering (HIVE) linked data project.'
   slack:
-- id: "christopher-berger"
-  name: Christopher Berger
-  last: Berger
-  institution: Loyola University Chicago, Health Sciences Library
-  keynote: false
 - id: "charlie-collett"
   name: Charlie Collett
   last: Collett
