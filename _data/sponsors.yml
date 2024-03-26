@@ -38,6 +38,7 @@
   img: /assets/img/sponsors/blacklight-logo-vectorized.svg
   link: https://projectblacklight.org
   level: platinum
+
 - name: Penn Libraries
   img: /assets/img/sponsors/penn.jpeg
   link: https://www.library.upenn.edu/
@@ -111,4 +112,59 @@
 - name: Innovative
   img: /assets/img/sponsors/innovative.png
   link: https://www.iii.com/
+  diversity: true
+
+# - gold
+- name: University of Michigan | School of Information
+  img: /assets/img/sponsors/um-si.png
+  link: https://www.si.umich.edu/
+  level: gold
+  annotation: 'Reception Sponsor'
+
+# - bronze
+- name: HathiTrust
+  img: /assets/img/sponsors/hathitrust.png
+  link: https://www.hathitrust.org
+  level: bronze
+  annotation: 'Streaming Video Sponsor'
+
+# - contributor
+- name: Honeycomb
+  img: /assets/img/sponsors/honeycomb.png
+  link: https://www.honeycomb.io/
+  level: contributor
+
+- name: Penn State University Libraries
+  img: /assets/img/sponsors/psu-lib.jpeg
+  link: https://libraries.psu.edu/
+  level: contributor
+
+- name: University of Michigan | Library
+  img: /assets/img/sponsors/um-library.jpeg
+  link: https://www.lib.umich.edu/
+  level: contributor
+  annotation: 'Reception Sponsor'
+
+# - exhibitor
+- name: Constellate (ITHAKA)
+  link: http://ithaka.org/
+  level: exhibitor
+
+- name: Honeycomb
+  link: https://www.honeycomb.io/
+  level: exhibitor
+
+- name: Permanent Legacy Foundation
+  link: http://www.permanent.org/
+  level: exhibitor
+
+# scholarship
+- name: Penn State University Libraries
+  img: /assets/img/sponsors/psu-lib.jpeg
+  link: https://libraries.psu.edu/
+  diversity: true
+
+- name: Permanent Legacy Foundation
+  img: /assets/img/sponsors/permanent.png
+  link: http://www.permanent.org/
   diversity: true
