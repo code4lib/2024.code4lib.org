@@ -2,11 +2,12 @@
 layout: default
 title: Poster Sessions
 ---
-
+{% assign posts = site.posts | where: 'type', 'poster' | sort: 'title' %}
+{% assign date = posts[0].startTime | date: "%B %d, %Y" %}
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>{{ page.title }}</h1>
+            <h1>{{ page.title }} {{date}}</h1>
         </div>
     </div>
     <div class="row" id="workshop-sorting-div">
@@ -17,7 +18,6 @@ title: Poster Sessions
     </div>
     <div class="row">
         <div class="col-12 sequence">
-            {% assign posts = site.posts | where: 'type', 'poster' | sort: 'title' %}
             {% for post in posts %}
                 <div class="well workshop-well" data-length="full" data-location="lobby">
                     <div class="row">
