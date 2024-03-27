@@ -2,11 +2,6 @@
 speakers-text: Eric Lease Morgan
 speakers:
 - eric-lease-morgan
-- 
-- 
-- 
-- 
-- 
 type: poster
 categories: posters
 location:
