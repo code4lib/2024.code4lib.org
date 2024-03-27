@@ -11,7 +11,7 @@ spot: 2
 location: frist
 speakers:
 - steve-meyer
-speaker-text: Steve Meyer, , 
+speakers-text: Steve Meyer, ,
 title: "Think Big, Act Localhost: using large scale data techniques at smaller scales for ad hoc data analysis"
 ---
 Even the largest libraries generally do not work with data that would qualify as Big Data, such as the log data represented by Google searches or Facebook posts. That puts some libraries in a bit of a bind, what we might call a "Medium Data" problem. The catalog data of a larger library, measured at the scale of a many millions of records, is interesting enough to be the subject of intra-data set analysis, but large enough that it can exceed the simple programming and scripting techniques used for ad hoc analysis.

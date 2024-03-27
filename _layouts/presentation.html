@@ -86,8 +86,8 @@
                 </div>
                 <br>
             {% comment %} poster sessions have no speaker data, only text {% endcomment %}
-            {% elsif page.type == 'poster' and page.speaker-text != '' %}
-                <h2>Presenter(s): {{ page.speaker-text }}</h2>
+            {% elsif page.type == 'poster' and page.speakers-text != '' %}
+                <h2>Presenter(s): {{ page.speakers-text }}</h2>
                 <br>
             {% endif %}
 

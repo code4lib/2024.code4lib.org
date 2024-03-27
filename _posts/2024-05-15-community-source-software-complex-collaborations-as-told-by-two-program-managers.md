@@ -12,10 +12,10 @@ location: frist
 speakers:
 - arran-griffith
 - emily-porter
-speaker-text: Arran Griffith, Emily Porter, 
+speakers-text: Arran Griffith, Emily Porter,
 title: "Community Source Software: Complex collaborations as told by two Program Managers"
 ---
-The decision to implement open, community-supported technologies can bring with it complexities and efforts not always experienced by the use of proprietary solutions. “Open Source”, by definition, can also lead to confusion and misunderstanding of the true cost of implementation, as well as underestimation of the importance of collaboration and advocacy. 
+The decision to implement open, community-supported technologies can bring with it complexities and efforts not always experienced by the use of proprietary solutions. “Open Source”, by definition, can also lead to confusion and misunderstanding of the true cost of implementation, as well as underestimation of the importance of collaboration and advocacy.
 
 Program Managers are in a unique position to help build collaborative bridges as a means of uniting users, supplying actionable use cases, and fostering open dialogue. In this talk, we will discuss commonalities and differences in our roles and how our respective organizations must collaborate, both internally and cross-organizationally, in an attempt to meet the needs of multiple technical and user communities in the digital repository realm.
 

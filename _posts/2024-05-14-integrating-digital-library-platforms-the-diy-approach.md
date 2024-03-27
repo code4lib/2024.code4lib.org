@@ -12,7 +12,7 @@ location: frist
 speakers:
 - phil-salvador
 - travis-brown
-speaker-text: Phil Salvador, Travis Brown, 
+speakers-text: Phil Salvador, Travis Brown,
 title: "Integrating Digital Library Platforms: The DIY Approach"
 ---
 What's more frustrating than setting up a library system? Setting up TWO library systems! Especially when they won't talk to each other.

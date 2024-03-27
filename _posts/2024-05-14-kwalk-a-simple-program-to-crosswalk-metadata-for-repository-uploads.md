@@ -11,9 +11,9 @@ spot: 3
 location: frist
 speakers:
 - kirsten-vallee
-speaker-text: Kirsten Vallee, , 
+speakers-text: Kirsten Vallee, ,
 title: "kwalk: a simple program to crosswalk metadata for repository uploads"
 ---
-Kwalk is a program that lets us write a simple crosswalk that we can apply to each batch of metadata as we receive it and have multiple crosswalks for multiple projects as we work on them in an intermixed fashion. The program allows us to apply special functions to modify date formats, combine literal and field name text, generate uniform upload URLs, and much more.  
+Kwalk is a program that lets us write a simple crosswalk that we can apply to each batch of metadata as we receive it and have multiple crosswalks for multiple projects as we work on them in an intermixed fashion. The program allows us to apply special functions to modify date formats, combine literal and field name text, generate uniform upload URLs, and much more.
 
-University of Chicago’s Center for Digital Scholarship has been utilizing this program to better edit metadata for batch upload to Knowledge@UChicago. There are plans to share this software in the future as it is platform agnostic and has a potential wide range of use cases.  
+University of Chicago’s Center for Digital Scholarship has been utilizing this program to better edit metadata for batch upload to Knowledge@UChicago. There are plans to share this software in the future as it is platform agnostic and has a potential wide range of use cases.

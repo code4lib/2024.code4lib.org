@@ -13,7 +13,7 @@ speakers:
 - kristian-allen
 - zoe-tucker
 - leigh-phan
-speaker-text: Kristian Allen, Zoe Tucker, Leigh Phan
+speakers-text: Kristian Allen, Zoe Tucker, Leigh Phan
 title: "Leveraging AI Tools for Automating Metadata Extraction"
 ---
 With an increase in the accessibility of Generative AI and Large Language Models (LLM) we now have the ability to apply these tools against a variety of materials, including images, text, and audio.

@@ -85,7 +85,8 @@
   title: Poster Session
   day2: true
   time: 15:30 - 16:00
-  link:
+  link: /posters/
+  button_label: View poster abstracts.
 
 # wrap ups
 - timeImg: 5.15.png
