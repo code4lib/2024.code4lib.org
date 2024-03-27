@@ -13,7 +13,7 @@ speakers:
 - greta-heng
 - kate-holvoet
 - nerissa-lindsey
-speaker-text: Greta Heng, Kate Holvoet, Nerissa Lindsey
+speakers-text: Greta Heng, Kate Holvoet, Nerissa Lindsey
 title: "Enhancing Cataloging of Electronic Government Documents with Programming and OpenAI"
 ---
 The advent of AI products like OpenAI ChatGPT has surged into the learning and library scenes, prompting us to contemplate how to harness these advances to enhance our work and envision the future of our endeavors. Especially within the domain of electronic resources and born-digital materials, developers have utilized their programming skills to extract essential resource descriptors from source files. The fusion of these programming skills with AI technologies empowers metadata and cataloging professionals to redefine and automate their workflows to a certain extent, resulting in increased efficiency.

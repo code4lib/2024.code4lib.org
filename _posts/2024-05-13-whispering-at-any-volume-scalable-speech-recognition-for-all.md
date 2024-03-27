@@ -12,7 +12,7 @@ location: frist
 speakers:
 - owen-c-king
 - ryan-harpo-harbert
-speaker-text: Owen C. King, Ryan "Harpo" Harbert, 
+speakers-text: Owen C. King, Ryan "Harpo" Harbert,
 title: "Whispering at any volume: Scalable speech recognition for all"
 ---
 The American Archive of Public Broadcasting (AAPB) preserves and hosts over 150k audiovisual resources, with over 100k records available publicly. A collaboration between the Library of Congress and GBH (WGBH Boston), the collection spans over 100 years of media history.
