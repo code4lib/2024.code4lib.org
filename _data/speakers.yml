@@ -610,9 +610,19 @@
     the Loyola University Chicago Health Sciences Library. They also serve as the
     library’s assessment specialist, scholarly communication, and data services librarian.
     Tiffany recently achieved a Level I Data Services Specialization through the Medical
-    Library Association. '
+    Library Association.'
   slack:
   image_src: "/assets/img/speakers/tiffany-tawzer.jpg"
+- id: "christopher-beger"
+  name: Christopher Beger
+  last: Beger
+  institution: Loyola University Chicago, Health Sciences Library
+  keynote: false
+  pronouns:
+  position-title: Interlibrary Loan and Access Services Specialist
+  bio:
+  slack:
+  image_src: 
 - id: "zoe-tucker"
   name: Zoe Tucker
   last: Tucker
