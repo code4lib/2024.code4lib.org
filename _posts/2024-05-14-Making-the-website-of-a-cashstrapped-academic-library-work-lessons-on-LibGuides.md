@@ -2,14 +2,14 @@
 speakers-text: Allan Berry
 speakers:
 - allan-berry
-- 
-- 
-- 
-- 
-- 
+-
+-
+-
+-
+-
 type: poster
 categories: posters
-location:
+location: TBD
 startTime: 2024-05-14T15:30
 time: 3:30 pm
 layout: presentation

@@ -6,6 +6,7 @@ speakers-text: Justin M Coyne
 speakers:
   - justin-m-coyne
 location: TBD
+
 room: TBD
 slugTitle: build-a-recomendation-engine-using-ai
 time: am

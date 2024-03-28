@@ -7,6 +7,7 @@ speakers:
   - nathan-kelber
   - matthew-lincoln
 location: TBD
+
 room: TBD
 slugTitle: what-you-can-do-with-word-counts-learning-the-basics-of-text-analysis-with-constellate
 time: pm

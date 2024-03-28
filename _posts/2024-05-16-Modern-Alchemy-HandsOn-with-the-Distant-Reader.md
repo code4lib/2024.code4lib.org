@@ -6,6 +6,7 @@ speakers-text: Eric Lease Morgan
 speakers:
   - eric-lease-morgan
 location: TBD
+
 room: TBD
 slugTitle: modern-alchemy-hands-on-with-the-distant-reader
 time: pm

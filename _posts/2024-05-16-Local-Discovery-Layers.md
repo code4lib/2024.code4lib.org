@@ -9,6 +9,7 @@ speakers:
   - ben-howell
   - albert-bertram
 location: TBD
+
 room: TBD
 slugTitle: local-discovery-layers
 time: pm

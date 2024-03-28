@@ -6,6 +6,7 @@ speakers-text: Elena Colon-Marrero
 speakers:
   - elena-colon-marrero
 location: TBD
+
 room: TBD
 slugTitle: digital-forensics-for-libraries-and-archives-introduction-to-using-bitcurator
 time: am

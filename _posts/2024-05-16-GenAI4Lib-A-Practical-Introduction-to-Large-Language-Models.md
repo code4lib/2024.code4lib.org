@@ -6,6 +6,7 @@ speakers-text: Michael B. Klein
 speakers:
   - michael-b-klein
 location: TBD
+
 room: TBD
 slugTitle: genai4lib-a-practical-introduction-to-large-language-models
 time: full
