@@ -1,0 +1,18 @@
+{% if site.data.conf.morning-run.show %}
+<section class="general-info social-event">
+  <div class="col-12">
+      <h2 id="morning-run">Morning Run</h2>
+      {% if site.data.conf.morning-run.location %}
+        <p><span class="font-weight-bold">Where: </span>{{site.data.conf.morning-run.location}}</p>
+      {% endif %}
+      {% if site.data.conf.morning-run.date %}
+        <p><span class="font-weight-bold">When: </span>{{site.data.conf.morning-run.date | date: '%A, %B %-d, %Y'}}, {{site.data.conf.morning-run.time}}</p>
+      {% endif %}
+      <p>{{ site.data.conf.morning-run.description }}</p>
+
+      {% if site.data.conf.morning-run.signup-url %}
+        <a class="btn ct-btn-light" target="blank" href="{{site.data.conf.morning-run.signup-url}}">{{site.data.conf.morning-run.signup-button-text}}</a>
+      {% endif %}
+  </div>
+</section>
+{% endif %}
