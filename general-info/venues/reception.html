@@ -9,21 +9,24 @@
 
             <h3>{{ site.data.conf.reception.venue }}</h3>
             <div class="row">
+            {% if site.data.conf.reception.image %}
                 <div class="col-6">
                     <a href="{{site.data.conf.reception.url}}">
                         <img src="/assets/img/venues/{{site.data.conf.reception.image}}" class="img-fluid"
                             title="{{site.data.conf.reception.image_title}}" alt="{{site.data.conf.reception.image_alt}}"></a>
                 </div>
                 <div class="col-6">
-                    <p>
-                        {{site.data.conf.reception.venue}}<br />
-                        {{site.data.conf.reception.street}}<br />
-                        {{site.data.conf.reception.city-state}} {{site.data.conf.reception.postal-code}}<br />
-                        <a href="tel:{{site.data.conf.reception.phone}}">{{site.data.conf.reception.phone}}</a> or <a
-                            href="{{site.data.conf.reception.contact}}">contact online</a>{% if site.data.conf.reception.floorplan != nil %}
-                        | <a href="{{site.data.conf.reception.floorplan}}">Floor Plan</a> {% endif %}<br />
-                    </p>
-                </div>
+            {% else %}
+                <div class="col-12">
+            {% endif %}
+                <p>
+                    {{site.data.conf.reception.venue}}<br />
+                    {{site.data.conf.reception.street}}<br />
+                    {{site.data.conf.reception.city-state}} {{site.data.conf.reception.postal-code}}<br />
+                    <a href="tel:{{site.data.conf.reception.phone}}">{{site.data.conf.reception.phone}}</a> or <a
+                        href="{{site.data.conf.reception.contact}}">contact online</a>{% if site.data.conf.reception.floorplan != nil %}
+                    | <a href="{{site.data.conf.reception.floorplan}}">Floor Plan</a> {% endif %}<br />
+                </p>
             </div>
 
             <div class="col-12">
@@ -53,5 +56,6 @@
                 </div>
             </div>
         {% endunless %}
+        </div>
     </div>
 </section>
