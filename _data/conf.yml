@@ -326,7 +326,7 @@ tours:
       description: 'Explore the undergraduate and graduate libraries at the University of Michigan. Highlights of this tour include exploring creation and learning spaces like the <a href="https://lib.umich.edu/locations-and-hours/computer-and-video-game-archive">Computer and Video Game Archive</a> and the <a href="https://lib.umich.edu/visit-and-study/creation-and-learning-spaces/shapiro-design-lab">Design Lab</a>.'
     - name: 'Detroit Observatory'
       location: 'Entrance on, 1398 E Ann St, Observatory St, Ann Arbor, MI 48109'
-      description: 'Come see the sky and journey back in time by visiting the <a href="https://detroitobservatory.umich.edu/">Detroit Observatory</a> built in 1854 —  one of the oldest observatories in the nation. Highlights of this tour include learning about telescopes, seeing why the observatory was constructed the way it is,d and discoveries made here!'
+      description: 'Come see the sky and journey back in time by visiting the <a href="https://detroitobservatory.umich.edu/">Detroit Observatory</a> built in 1854 —  one of the oldest observatories in the nation. Highlights of this tour include learning about telescopes, seeing why the observatory was constructed the way it is, and discoveries made here!'
     - name: 'Clements Rare Book Library'
       location: 'Front entrance of Clements Library, 909 S University Ave, Ann Arbor, MI 48109'
       description: 'Go behind the scenes with a brief presentation about conserving rare materials and a tour of rare collection materials at the <a href="https://clements.umich.edu/">Clements Library</a>. Highlights include touring the Avenir Foundation Reading Room to browse books, graphics, manuscripts and maps.'
