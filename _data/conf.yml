@@ -286,9 +286,19 @@ diy-social:
   show: true
 
 newcomer-dinner:
-  show: false
-  signup-url: ''
-  date:
+  show: true
+  description: 'The Newcomer Dinner is an opportunity for veterans of the code4lib conference to meet and welcome first-timers. Attendees sign up to join others for dinner as a gentle introduction to the code4lib conference.'
+  signup-url: 'https://docs.google.com/document/d/1Oad2ct2odck8duG82JRUqqPKvB_RB4FVbo9WK-OylmY/edit'
+  signup-button-text: '#c4l24 Newcomer Dinner Information and Sign Up'
+  date: '2024-05-13'
+  time: '6pm or later'
+
+morning-run:
+  show: true
+  location: 'The Arb, 1610 Washington Heights (<a href="https://www.google.com/maps/dir//1610+Washington+Heights,+Ann+Arbor,+MI+48104/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883cae5d9150529b:0xe58ca9b182545396?sa=X&ved=1t:707&ictx=111&cshid=1711720648831274">Get directions in Google Maps</a>)'
+  description: "Join fellow Code4Lib Runners as a group runs around the <a href='https://www.a2gov.org/departments/Parks-Recreation/parks-places/Pages/Arboretum.aspx'>Arboretum</a> ('The Arb'), University of Michigan's nature preserve area. This run will be led by Michelle Janowiecki and it is a non-drop run, so all should feel welcome. Meet at the entrance at 7am."
+  date: '2024-05-14'
+  time: '7-8am'
 
 reception:
   show: true
@@ -306,27 +316,30 @@ reception:
   special-notes: 'All attendees are invited to join us for a complimentary reception Tuesday evening at the <a href="https://fowlingwarehouse.com/ypsiannarbor/">Fowling Warehouse</a>. What is Fowling? Fowling is The Original Football Bowling Pin Game. It started as a one-lane mashup of football and bowling while tailgating at the 2001 Indy 500. It’s as easy as throwing a football at ten bowling pins until someone knocks them all down.'
 
 tours:
-  show: false
-  time: ''
+  show: true
+  time: '5/13/24 at 11am'
+  sign-up-url: 'https://docs.google.com/spreadsheets/d/1yiemUqbKwkZbAhgn-cQnugB9cjbHlVfQl03DTAzi4i8/edit'
+  sign-up-button-text: 'Sign Up'
   tours:
-    - name: ''
-      date: ''
-      time: ''
-      location: ''
-      description: ''
-      event-url: ''
-      event-url-button-text: ''
-      sign-up-url: ''
-      sign-up-button-text: ''
+    - name: 'Shapiro and Hatcher Libraries'
+      location: 'Shapiro Library lobby, 919 S University Ave, Ann Arbor, MI 48109'
+      description: 'Explore the undergraduate and graduate libraries at the University of Michigan. Highlights of this tour include exploring creation and learning spaces like the <a href="https://lib.umich.edu/locations-and-hours/computer-and-video-game-archive">Computer and Video Game Archive</a> and the <a href="https://lib.umich.edu/visit-and-study/creation-and-learning-spaces/shapiro-design-lab">Design Lab</a>.'
+    - name: 'Detroit Observatory'
+      location: 'Entrance on, 1398 E Ann St, Observatory St, Ann Arbor, MI 48109'
+      description: 'Come see the sky and journey back in time by visiting the <a href="https://detroitobservatory.umich.edu/">Detroit Observatory</a> built in 1854 —  one of the oldest observatories in the nation. Highlights of this tour include learning about telescopes, seeing why the observatory was constructed the way it is,d and discoveries made here!'
+    - name: 'Clements Rare Book Library'
+      location: 'Front entrance of Clements Library, 909 S University Ave, Ann Arbor, MI 48109'
+      description: 'Go behind the scenes with a brief presentation about conserving rare materials and a tour of rare collection materials at the <a href="https://clements.umich.edu/">Clements Library</a>. Highlights include touring the Avenir Foundation Reading Room to browse books, graphics, manuscripts and maps.'
 
 game-night:
-  show: false
-  date: ''
-  time: ''
-  location: ''
-  description: ''
-  event-url: ''
-  event-url-button-text: ''
+  show: true
+  date: '2024-05-15'
+  time: '6:30pm'
+  location: 'Detroit Observatory, 1398 E. Ann St. (<a href="https://www.google.com/maps/dir//detroit+observatory/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883cae681ee1165b:0x1641df490d206de3?sa=X&ved=1t:3061&ictx=111">Get directions in Google Maps</a>)'
+  description: 'Join fellow Code4Libers at a BYO-Game and Snacks/Non-alcoholic drink Game Night! This will take place at the beautiful Detroit Observatory. Sign up to bring a game, snack or non-alcoholic beverage and join the fun!
+'
+  event-url: 'https://docs.google.com/spreadsheets/d/125IBzci7jOdgWyv8eDOJ65HotLTem-4zKjBWDp7w_t0/edit'
+  event-url-button-text: 'Sign Up'
   sign-up-url: ''
   sign-up-button-text: 'Sign Up for Game Night'
 
