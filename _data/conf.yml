@@ -296,9 +296,9 @@ newcomer-dinner:
 morning-run:
   show: true
   location: 'The Arb, 1610 Washington Heights (<a href="https://www.google.com/maps/dir//1610+Washington+Heights,+Ann+Arbor,+MI+48104/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883cae5d9150529b:0xe58ca9b182545396?sa=X&ved=1t:707&ictx=111&cshid=1711720648831274">Get directions in Google Maps</a>)'
-  description: "Join fellow Code4Lib Runners as a group runs around the <a href='https://www.a2gov.org/departments/Parks-Recreation/parks-places/Pages/Arboretum.aspx'>Arboretum</a> ('The Arb'), University of Michigan's nature preserve area. This run will be led by Michelle Janowiecki and it is a non-drop run, so all should feel welcome. Meet at the entrance at 7am."
+  description: "Join fellow code4lib runners as a group runs around the <a href='https://www.a2gov.org/departments/Parks-Recreation/parks-places/Pages/Arboretum.aspx'>Arboretum</a> ('The Arb'), University of Michigan's nature preserve area. This run will be led by Michelle Janowiecki and it is a non-drop run, so all should feel welcome. Meet at the entrance at 7am."
   date: '2024-05-14'
-  time: '7-8am'
+  time: '7:00AM'
 
 reception:
   show: true
