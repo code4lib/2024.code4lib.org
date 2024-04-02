@@ -11,6 +11,27 @@ title: Schedule
         </div>
     </div>
 
+    {% if site.data.conf.tours.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.tours.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Tours</h4>
+            <p>
+                See the <a href="/general-info/social/#tours">Social Activities</a> page for more details.
+            </p>
+            {% if site.data.conf.tours.sign-up-url %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.tours.sign-up-url }}">{{ site.data.conf.tours.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
     <div class="row">
         <div class="col-12 col-md-3 text-right">
             <h3>1PM to 5:30PM
@@ -257,27 +278,6 @@ title: Schedule
             </p>
         </div>
     </div>
-
-    {% if site.data.conf.tours.show %}
-    <div class="row">
-        <div class="col-12 col-md-3 text-right">
-            <h3>{{ site.data.conf.tours.time }}
-                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
-            </h3>
-        </div>
-        <div class="col-12 col-md-9 sched-well">
-            <h4>Tours</h4>
-            <p>
-                See the <a href="/general-info/social/#tours">Social Activities</a> page for more details.
-            </p>
-            {% if site.data.conf.tours.sign-up-url %}
-                <p>
-                    <a class="btn ct-btn-light" href="{{ site.data.conf.tours.sign-up-url }}">{{ site.data.conf.tours.sign-up-button-text }}</a>
-                </p>
-            {% endif %}
-        </div>
-    </div>
-    {% endif %}
 
     {% if site.data.conf.trivia-night.show %}
     <div class="row">
