@@ -317,7 +317,8 @@ reception:
 
 tours:
   show: true
-  time: '5/13/24 at 11am'
+  date: '2024-05-13'
+  time: '11:00am'
   sign-up-url: 'https://docs.google.com/spreadsheets/d/1yiemUqbKwkZbAhgn-cQnugB9cjbHlVfQl03DTAzi4i8/edit'
   sign-up-button-text: 'Sign Up'
   tours:
