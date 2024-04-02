@@ -101,6 +101,27 @@ title: Schedule
         </div>
     </div>
 
+    {% if site.data.conf.morning-run.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.morning-run.time }}
+                <br/><div class="timezone">{{ site.data.conf.timezone }} Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Morning Run</h4>
+            <p>
+                See the <a href="/general-info/social/#morning-run">Social Activities</a> page for more details.
+            </p>
+            {% if site.data.conf.morning-run.sign-up-url %}
+                <p>
+                    <a class="btn ct-btn-light" href="{{ site.data.conf.tours.sign-up-url }}">{{ site.data.conf.morning-run.sign-up-button-text }}</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
     <div class="row">
         <div class="col-12 col-md-3 text-right">
             <h3>9AM to 5:30PM
