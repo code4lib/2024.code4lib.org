@@ -8,6 +8,8 @@ subnav:
   url: '#contactus'
 - name: 'Captioning'
   url: '#captioning'
+- name: 'Meals and dieatry needs'
+  url: '#dietary'
 - name: 'Quiet Room'
   url: '#quietroom'
 # - name: 'Conference Platform'
@@ -18,8 +20,6 @@ subnav:
   url: '#microphones'
 - name: 'Venues'
   url: '#venue'
-- name: 'Transportation'
-  url: '#transportation'
 # - name: 'Parking'
 #   url: '#parking'
 ---
@@ -38,6 +38,14 @@ subnav:
 		<div class="col-12">
             <h2 id="contactus">Accommodation Requests or Questions</h2>
             <p>Contact <a href="mailto:{{site.data.conf.accessibility-email}}">{{site.data.conf.accessibility-email}}</a> with any questions, concerns, or accommodation requests related to the conference.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+            <h2 id="dietary">Meals and dietary needs</h2>
+            <p>Breakfast and lunch will be served on Tuesday and Wednesday. Meals with dietary information will be added to the <a href="/schedule">schedule</a> as they're finalized.</p>
+            <p>There is also food available for purchase at <a href="https://dining.umich.edu/menus-locations/markets/maizies/">Maizie's Kitchen and Market</a> on floor 1 of the League.</p>
 		</div>
 	</div>
 
@@ -65,7 +73,7 @@ subnav:
 		<div class="col-12">
             <h2 id="quietroom">Quiet Room</h2>
             <p>
-				For the General Conference days, room {{site.data.conf.quiet-room.location}} will serve as a <em>quiet room</em> at the conference venue. The purpose of this room is to provide a quiet space so that attendees can take a mental or physical break from the many goings on. The room is open to all attendees during the conference hours.
+				For the General Conference days, the {{site.data.conf.quiet-room.location}} will serve as a <em>quiet room</em> at the conference venue. The purpose of this room is to provide a quiet space so that attendees can take a mental or physical break from the many goings on. The room is open to all attendees during the conference hours.
             </p>
             <p>
                If you use the Quiet Room, we ask you to abide by the following rules:
@@ -135,22 +143,10 @@ subnav:
 
 	<div class="row">
 		<div class="col-12">
-			<h2 id="venue">Conference Venues</h3>
-                        <p>More information forthcoming.</p>
+			<h2 id="venue">Conference venues and transportation</h3>
+            <p>The Local Planning Committee is committed to integrating accessibility considerations throughout our information about the conference. You can find details about accessibility of <a href="/general-info/venues/">conference venues</a>, as well as support for <a href="/general-info/loding-transportation/">transportation</a> on the respective pages.</p>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-12">
-			<h2 id="transportation">Transportation</h2>
-
-			<h3>Public Transportation</h3>
-			{% if site.data.conf.public-transportation.show %}
-				<p>Transportation info here.</p>
-			{% else %}
-			<p>More information forthcoming. </p>
-			{% endif %}
-        </div>
-    </div>
 </div>
 </section>

@@ -1,41 +1,28 @@
+---
+layout: secondary-nav
+title: Lodging and Transportation
+nav: general-info
+active: 'Lodging and Transportation'
+subnav:
+- name: 'Lodging'
+  url: '#lodging'
+- name: 'Getting here'
+  url: '#gettinghere'
+- name: 'Public transportation'
+  url: '#publictransportation'
+- name: 'Scooters and e-bikes'
+  url: '#scooters'
+- name: 'Parking'
+  url: '#parking'
+---
+
 <section class="general-info">
-    <div class="col-12">
-        <h2 id="conference-hotel">Conference Venue</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1>Lodging and Transportation</h1>
 
-        <p>Code4Lib {{site.data.conf.year}} will be held at {{site.data.conf.venue.name}} in {{site.data.conf.location}}.</p>
-
-        {% if site.data.conf.venue.image %}
-        <div class="col-6">
-            <img class="img-fluid" src="{{ site.data.conf.venue.image }}" alt="{{ site.data.conf.venue.name }}">
-        </div>
-        {% endif %}
-
-        <div class="col-6">
-            <p>
-                {% if site.data.conf.venue.street != nil %}
-                    {{site.data.conf.venue.street}}<br>
-                    {{site.data.conf.city-state}} {{site.data.conf.venue.postal-code}}<br>
-                {% endif %}
-                {% if site.data.conf.venue.phone != nil %}
-                    <a href="tel:{{site.data.conf.venue.phone}}">{{site.data.conf.venue.phone}}</a> |
-                {% endif %}
-                {% if site.data.conf.venue.website != nil %}
-                    <a href="{{site.data.conf.venue.website}}">Website</a>
-                {% endif %}
-                {% if site.data.conf.venue.floorplan != nil %}
-                 | <a href="{{site.data.conf.venue.floorplan}}">Floor Plan</a>
-                {% endif %}
-            </p>
-        </div>
-
-        <p>
-            See the <a href="/general-info/accessibility">Accessibility</a> section for more info on <a href="/general-info/accessibility#transportation">public transportation</a> and <a href="/general-info/accessibility#parking">parking</a>.
-        </p>
-    </div>
-
-    {% if site.data.conf.venue.hotel.show %}
-    <div class="col-12">
-        <h3>Lodging</h3>
+        <h2 id="lodging">Lodging</h2>
         {% if site.data.conf.venue.hotel.reserved-room-block %}
         <p>
             The conference has a block of rooms reserved at the {{site.data.conf.venue.hotel.name}}, starting at a daily rate of {{ site.data.conf.venue.hotel.cost }} ({% if site.data.conf.venue.hotel.with-tax-cost %}{{ site.data.conf.venue.hotel.with-tax-cost }} with taxes{% else %}plus taxes{% endif %}).
@@ -126,34 +113,32 @@
             {% endif %}
         {% endif %}
 
-        {% if site.data.conf.venue.hotel.self-parking-fee or site.data.conf.venue.hotel.valet-parking-fee %}
-            <h3>Parking</h3>
-            {% if site.data.conf.venue.hotel.self-parking-fee %}
-                <p><strong>Onsite Self-Parking</strong>: {{site.data.conf.venue.hotel.self-parking-fee}} per night</p>
-            {% endif %}
-            {% if site.data.conf.venue.hotel.valet-parking-fee %}
-                <p><strong>Onsite Valet Parking</strong>: {{site.data.conf.venue.hotel.valet-parking-fee}} per night</p>
-            {% endif %}
-        {% endif %}
-    </div>
-    {% endif %}
+        <h2 id="gettinghere">Getting here</h2>
+        <p>Ann Arbor is located about 35 min from <a href="https://www.metroairport.com/">Detroit Metro Airport (DTW)</a>, Michigan’s largest airport. The <a href="https://www.michiganflyer.com/">Michigan Flyer</a> is a direct bus line that runs regularly 7 days a week between downtown Ann Arbor and the airport. The Michigan Flyer drops off at the Blake Transit Center, which is about a ½ mile from Central Campus.</p>
+        <p><a href="https://amtrakguide.com/routes/wolverine/">Amtrak’s Wolverine train line</a> also conveniently runs through downtown between the Detroit and Chicago metros. The station is about 1 mile from Central Campus.</p>
 
-	<div class="col-12">
-		<h3 id="transportation">Transportation</h3>
-		{% if site.data.conf.public-transportation.show %}
-          <p>Ann Arbor is located about 35 min from <a href="https://www.metroairport.com/">Detroit
-          Metro Airport (DTW)</a>, Michigan’s largest airport. The
-          <a href="https://www.michiganflyer.com/">Michigan Flyer</a> is a direct bus line that runs
-          regularly 7 days a week between downtown Ann Arbor and the airport.
-          <a href="https://amtrakguide.com/routes/wolverine/">Amtrak’s Wolverine train line</a> also
-          conveniently runs through downtown between the Detroit and Chicago metros. We have an
-          extensive public transportation network called <a
-          href="https://www.theride.org/">TheRide</a> that runs throughout the Ann Arbor/Ypsilanti
-          (pronounced IP-si-lantee) area. The University of Michigan also has its own fleet of buses
-          along 12 routes that are available to the general public for free without an ID or pass.
-          For more information on parking at the university and other transportation options, please
-          visit the U of M Facilities’ <a href="https://ltp.umich.edu/">Logistics, Transportation &
-          Parking website</a>.</p>
-        {% endif %}
-	</div>
+        <h2 id="publictransportation">Public transportation</h2>
+        <p><a href="https://www.theride.org/">TheRide</a> is an extensive public transportation network that runs throughout the Ann Arbor and Ypsilanti (pronounced IP-si-lantee) area. They offer a <a href="https://www.theride.org/maps-schedules/trip-planner"trip-planning tool</a> and <a href="https://www.theride.org/maps-schedules/track-bus">bus tracking</a>. You can pay <a href="https://www.theride.org/fares-passes">one-way fares or purchase a single day pass</a>.</p>
+        <p>All fixed-route buses through TheRide are low-floor vehicles equipped with ramps and kneeling features. Buses include audio announcements of major locations and visual displays that tell you the name of the route you are on and where you are headed.</p>
+        <p>The University of Michigan also has its own fleet of Blue Buses along 12 routes that are free to anyone on campus without an ID or pass. Blue Buses can get you from Central to North campus or anywhere in between. The <a href="https://tour.umich.edu/text-based/locations/central-campus-transit-center/">Central Campus Transit Center</a> is down the street from the League. Visit <a href="https://ltp.umich.edu/campus-transit/">Campus Transit</a> to learn more.</p>
+
+        <h2 id="scooters">Scooters and e-bikes</h2>
+        <p>The university and city of Ann Arbor both have agreements with <a href="https://www.spin.app/">SPIN</a>. You’ll find <a href="https://ltp.umich.edu/2023/04/10/spin-e-bikes-arrive-on-u-m-campus/">Scooters and e-bikes</a> around campus and town, if that’s your thing.</p>
+
+        <h2 id="parking">Parking</h2>
+        <p>If you’re driving to the conference, there is street parking, as well as parking garages near the conference venues.</p>
+
+        <h3>Street and handicap parking</h3>
+        <p>Metered parking is available throughout campus and downtown, including on several streets surrounding the Michigan League and North Quad. We recommend downloading the <a href="https://eparka2.com/">ePark Ann Arbor</a> app to pay for street parking. There are also pay stations.</p>
+        <p>There are a number of 24/7 handicap spaces in the half-moon driveway along the main entrance of the League. There is one dedicated handicap space on South State St, directly outside the west entrance to North Quad. There is also a dedicated handicap space at the northeast corner of the intersection of East Washington and Thayer streets, by the main (south) entrance to North Quad, as well as another on the south side of East Washington St.</p>
+        <p>Parking on streets in residential neighborhoods surrounding campus is free, but be mindful of one-way streets, parking only being permitted on one side of the street, and other parking restrictions, including time limits (often 2-hours) or residential-only signage.</p>
+        <p>If you’re headed to the workshop at the Bentley Historical Library, free parking is available on the south side of the building in <a href="https://ltp.umich.edu/lot/?xyz=fS">Lot NC42</a>, with a permit provided at the time of your visit.</p>
+
+
+        <h3>Garages</h3>
+        <p>There is a <a href="https://en.parkopedia.com/parking/garage/maynard_street_parking_structure/48104/ann_arbor/?arriving=202403151500&leaving=202403151700">public parking garage on Maynard Street</a>, three blocks from the League. This is your closest option for full day parking. The garage has elevators and it is a straight route through <a href="https://www.annarbor.org/listing/nickels-arcade/1108/">Nickels Arcade</a> and down North University Ave to the Michigan League.</p>
+        <p><a href="https://ltp.umich.edu/parking/patient-and-visitor/campus-visitor-parking/">Visitor parking on campus</a> is also available in a number of locations, but there aren’t many near the primary conference venues. The closest are the Palmer Structure, Ann St Structure, and North Ingalls Street lot.</p>
+      </div>
+    </div>
+  </div>
 </section>

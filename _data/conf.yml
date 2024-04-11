@@ -75,7 +75,9 @@ venue:
   street:
   postal-code:
   phone:
-  image: /assets/img/theme-images/hatcher-library-in-spring.jpg
+  image: michigan-league.jpg
+  image_alt: 'An exterior view of the main entrance of the Michigan League, a red brick building with a curved entrance overhang, tall white-frame windows, and an arched, recessed doorway.'
+  image_title: 'Michigan League'
   website:
   floorplan:
   directions:
@@ -307,12 +309,14 @@ reception:
   city-state: 'Ypsilanti, MI'
   postal-code: '48197'
   phone: '(734) 499-3695'
-  image:
-  image_title:
+  image: fowling.jpg
+  image_alt: 'Interior view of the Fowling Warehouse with a wooden high-top table and stools in the foreground, fenced in fowling lanes on either side, and a warm-lit industrial ceiling.'
+  image_title: 'Fowling Warehouse'
   contact: 'https://fowlingwarehouse.com/ypsiannarbor/'
   floorplans:
   date: '2024-05-14'
   times:
+  shuttle: 'We’ll provide shuttles to and from the reception. The first shuttles will leave from the Michigan League at 6:30pm and continue round trips.'
   special-notes: 'All attendees are invited to join us for a complimentary reception Tuesday evening at the <a href="https://fowlingwarehouse.com/ypsiannarbor/">Fowling Warehouse</a>. What is Fowling? Fowling is The Original Football Bowling Pin Game. It started as a one-lane mashup of football and bowling while tailgating at the 2001 Indy 500. It’s as easy as throwing a football at ten bowling pins until someone knocks them all down.'
 
 tours:
@@ -406,9 +410,9 @@ live-captioning:
   service: ''
 
 quiet-room:
-  show: false
+  show: true
   # Room number(s)
-  location: ''
+  location: 'Kalamazoo Room'
 
 public-transportation:
   show: true

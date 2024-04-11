@@ -4,6 +4,10 @@
   url: /general-info/scholarships  
 - name: Venues
   url: /general-info/venues
+- name: Land Acknowledgment
+  url: /general-info/land
+- name: Lodging and Transportation
+  url: /general-info/lodging-transportation
 - name: Accessibility
   url: /general-info/accessibility
 - name: Presenting Accessibly
@@ -16,4 +20,3 @@
   url: /general-info/social
 - name: About Code4Lib
   url: /general-info/about-c4l
-
