@@ -805,3 +805,15 @@
   name: Albert Bertram
   last: Bertram
   keynote: false
+- id: "brandon-patterson"
+  name: Brandon Patterson
+  last: Patterson
+  keynote: false
+- id: "erica-ervin"
+  name: Erica Ervin
+  last: Ervin
+  keynote: false
+- id: "justin-schell"
+  name: Justin Schell
+  last: Schell
+  keynote: false
