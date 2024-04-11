@@ -163,7 +163,7 @@ peri:
     pm:
       title: 'Newcomer Dinner'
       desc: 'Dine-Around'
-      link: '/general-info/venues/#dinner'
+      link: '/general-info/social/#newcomer-dinner'
   day1:
     am:
       title: 'Conference, Day 2'
@@ -294,6 +294,7 @@ newcomer-dinner:
   signup-button-text: '#c4l24 Newcomer Dinner Information and Sign Up'
   date: '2024-05-13'
   time: '6pm or later'
+  link: '/general-info/social/#newcomer-dinner'
 
 morning-run:
   show: true
