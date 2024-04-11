@@ -1,11 +1,9 @@
 - name: Attend Code4Lib
   url: /general-info/attend
 - name: Scholarships
-  url: /general-info/scholarships  
+  url: /general-info/scholarships
 - name: Venues
   url: /general-info/venues
-- name: Land Acknowledgment
-  url: /general-info/land
 - name: Lodging and Transportation
   url: /general-info/lodging-transportation
 - name: Accessibility
@@ -18,5 +16,7 @@
 #  url: /general-info/first-timers
 - name: Social Activities
   url: /general-info/social
+- name: Land Acknowledgment
+  url: /general-info/land
 - name: About Code4Lib
   url: /general-info/about-c4l
