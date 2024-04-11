@@ -11,9 +11,8 @@
             <div class="row">
             {% if site.data.conf.reception.image %}
                 <div class="col-6">
-                    <a href="{{site.data.conf.reception.url}}">
-                        <img src="/assets/img/venues/{{site.data.conf.reception.image}}" class="img-fluid"
-                            title="{{site.data.conf.reception.image_title}}" alt="{{site.data.conf.reception.image_alt}}"></a>
+                    <img src="/assets/img/theme-images/{{site.data.conf.reception.image}}" class="img-fluid"
+                            title="{{site.data.conf.reception.image_title}}" alt="{{site.data.conf.reception.image_alt}}">
                 </div>
                 <div class="col-6">
             {% else %}
@@ -39,22 +38,34 @@
                     {% endif %}
                   </p>
                 {% endif %}
-                {% if site.data.conf.reception.special-notes %}
-                <p><strong>Note: </strong>
-                    {{site.data.conf.reception.special-notes}}
-                </p>
+
+                {% if site.data.conf.reception.shuttle %}
+                    <p><strong>Transportation:</strong> {{site.data.conf.reception.shuttle}}</p>
                 {% endif %}
+
+                {% if site.data.conf.reception.special-notes %}
+                    <p>{{site.data.conf.reception.special-notes}}</p>
+                {% endif %}
+
+                <p>Don't forget your conference name tag and lanyard!</p>
             </div>
+
+            {% comment %}
+            2024 LPC didn't want the map, transport info added to section above
 
             <div class="col-12">
                 <h3>Directions</h3>
                 <p>Don't forget your conference name tag and lanyard!</p>
                 <h4>Transit</h4>
+                {% if site.data.conf.reception.shuttle %}
+                    <p><strong>Transportation:</strong> {{site.data.conf.reception.shuttle}}</p>
+                {% endif %}
                 <p>Using technology:</p>
                 <div style="margin: auto; max-width: 900px;" class="embed-responsive embed-responsive-4by3">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.2859535803777!2d-83.6587505!3d42.2510656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883ca946ec13c25d%3A0x7a0294e45d5a26cd!2sFowling%20Warehouse%20Ypsi%20Ann%20Arbor!5e0!3m2!1sen!2sus!4v1706124805149!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+            {% endcomment %}
         {% endunless %}
         </div>
     </div>
