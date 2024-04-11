@@ -4,7 +4,7 @@ speakers:
 - summer-mengarelli
 - matthew-cruz
 - garth-holman
-- nict-ord-ez-garza
+- nicte-ordonez-garza
 - brian-c-weeks
 - kelly-a-speer
 type: poster

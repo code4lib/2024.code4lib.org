@@ -76,6 +76,15 @@
                     {% endif %}
                 {% endfor %}
             {% endfor %}
+
+            {% assign posters = site.posts | where:'type','poster' %}
+            {% for poster in posters  %}
+                {% for speaker_id in poster.speakers %}
+                    {% if speaker_id == speaker.id %}
+                    <p class="speaker-session">Poster: <a href="{{ poster.url }}" tabindex="-1">{{ poster.title }}</a></p>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
         {% endunless %}
     </div>
 </div>
