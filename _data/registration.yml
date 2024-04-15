@@ -23,17 +23,17 @@ conference:
 
 workshop-only:
   # "show" only toggles the display of info in the registration bullets on the general-info/attend page
-  show: false
+  show: true
   # "show-button" only affects a button on the general-info/attend page
   show-button: false
   undecided: false
   undecided-text: "Depending on availability, Workshop-ONLY registration may open at the beginning of May."
   url: 
   # workshop-only registration cost may differ from workshop registration with general registration
-  half-day-cost: ''
-  full-day-cost: ''
-  start-date: ''
-  end-date: ''
+  half-day-cost: '$50'
+  full-day-cost: '$100'
+  start-date:
+  end-date:
 
 t-shirt-only:
   show: true
