@@ -15,6 +15,7 @@ endTime: 12:00pm
 learning-outcomes:
 attendee-requirements:
 title: Digital Forensics for Libraries and Archives&#58; Introduction to Using BitCurator
+full: true
 ---
 BitCurator (BC) is a digital curation environment geared toward librarians and archivists that combines a set of digital forensics tools in the Linux-based Ubuntu operating system. The BC environment includes a suite of open source digital forensics and data analysis tools to help collecting institutions process born-digital materials. It can be run as a main operating system on a single workstation, or it can be run in a virtualized environment (that is, the entire system is running by itself inside another program on your computer).
 

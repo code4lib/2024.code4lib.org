@@ -13,6 +13,8 @@
             <h2 class="h4"><a href="{{ workshop.url }}">{{ workshop.title }}</a></h2>
             {% if workshop.full == true %}
                 <p class="alert alert-danger">This workshop is full.</p>
+            {% elsif workshop.full == "limited" %}
+                <p class="alert alert-warning">Limited availability.</p>
             {% endif %}
             <p>{{ workshop.content | truncatewords: 50 }} <a href="{{ workshop.url }}"><span aria-label="more about {{ workshop.title }}">more</span></a></p>
         </div>

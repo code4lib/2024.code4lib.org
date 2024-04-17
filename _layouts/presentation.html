@@ -23,8 +23,10 @@
 
             <h1>{{ page.title }}</h1>
 
-            {% if page.full %}
+            {% if page.full == true %}
                 <p class="alert alert-warning">This workshop is at maximum capacity and no longer accepting registrations.</p>
+            {% elsif page.full == "limited" %}
+                <p class="alert alert-warning">This workshop is near capacity.</p>
             {% endif %}
 
             <p>{{ content }}</p>

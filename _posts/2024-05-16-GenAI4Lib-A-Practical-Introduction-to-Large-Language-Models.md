@@ -17,6 +17,7 @@ vector databases, embeddings, tokens, context windows, LLM \"hallucinations,\" a
 technology, even without a budget."
 attendee-requirements:
 title: GenAI4Lib&#58; A Practical Introduction to Large Language Models
+full: true
 ---
 The developers from the Digital Products & Data Curation workgroup at Northwestern University Libraries are proposing an immersive, full-day workshop designed to introduce and deepen your understanding of Large Language Models (LLMs) in the context of library services and operations. In “GenAI4Lib,” participants will learn from practitioners with firsthand experience creating, configuring, and deploying LLM-centric applications on the web.
 
