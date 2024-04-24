@@ -1,3 +1,20 @@
+# registration and breakfast
+- timeImg: 12.00.png
+  title: Registration
+  day1: true
+  time: 12:00-13:00
+
+- timeImg: 8.00.png
+  title: Registration and Breakfast
+  day2: true
+  time: 08:00-09:00
+
+- timeImg: 8.00.png
+  title: Breakfast
+  day3: true
+  time: 08:00-09:00
+
+
 # Announcements
 - timeImg: 1.00.png
   title: Announcements
@@ -86,7 +103,7 @@
   day2: true
   time: 15:30 - 16:00
   link: /posters/
-  button_label: View poster abstracts.
+  button_label: View poster abstracts
 
 # wrap ups
 - timeImg: 5.15.png
@@ -106,6 +123,13 @@
   title: Lunch
   day3: true
   time: 12:05-13:20
+
+- timeImg: 6.30.png
+  title: Reception at Fowling Warehouse
+  day2: true
+  time: 18:30-21:00
+  link: /general-info/venues/#reception
+  button_label: View reception details
 
 # keynotes
 - timeImg: 1.15.png
