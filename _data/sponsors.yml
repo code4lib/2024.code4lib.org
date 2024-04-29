@@ -121,12 +121,35 @@
   level: gold
   annotation: 'Reception Sponsor'
 
+# - silver
+- name: Rockefeller Archive Center
+  img: /assets/img/sponsors/rockefeller.jpeg
+  link: https://rockarch.org/
+  level: silver
+
 # - bronze
 - name: HathiTrust
   img: /assets/img/sponsors/hathitrust.png
   link: https://www.hathitrust.org
   level: bronze
   annotation: 'Streaming Video Sponsor'
+
+- name: Bentley Historical Library (University of Michigan)
+  img: /assets/img/sponsors/bentley.png
+  link: https://bentley.umich.edu/
+  level: bronze
+  annotation: 'Captioning Sponsor'
+
+- name: Johns Hopkins University
+  img: /assets/img/sponsors/jhu.jpg
+  link: https://www.jhu.edu/
+  level: bronze
+
+- name: 4Science
+  img: /assets/img/sponsors/4science.png
+  link: https://www.4science.com/
+  level: bronze
+  diversity: true
 
 # - contributor
 - name: Honeycomb
@@ -158,6 +181,14 @@
   link: http://www.permanent.org/
   level: exhibitor
 
+- name: Adam Matthew Digital
+  link: https://www.amdigital.co.uk/
+  level: exhibitor
+
+- name: 4Science
+  link: https://www.4science.com/
+  level: exhibitor
+
 # scholarship
 - name: Penn State University Libraries
   img: /assets/img/sponsors/psu-lib.jpeg
@@ -168,3 +199,9 @@
   img: /assets/img/sponsors/permanent.png
   link: http://www.permanent.org/
   diversity: true
+
+# supporter
+- name: Carnegie Mellon University Libraries
+  img: /assets/img/sponsors/cmu-library.jpeg
+  link: https://library.cmu.edu/
+  level: supporter
