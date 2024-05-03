@@ -1,0 +1,114 @@
+# The schedule for Community Support Volunteers, only affects
+# /conduct/#schedule
+# The volunteer(s) fields key off of objects in community-support.yml
+# Everything else is a string; "period" can be text or a time but we
+# usually use a label for the onsite schedule & time for online.
+
+onsite:
+  # template:
+  # - day: Tuesday
+  #   period: Morning Preconferences
+  #   volunteers:
+  #     - surname
+  #     - othersurname
+  - day: Monday
+    period: 1 - 3pm
+    volunteers:
+      - eric-phetteplace
+      - bess-sadler
+  - day: Monday
+    period: 3 - 5pm
+    volunteers:
+      - andromeda-yelton
+      - ann-marie-mesco
+  - day: Tuesday
+    period: 8:30am - 11
+    volunteers:
+      - soojeong-herring
+      - bobbi-fox
+  - day: Tuesday
+    period: 11am - 1pm
+    volunteers:
+      - eric-phetteplace
+      - andromeda-yelton
+  - day: Tuesday
+    period: 1 - 3pm
+    volunteers:
+      - bess-sadler
+      - ann-marie-mesco
+  - day: Tuesday
+    period: 3 - 5pm
+    volunteers:
+      - soojeong-herring
+      - bobbi-fox
+  - day: Tuesday
+    period: Reception
+    volunteers:
+      - bess-sadler
+      - bobbi-fox
+  - day: Wednesday
+    period: 8:30am - 11
+    volunteers:
+      - eric-phetteplace
+      - bess-sadler
+  - day: Wednesday
+    period: 11am - 1pm
+    volunteers:
+      - andromeda-yelton
+      - ann-marie-mesco
+  - day: Wednesday
+    period: 1 - 3pm
+    volunteers:
+      - soojeong-herring
+      - bobbi-fox
+  - day: Wednesday
+    period: 3 - 5pm
+    volunteers:
+      - eric-phetteplace
+      - andromeda-yelton
+  - day: Wednesday
+    period: Game Night
+    volunteers:
+      - eric-phetteplace
+      - soojeong-herring
+  - day: Thursday
+    period: Morning Postconferences
+    volunteers:
+      - soojeong-herring
+      - ann-marie-mesco
+  - day: Thursday
+    period: Afternoon Postconferences
+    volunteers:
+      - ann-marie-mesco
+
+online:
+  - day: Monday
+    period: 1 - 3pm
+    volunteer: coral-sheldon-hess
+  - day: Monday
+    period: 3 - 5pm
+    volunteer: mike-giarlo
+  - day: Tuesday
+    period: 8:30am - 11
+    volunteer: coral-sheldon-hess
+  - day: Tuesday
+    period: 11am - 1pm
+    volunteer: natasha-allen
+  - day: Tuesday
+    period: 1 - 3pm
+    volunteer: mike-giarlo
+  - day: Tuesday
+    period: 3 - 5pm
+    volunteer: mike-giarlo
+  - day: Wednesday
+    period: 8:30am - 11
+    volunteer: coral-sheldon-hess
+  - day: Wednesday
+    period: 11am - 1pm
+    volunteer: mike-giarlo
+  - day: Wednesday
+    period: 1 - 3pm
+    volunteer: natasha-allen
+  - day: Wednesday
+    period: 3 - 5pm
+    volunteer: natasha-allen
