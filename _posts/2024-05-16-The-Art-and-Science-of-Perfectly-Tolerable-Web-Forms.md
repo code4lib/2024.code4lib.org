@@ -5,9 +5,8 @@ categories: workshop
 speakers-text: Robin Davis
 speakers:
   - robin-davis
-location: TBD
-
-room: TBD
+location: north-quad
+room: 2435
 slugTitle: the-art-and-science-of-perfectly-tolerable-web-forms
 time: am
 startTime: 9:00am

@@ -5,9 +5,8 @@ categories: workshop
 speakers-text: Justin M Coyne
 speakers:
   - justin-m-coyne
-location: TBD
-
-room: TBD
+location: north-quad
+room: 3100
 slugTitle: build-a-recomendation-engine-using-ai
 time: am
 startTime: 9:00am

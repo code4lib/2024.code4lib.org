@@ -8,9 +8,8 @@ speakers:
   - robyn-ness
   - ben-howell
   - albert-bertram
-location: TBD
-
-room: TBD
+location: north-quad
+room: 2435
 slugTitle: local-discovery-layers
 time: pm
 startTime: 1:30pm

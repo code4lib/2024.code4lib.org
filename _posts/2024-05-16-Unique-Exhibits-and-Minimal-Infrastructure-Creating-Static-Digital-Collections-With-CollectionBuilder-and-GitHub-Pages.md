@@ -5,9 +5,8 @@ categories: workshop
 speakers-text: Olivia Wikle
 speakers:
   - olivia-wikle
-location: TBD
-
-room: TBD
+location: north-quad
+room: 1265
 slugTitle: unique-exhibits-and-minimal-infrastructure-creating-static-digital-collections-with-collectionbuilder-and-github-pages
 time: full
 startTime: 9:00am

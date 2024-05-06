@@ -4,3 +4,22 @@
   rooms:
     - id: TBD
       name: To Be Determined
+- id: north-quad
+  name: North Quad
+  rooms:
+    - id: 1265
+      name: Room 1265
+    - id: 2185
+      name: Room 2185
+    - id: 2245
+      name: Room 2245
+    - id: 2255
+      name: Room 2255
+    - id: 2435
+      name: Room 2435
+    - id: 3100
+      name: Room 3100
+- id: bentley
+  name: Bentley Historical Library
+  # no rooms named, site seems to still work
+  rooms:

@@ -5,9 +5,8 @@ categories: workshop
 speakers-text: Eric Lease Morgan
 speakers:
   - eric-lease-morgan
-location: TBD
-
-room: TBD
+location: north-quad
+room: 3100
 slugTitle: modern-alchemy-hands-on-with-the-distant-reader
 time: pm
 startTime: 1:30pm

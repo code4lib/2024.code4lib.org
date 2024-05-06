@@ -5,9 +5,8 @@ categories: workshop
 speakers-text: Michael B. Klein
 speakers:
   - michael-b-klein
-location: TBD
-
-room: TBD
+location: north-quad
+room: 2255
 slugTitle: genai4lib-a-practical-introduction-to-large-language-models
 time: full
 startTime: 9:00am

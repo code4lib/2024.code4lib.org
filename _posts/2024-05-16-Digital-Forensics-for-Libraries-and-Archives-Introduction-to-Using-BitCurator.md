@@ -5,9 +5,8 @@ categories: workshop
 speakers-text: Elena Colon-Marrero
 speakers:
   - elena-colon-marrero
-location: TBD
-
-room: TBD
+location: bentley
+room:
 slugTitle: digital-forensics-for-libraries-and-archives-introduction-to-using-bitcurator
 time: am
 startTime: 9:00am
