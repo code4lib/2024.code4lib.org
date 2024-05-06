@@ -1,0 +1,90 @@
+soojeong-herring:
+    name: Soojeong Herring
+    last: Herring
+    pronouns: she/her/hers
+    img: /assets/img/conduct/soojeong-herring.jpg
+    img_alt:
+    slack_handle: Soojeong Herring
+    onsite: true
+    online: false
+
+ann-marie-mesco:
+    name: Ann Marie Mesco
+    last: Mesco
+    pronouns: she/her/hers
+    img: /assets/img/conduct/ann-marie-mesco.jpg
+    img_alt: Woman with blonde hair, blue eyes, wearing glasses and a black sweater
+    slack_handle: Ann Marie
+    onsite: true
+    online: false
+
+bobbi-fox:
+    name: Bobbi Fox
+    last: Fox
+    pronouns: she/her/hers
+    img: /assets/img/conduct/bobbi-fox.jpg
+    img_alt: "An old white woman with glasses and wavy long greying brown hair."
+    slack_handle: Bobbi Fox
+    onsite: true
+    online: false
+
+andromeda-yelton:
+    name: Andromeda Yelton
+    last: Yelton
+    pronouns: she/her
+    img: /assets/img/speakers/andromeda-yelton.jpg
+    img_alt: "A white woman looks straight at the camera with a half-smile. She has curly brown hair and glasses. There's a soft white-and-grey cat draped over her shoulder."
+    slack_handle: thatandromeda
+    onsite: true
+    online: false
+
+bess-sadler:
+    name: Bess Sadler
+    last: Sadler
+    pronouns: she/they
+    img: /assets/img/conduct/bess-sadler.png
+    img_alt: A white woman with light brown hair that is short on the sides and long on top. She is wearing rimless glasses and a black t-shirt. She is smiling. There are fairy lights behind her.
+    slack_handle: bess
+    onsite: true
+    online: false
+
+mike-giarlo:
+    name: Mike Giarlo
+    last: Giarlo
+    pronouns: he/him/his
+    img: /assets/img/conduct/mike-giarlo.jpg
+    img_alt: A white, freckle-faced male with blue eyes, chin-length curly dark brown hair, and a beard is smiling in front of a light green wall. He is wearing a green t-shirt and a grey & green Seattle Supersonics baseball cap.
+    slack_handle: mjgiarlo
+    onsite: false
+    online: true
+
+eric-phetteplace:
+    name: Eric Phetteplace
+    last: Phetteplace
+    pronouns: he/him
+    img: /assets/img/speakers/eric-phetteplace.jpg
+    img_alt: A bearded, bald man with a wide-eyed, wild look holding a green copy of Ulysses by James Joyce which matches his t-shirt.
+    slack_handle: Phette23
+    onsite: true
+    online: false
+
+natasha-allen:
+    name: Natasha Allen
+    last: Allen
+    pronouns: she/her
+    img: /assets/img/conduct/natasha-allen.jpg
+    img_alt:
+    slack_handle: Natasha Allen
+    onsite: false
+    online: true
+
+# TODO needs img
+coral-sheldon-hess:
+    name: Coral Sheldon-Hess
+    last: Sheldon-Hess
+    pronouns: she/her
+    img: /assets/img/nopics/nopic1.jpg
+    img_alt:
+    slack_handle: coral
+    onsite: false
+    online: true

@@ -1,5 +1,7 @@
 surname:
     name: Full Name
+    last: Name
+    pronouns: she/her/hers
     img: /assets/img/nopics/nopic2.jpg
     img_alt: "A beautiful soul whose eyes betray their very unoriginal name"
     slack_handle: fnslack
@@ -8,6 +10,8 @@ surname:
 
 othersurname:
     name: Community Support
+    last: Support
+    pronouns: he/him
     img: /assets/img/nopics/nopic3.jpg
     img_alt:
     slack_handle: communitysupport
@@ -16,6 +20,8 @@ othersurname:
 
 drrobot:
     name: Dr Robot
+    last: Robot
+    pronouns: they/theirs
     img: /assets/img/nopics/nopic1.jpg
     img_alt: "Metal box with googly eyes glued on and a Mr. Potato Head nose"
     slack_handle: drrobot
