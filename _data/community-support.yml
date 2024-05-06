@@ -78,12 +78,11 @@ natasha-allen:
     onsite: false
     online: true
 
-# TODO needs img
 coral-sheldon-hess:
     name: Coral Sheldon-Hess
     last: Sheldon-Hess
     pronouns: she/her
-    img: /assets/img/nopics/nopic1.jpg
+    img: /assets/img/conduct/coral-sheldon-hess.png
     img_alt:
     slack_handle: coral
     onsite: false
