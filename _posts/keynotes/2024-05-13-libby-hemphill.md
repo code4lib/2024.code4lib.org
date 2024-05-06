@@ -7,7 +7,7 @@ group: key-open
 spot: 1
 length: 45
 type: key-open
-startTime: 2024-05-13T14:15
+startTime: 2024-05-13T13:15
 categories: keynote
 title:
 slides:
