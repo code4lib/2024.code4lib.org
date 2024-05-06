@@ -13,7 +13,7 @@ conference:
   end-date: '2024-04-16'
   cancellation-date: '2024-04-16'
   # "open" means people can register
-  open: true
+  open: false
   cost: '$225'
   late-cost: '$290'
   workshop-half-day-cost: '$40'
@@ -28,7 +28,7 @@ workshop-only:
   show-button: false
   undecided: false
   undecided-text: "Depending on availability, Workshop-ONLY registration may open at the beginning of May."
-  url: 
+  url:
   # workshop-only registration cost may differ from workshop registration with general registration
   half-day-cost: '$50'
   full-day-cost: '$100'
@@ -49,7 +49,7 @@ childcare:
   show: false
   # distinct from `show: false` in that we _know_ we won't be able to offer childcare
   no-childcare:
-  no-childcare-text: 
+  no-childcare-text:
   full-day-cost:
   half-day-cost:
   end-date:
