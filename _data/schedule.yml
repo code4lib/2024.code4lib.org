@@ -163,7 +163,7 @@
   title: Lunch
   day3: true
   time: 12:05-13:20
-  menu: day2-menus
+  menu: day3-menus
   submenu: Lunch
 
 - timeImg: 6.30.png
