@@ -41,65 +41,40 @@
   time: 13:20-13:35
 
 # Breaks
-- timeImg: 2.00.png
-  title: Refreshments
-  day1: true
-  time: 14:00-17:00
-  menu: day1-menus
-  submenu: Refreshments
-
 - timeImg: 3.00.png
   title: Break/Social
   day1: true
   time: 15:00-15:15
-
-- timeImg: 10.05.png
-  title: Refreshments
-  day2: true
-  time: 10:05-12:00
-  menu: day2-menus
-  submenu: Morning Refreshments
+  menu: day1-menus
+  submenu: Refreshments
 
 - timeImg: 10.05.png
   title: Break/Social
   day2: true
   time: 10:05-10:20
-
-- timeImg: 2.15.png
-  title: Refreshments
-  day2: true
-  time: 14:15-17:00
   menu: day2-menus
-  submenu: Afternoon Refreshments
+  submenu: Morning Refreshments
 
 - timeImg: 3.15.png
   title: Break/Social
   day2: true
   time: 15:15-15:30
+  menu: day2-menus
+  submenu: Afternoon Refreshments
 
 - timeImg: 10.00.png
   title: Break/Social
   day3: true
   time: 10:00-10:15
-
-- timeImg: 10.00.png
-  title: Refreshments
-  day3: true
-  time: 10:00-12:05
   menu: day3-menus
   submenu: Morning Refreshments
-
-- timeImg: 2.00.png
-  title: Refreshments
-  day3: true
-  time: 14:00-17:00
-  menu: day3-menus
-  submenu: Afternoon Refreshments
 
 - timeImg: 3.20.png
   title: Break/Social
   day3: true
   time: 15:20-15:35
+  menu: day3-menus
+  submenu: Afternoon Refreshments
 
 # NOTE: first-timers page uses the link properties of the first events with
 # titles like "Breakout Sessions" and "Lightning Talks"
@@ -187,6 +162,8 @@
   day1: true
   groupId: key-open
   time: 14:00-14:05
+  menu: day1-menus
+  submenu: Refreshments
 
 - timeImg: 9.15.png
   title: Closing Keynote
