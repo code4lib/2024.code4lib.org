@@ -172,6 +172,8 @@
   time: 18:30-21:00
   link: /general-info/venues/#reception
   button_label: View reception details
+  menu: day2-menus
+  submenu: Reception
 
 # keynotes
 - timeImg: 1.15.png
