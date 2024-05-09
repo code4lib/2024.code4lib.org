@@ -563,6 +563,7 @@
     technology. Currently, they work building infrastructure to enable reproducible
     open science.  '
   slack: bess
+  image_src: "/assets/img/speakers/bess_sadler.jpg"
 - id: "phil-salvador"
   name: Phil Salvador
   last: Salvador
