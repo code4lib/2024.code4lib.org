@@ -1,18 +1,18 @@
 Breakfast:
     Entrees:
-        "Breakfast Frittata with spinach, tomato, (feta on the side)": ""
+        "Breakfast Frittata: spinach, tomato, feta on the side": ""
         "Tofu Scramble with peppers and mushrooms": "VGN"
     Sides:
         "Home Fries": "VGN, GF"
         "Seasonal Fruit Salad": "VGT, GF"
         "Assorted Croissants / Danish / Freshly baked scones": ""
-        "Almond Coconut Chia Pudding (available upon request)": ""
     Beverages:
-        "Orange Juice / Coffee / Decaf / Tea / Water": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
+        "Orange Juice": ""
+        "Water": ""
 Morning Refreshments:
     Beverages:
-        "JavaBlu coffee and decaf (fair trade, organic)": ""
-        "Teatulia teas and accompaniments ": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
 Lunch:
     Entrees:
         "Turkey Meatballs: roasted vegetables, wild rice, cranberries, sage served with Michigan cranberry sauce": "GF"
@@ -27,9 +27,10 @@ Lunch:
     Dessert:
         "Vegan Rasberry Bar": "VGN"
         "Chocolate Chip Cookies": ""
-        "Vegan and Gluten-Free cookies available upon request": "VGN, GF"
     Beverages:
-        "Water, Iced Tea, Hot Tea, Coffee": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
+        "Iced Tea": ""
+        "Water": ""
 Afternoon Refreshments:
     Snacks:
         "Veggie Chips": "VGN, GF"
@@ -37,6 +38,5 @@ Afternoon Refreshments:
         "Whole Fruit": "VGN, GF"
         "M&Ms": "VGN, GF"
     Beverages:
-        "Freshly Brewed Regular & Decaffeinated Coffee": ""
-        "Hot Tea": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
         "Assorted Sodas": ""

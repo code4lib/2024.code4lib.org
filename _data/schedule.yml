@@ -53,10 +53,10 @@
   day1: true
   time: 15:00-15:15
 
-- timeImg: 10.00.png
+- timeImg: 10.05.png
   title: Refreshments
   day2: true
-  time: 10:00-12:00
+  time: 10:05-12:00
   menu: day2-menus
   submenu: Morning Refreshments
 
@@ -65,10 +65,10 @@
   day2: true
   time: 10:05-10:20
 
-- timeImg: 2.00.png
+- timeImg: 2.15.png
   title: Refreshments
   day2: true
-  time: 14:00-17:00
+  time: 14:15-17:00
   menu: day2-menus
   submenu: Afternoon Refreshments
 
@@ -85,7 +85,7 @@
 - timeImg: 10.00.png
   title: Refreshments
   day3: true
-  time: 10:00-12:00
+  time: 10:00-12:05
   menu: day3-menus
   submenu: Morning Refreshments
 

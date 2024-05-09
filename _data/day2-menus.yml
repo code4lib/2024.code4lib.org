@@ -6,15 +6,12 @@ Breakfast:
         "Hard-Boiled Eggs": "DF, GF"
         "Assorted Bagels": ""
         "Vegan Whipped Cream Cheese and Vegan Jam": "VGN"
-        "Gluten-Free Bagels with Cream Cheese (available upon request)": "GF"
     Beverages:
-        "Coffee / Decaf": ""
-        "Tea": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
         "Water": ""
 Morning Refreshments:
     Beverages:
-        "JavaBlu Regular & Decaffeinated Coffee (Fair Trade, Organic)": ""
-        "Teatulia Teas and Accompaniments ": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
 Lunch:
     Entrees:
         "Halal Chicken: Garlic, Curry, and Green Onion": "GF"
@@ -27,9 +24,10 @@ Lunch:
     Dessert:
         "Vegan Rasberry Bar": "VGN"
         "Chocolate Chip Cookies": ""
-        "Vegan and Gluten-Free Cookies (available upon request)": "VGN, GF"
     Beverages:
-        "Water, Iced Tea, Hot Tea, Coffee": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
+        "Iced Tea": ""
+        "Water": ""
 Afternoon Refreshments:
     Snacks:
         "Chips & Salsa": "VGN, GF"
@@ -37,6 +35,5 @@ Afternoon Refreshments:
         "Whole Fruit": "VGN, GF"
         "Brownies": "VGT"
     Beverages:
-        "Freshly Brewed Regular & Decaffeinated Coffee": ""
-        "Hot Tea": ""
+        "Coffee / Decaf / Assorted Hot Teas": ""
         "Assorted Sodas": ""
