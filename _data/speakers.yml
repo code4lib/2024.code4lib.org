@@ -16,6 +16,11 @@
   name: Eric Lease Morgan
   last: Morgan
   keynote: false
+  institution: University of Notre Dame
+  position-title: Librarian
+  bio: Eric Lease Morgan is a librarian working in the Navari Family Center for Digital Scholarship, Hesburgh Libraries, University of Notre Dame where he provides text mining and natural language processing services to the University community. He does data science with words.
+  image_src: /assets/img/speakers/eric-lease-morgan.jpg
+  image_alt: "Eric is a librarian who works at the University of Notre Dame."
 - id: "robin-davis"
   name: Robin Davis
   last: Davis
