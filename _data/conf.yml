@@ -414,7 +414,8 @@ diversity-scholarship-sponsors:
 
 live-captioning:
   show: true
-  service: https://www.streamtext.net/player?event=code4lib
+  # name of captioning company, URL is above under closed-captioning.url
+  service: streamtext
 
 quiet-room:
   show: true
