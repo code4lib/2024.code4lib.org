@@ -10,6 +10,10 @@
       {% endif %}
       <p>{{ site.data.conf.morning-run.description }}</p>
 
+      {% if site.data.conf.morning-run.image %}
+        <p><img class="info-image" src="/assets/img/theme-images/{{ site.data.conf.morning-run.image }}" alt="{{site.data.conf.morning-run.image_alt}}"/></p>
+      {% endif %}
+
       {% if site.data.conf.morning-run.signup-url %}
         <a class="btn ct-btn-light" target="blank" href="{{site.data.conf.morning-run.signup-url}}">{{site.data.conf.morning-run.signup-button-text}}</a>
       {% endif %}
