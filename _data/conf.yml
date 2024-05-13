@@ -147,7 +147,7 @@ slide-template:
   url: '/assets/C4L2024-template.pptx'
 
 closed-captioning:
-  url:
+  url: https://www.streamtext.net/player?event=code4lib
 
 workshops:
   show: true
