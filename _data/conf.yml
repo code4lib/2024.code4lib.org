@@ -413,8 +413,8 @@ diversity-scholarship-sponsors:
 ################
 
 live-captioning:
-  show: false
-  service: ''
+  show: true
+  service: https://www.streamtext.net/player?event=code4lib
 
 quiet-room:
   show: true

@@ -23,7 +23,7 @@ conference:
 
 workshop-only:
   # "show" only toggles the display of info in the registration bullets on the general-info/attend page
-  show: true
+  show: false
   # "show-button" only affects a button on the general-info/attend page
   show-button: false
   undecided: false
