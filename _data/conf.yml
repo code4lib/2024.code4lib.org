@@ -130,7 +130,7 @@ anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 # - post:   for after the conference is over
 #
 ####################
-homepage-display: pre
+homepage-display: peri
 
 livestream:
   show: false
@@ -171,7 +171,7 @@ peri:
       link: '/schedule/day-2'
     pm:
       title: 'Reception'
-      desc: 'Palmer House'
+      desc: 'Fowling Warehouse'
       link: '/general-info/venues/#reception'
   day2:
     am:
@@ -181,7 +181,7 @@ peri:
     pm:
       title: 'Game Night'
       desc: 'Board or Card Games'
-      link: '/general-info/venues/#gaming'
+      link: '/general-info/social/#game-night'
   day3:
     am:
       title: 'Workshops'
