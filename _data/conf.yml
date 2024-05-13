@@ -160,6 +160,7 @@ peri:
       title: 'Conference, Day 1'
       desc: 'Opening Keynote & Talks'
       link: '/schedule/day-1'
+      menu: 'day1-menus.html'
     pm:
       title: 'Newcomer Dinner'
       desc: 'Dine-Around'
@@ -169,15 +170,18 @@ peri:
       title: 'Conference, Day 2'
       desc: 'Awesome Talks'
       link: '/schedule/day-2'
+      menu: 'day2-menus.html'
     pm:
       title: 'Reception'
       desc: 'Fowling Warehouse'
       link: '/general-info/venues/#reception'
+      menu: 'day2-menus.html#Reception'
   day2:
     am:
       title: 'Conference, Day 3'
       desc: 'Closing Keynote & Talks'
       link: '/schedule/day-3'
+      menu: 'day3-menus.html'
     pm:
       title: 'Game Night'
       desc: 'Board or Card Games'
