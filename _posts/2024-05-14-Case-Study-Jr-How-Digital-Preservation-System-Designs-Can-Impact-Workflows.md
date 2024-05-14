@@ -2,11 +2,6 @@
 speakers-text: Chris Banuelos
 speakers:
 - chris-banuelos
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD
