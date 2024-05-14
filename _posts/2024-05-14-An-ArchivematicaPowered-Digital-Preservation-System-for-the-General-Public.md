@@ -3,10 +3,6 @@ speakers-text: Liam Lloyd, Cecilia Krum
 speakers:
 - liam-lloyd
 - cecilia-krum
--
--
--
--
 type: poster
 categories: posters
 location: TBD
