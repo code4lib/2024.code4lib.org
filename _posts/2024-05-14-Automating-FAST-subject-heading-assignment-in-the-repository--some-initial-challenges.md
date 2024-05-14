@@ -3,10 +3,6 @@ speakers-text: Esther Jackson, Sarai Vega
 speakers:
 - esther-jackson
 - sarai-vega
--
--
--
--
 type: poster
 categories: posters
 location: TBD
