@@ -2,11 +2,6 @@
 speakers-text: Kaitlyn Jarnagin
 speakers:
 - kaitlyn-jarnagin
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD
