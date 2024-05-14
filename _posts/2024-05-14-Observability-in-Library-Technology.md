@@ -3,10 +3,6 @@ speakers-text: Mary Jinglewski, Ryan Ordway
 speakers:
 - mary-jinglewski
 - ryan-ordway
--
--
--
--
 type: poster
 categories: posters
 location: TBD
