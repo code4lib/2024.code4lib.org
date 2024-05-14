@@ -2,11 +2,6 @@
 speakers-text: Nikhil Motwani
 speakers:
 - nikhil-motwani
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD
