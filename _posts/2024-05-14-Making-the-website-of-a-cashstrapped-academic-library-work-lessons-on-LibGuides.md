@@ -2,11 +2,6 @@
 speakers-text: Allan Berry
 speakers:
 - allan-berry
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD

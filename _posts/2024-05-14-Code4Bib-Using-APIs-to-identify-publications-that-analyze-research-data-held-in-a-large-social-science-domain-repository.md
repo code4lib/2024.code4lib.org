@@ -2,11 +2,6 @@
 speakers-text: Elisabeth Shook
 speakers:
 - elisabeth-shook
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD

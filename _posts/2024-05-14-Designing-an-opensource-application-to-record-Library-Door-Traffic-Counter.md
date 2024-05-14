@@ -2,11 +2,6 @@
 speakers-text: Damith Perera
 speakers:
 - damith-perera
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD

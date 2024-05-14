@@ -2,11 +2,6 @@
 speakers-text: Maccabee Levine
 speakers:
 - maccabee-levine
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD

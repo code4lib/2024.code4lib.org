@@ -4,9 +4,6 @@ speakers:
 - cecilia-krum
 - liam-lloyd
 - kaitlyn-jarnagin
--
--
--
 type: poster
 categories: posters
 location: TBD

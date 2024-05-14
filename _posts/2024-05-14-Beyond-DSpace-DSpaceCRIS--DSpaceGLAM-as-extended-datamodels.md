@@ -6,7 +6,6 @@ speakers:
 - claudio-cortese
 - susanna-mornati
 - federico-verlicchi
--
 type: poster
 categories: posters
 location: TBD

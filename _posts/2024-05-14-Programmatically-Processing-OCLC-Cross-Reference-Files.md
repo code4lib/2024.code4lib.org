@@ -5,8 +5,6 @@ speakers:
 - david-fulmer
 - margaret-kelly
 - monique-rio
--
--
 type: poster
 categories: posters
 location: TBD

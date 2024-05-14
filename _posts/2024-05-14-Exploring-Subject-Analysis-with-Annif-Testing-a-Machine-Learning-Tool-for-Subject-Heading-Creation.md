@@ -2,11 +2,6 @@
 speakers-text: Amelia Mowry
 speakers:
 - amelia-mowry
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD
