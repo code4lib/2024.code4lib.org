@@ -2,11 +2,6 @@
 speakers-text: Monica Maceli
 speakers:
 - monica-maceli
--
--
--
--
--
 type: poster
 categories: posters
 location: TBD
