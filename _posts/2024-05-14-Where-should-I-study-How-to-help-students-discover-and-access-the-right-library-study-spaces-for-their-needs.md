@@ -3,10 +3,6 @@ speakers-text: Emma Brown, Suviksha Hirawat
 speakers:
 - emma-brown
 - suviksha-hirawat
--
--
--
--
 type: poster
 categories: posters
 location: TBD
