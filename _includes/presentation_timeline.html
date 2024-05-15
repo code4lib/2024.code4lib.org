@@ -23,7 +23,19 @@
                                 <p>
                                     <a class="btn ct-btn-light" href="{{ event.link }}">{{ event.button_label }}</a>
                                 </p>
-                            {% else %}
+                            {% elsif event.sessions %}
+                              <ol>
+                              {% for session in event.sessions %}
+                                <li>
+                                  {% if session.presenter %}{{ session.presenter }}: {% endif %}
+                                  {% if session.link %}
+                                    <a href="{{session.link}}">{{ session.title }}</a>
+                                  {% else %}
+                                    {{ session.title }}
+                                  {% endif %}
+                                </li>
+                              {% endfor %}
+                              </ol>
                             {% endif %}
                             {% if event.menu %}
                                 <a href="/schedule/food/{{ event.menu }}.html#{{ event.submenu }}" class="btn ct-btn-light" >View Menu</a>

@@ -83,8 +83,11 @@
   title: Breakouts
   day2: true
   time: 14:15-15:15
-  link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions
-  button_label: View session titles
+  sessions:
+    - title: "ArchivesSpace tech update & community chat"
+    - title: "Patron and Data Privacy"
+    - title: "Transcriptions (video, audio, image) using Whisper OpenAI, google AI, etc."
+    - title: "Advocacy & Retrenchment: How do we continue our work in this world?"
 
 - timeImg: 2.35.png
   title: Breakouts
@@ -98,15 +101,55 @@
   title: Lightning Talks
   day2: true
   time: 10:20-11:05
-  link: https://wiki.code4lib.org/Code4Lib2024_Lightning_Talks
-  button_label: View talk titles
+  sessions:
+  - presenter: Jonathan Rochkind
+    title: A local page viewer for digitized historical material
+  - presenter: Jenn Colt
+    title: "FOLIO: It's not just..."
+    link: https://osf.io/cnpve/
+  - presenter: Vera Kahn
+    title: Progamming Protest
+  - presenter: Shinwoo Kim
+    title: Lambda fixity process
+  - presenter: Eric Lease Morgan
+    title: Free GSU!
+  - presenter: Cary Gordon
+    title: Let find a host for 2025 Code4Lib
+  - presenter: Barbara Cormack
+    title: Metadata Analysis in Zephir and HathiTrust
+    link: https://osf.io/ry7vt/
+  - presenter: Natasha Allen
+    title: A Brief History of Fowling
 
 - timeImg: 10.15.png
   title: Lightning Talks
   day3: true
   time: 10:15-11:15
-  link: https://wiki.code4lib.org/Code4Lib2024_Lightning_Talks
-  button_label: View talk titles
+  sessions:
+  - presenter: Micah Walter
+    title: "Smith Inventory System: How it works and lessons learned"
+    link: https://osf.io/fepqc/
+  - presenter: Maccabee Levine
+    title: Bound-with Titles in FOLIO and VuFind
+    link: https://docs.google.com/presentation/d/1dxnGKLbSbM05JptxTm-1nKz_6UVqM9EE4rZmGwLogAA/edit
+  - presenter: Eric Hellman
+    title: Browser Extension Rant
+  - presenter: Michael Klein
+    title: Things my grandfather told me [30 years later, with the help of AI audio transcription]
+  - presenter: Dee Dee Crema
+    title: ETDs@Harvard
+    link: https://osf.io/m83t5/
+  - presenter: Patrick Galligan
+    title: On Not choosing Kubernetes OR it's OK to fail
+    link: https://osf.io/h4ud3/
+  - presenter: Angela Zoss
+    title: Three(ish) Tips for Better Data Visualization
+    link: https://osf.io/tqhye
+  - presenter: Steve Bischof
+    title: "Learning from Poggio Civitate: Data Verification"
+  - presenter: Thomas Dowling
+    title: Open Access Theses and Dissertations
+    link: https://oatd.org
 
 - timeImg: 1.35.png
   title: Lightning Talks
