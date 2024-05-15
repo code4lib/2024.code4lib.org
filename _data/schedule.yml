@@ -83,7 +83,8 @@
   title: Breakouts
   day2: true
   time: 14:15-15:15
-  link:
+  link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions
+  button_label: View session titles
 
 - timeImg: 2.35.png
   title: Breakouts
@@ -97,13 +98,15 @@
   title: Lightning Talks
   day2: true
   time: 10:20-11:05
-  link:
+  link: https://wiki.code4lib.org/Code4Lib2024_Lightning_Talks
+  button_label: View talk titles
 
 - timeImg: 10.15.png
   title: Lightning Talks
   day3: true
   time: 10:15-11:15
-  link:
+  link: https://wiki.code4lib.org/Code4Lib2024_Lightning_Talks
+  button_label: View talk titles
 
 - timeImg: 1.35.png
   title: Lightning Talks
