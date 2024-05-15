@@ -89,7 +89,8 @@
   title: Breakouts
   day3: true
   time: 14:35-15:20
-  link:
+  link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions
+  button_label: View session titles
 
 # lightning
 - timeImg: 10.20.png
