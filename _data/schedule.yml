@@ -83,17 +83,13 @@
   title: Breakouts
   day2: true
   time: 14:15-15:15
-  sessions:
-    - title: "ArchivesSpace tech update & community chat"
-    - title: "Patron and Data Privacy"
-    - title: "Transcriptions (video, audio, image) using Whisper OpenAI, google AI, etc."
-    - title: "Advocacy & Retrenchment: How do we continue our work in this world?"
+  link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions#Tuesday.2C_May_14.2C_2%3A15-3%3A15pm
 
 - timeImg: 2.35.png
   title: Breakouts
   day3: true
   time: 14:35-15:20
-  link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions
+  link: link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions#Wednesday.2C_May_15.2C_2%3A35-3%3A20pm
   button_label: View session titles
 
 # lightning
