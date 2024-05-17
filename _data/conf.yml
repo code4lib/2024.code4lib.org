@@ -130,15 +130,15 @@ anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 # - post:   for after the conference is over
 #
 ####################
-homepage-display: peri
+homepage-display: post
 
 livestream:
-  show: true
+  show: false
   button-label: 'Join Livestream'
   url: 'https://www.youtube.com/c/Code4Lib'
 
 slides:
-  show: true
+  show: false
   url: 'https://osf.io/meetings/c4l24'
   contact: ''
   email: ''
@@ -147,7 +147,7 @@ slide-template:
   url: '/assets/C4L2024-template.pptx'
 
 closed-captioning:
-  url: https://www.streamtext.net/player?event=code4lib
+#  url: https://www.streamtext.net/player?event=code4lib
 
 workshops:
   show: true
