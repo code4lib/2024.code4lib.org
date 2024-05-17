@@ -84,6 +84,7 @@
   day2: true
   time: 14:15-15:15
   link: https://wiki.code4lib.org/Code4Lib2024_Breakout_Sessions#Tuesday.2C_May_14.2C_2%3A15-3%3A15pm
+  button_label: View session titles
 
 - timeImg: 2.35.png
   title: Breakouts
@@ -151,7 +152,37 @@
   title: Lightning Talks
   day3: true
   time: 13:35-14:35
-  link:
+  sessions:
+  - presenter: Emily Frazier
+    title: <i>Sometimes you can't automate it!</i>
+    link: https://osf.io/p6vyr/
+  - presenter: Ray Schwartz
+    title: Tips about Detroit
+    link: 
+  - presenter: Kate Deibel
+    title: New US Federal A11y Laws Ready to Pounce
+    link: https://osf.io/j8k69/
+  - presenter: Corey Halpin
+    title: Chess computers and AI in libraries
+    link: 
+  - presenter: Susan Hoover
+    title: Ten Thousand
+    link: https://osf.io/v4egb/
+  - presenter: Ryan "Harpo" Harbert
+    title: "Battle of the Bots: Preventing web scrapers"
+    link: 
+  - presenter: Ange Zaytsev
+    title: Make your slides more accessible
+    link: https://osf.io/z4jen/
+  - presenter: Roger Espinoza
+    title: "Digital Collections: 25 years in 5 minutes"
+    link: https://osf.io/6av2f/
+  - presenter: Anne Slaughter
+    title: Digital equity and federal funding to support broadband access
+    link: 
+  - presenter: Chad Nelson
+    title: AI and NaNoGenMo
+    link: 
 
 # Poster Session
 - timeImg: 3.30.png
