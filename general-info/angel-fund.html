@@ -4,51 +4,44 @@
 			{% if site.data.conf.angel-fund.show %}
 			<h2>Individual Giving</h2>
 			<p>
-				The Angel Fund has proven over the years to be a successful way for individuals in the community to support the Diversity and Inclusion Scholarships. We would like to continue accepting donations from individuals who would like to support this year’s Financial Assistance Program. Individual donors will be thanked below, though anonymous donation is also possible. All funds raised will help pay the conference registration costs for anyone in the community requesting financial assistance for our annual conference.
+				Angel Funds are an opportunity for individuals in the community to support Diversity and Inclusion Scholarships. These
+				scholarships provide funding for travel costs & conference fees for qualified applicants from groups typically
+				underrepresented at the conference. Individual donors will be thanked below. If you prefer to donate anonymously, please note NA in the "Donated in the Name Of" text box on the payment page.
 			</p>
-			<p>[February 2, 2021] <br />Wow! Thank you to all of our community members and organizations for the contributions received so far! We understand that the Code4Lib community is committed to supporting diversity and inclusion each year. Because of this, any extra funding (in surplus of the Financial Assistance requests) may be directed to our <a href="/prospectus/#Targeted-Sponsorship">Diversity and Inclusion Sponsorships</a>, which includes Closed Captioning and Post-Conference Video Production. These sponsorships provide access to conference content to many around the world who are unable to attend, and for future viewing. If you have any questions about this use of funding, please contact <a href="mailto:{{site.data.conf.main-conf-email}}">{{site.data.conf.main-conf-email}}</a>
-			</p>
-			<div>
-				<a class="btn ct-btn-light btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel Fund today!</a>
-			</div><br>
+			{%  if site.data.conf.angel-fund.url %}
+				<div>
+					<a class="btn ct-btn-light btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel
+						Fund today!</a>
+				</div><br>
 			{% endif %}
 
-			<div id="donation-total"></div>
+			{%  comment  %} Stripe payment buttons from Concentra, these will change every year {% endcomment %}
+			<div>
+				<script async src="https://js.stripe.com/v3/buy-button.js">
+				</script>
+				{%  comment  %} 25, 50, 100, name-your-price buttons  {% endcomment %}
+				<stripe-buy-button buy-button-id="buy_btn_1OV10iHJ5CvRBfpw1GBEthqy"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<stripe-buy-button buy-button-id="buy_btn_1OV12bHJ5CvRBfpwVQ08m2km"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<stripe-buy-button buy-button-id="buy_btn_1OME07HJ5CvRBfpwHybRcKtt"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<stripe-buy-button buy-button-id="buy_btn_1OV13SHJ5CvRBfpwWKEZRs2v"
+					publishable-key="pk_live_51IiVO2HJ5CvRBfpweD2zm3UYI7L2ImDx2Xo5kSLErNci07SJsxoy4f6Aas21309J4m7PUCGmKmJLtgtcIkjMS17x001TJqHkSr">
+				</stripe-buy-button>
+				<p>The final button "Name Your Price" lets you choose any payment amount in five-dollar increments. Just adjust the Qty, noted beneath the "Code4Lib: Angel Donation" text on the payment page.</p>
+			</div>
+			{% endif %}
 
 			{% if site.data.conf.angel-fund.thermometer %}
-				<div id="donation-thermometers"></div>
-
-				<!-- thermometer HTML/CSS based on https://codepen.io/robotballoon/pen/Fjnyp -->
-				<template id="thermometer">
-				    <div class=countdown-wrap>
-				      <div class="goal-title">
-				          <div class="label">{{label}}</div>
-				          <div class="goal">{{goal}}</div>
-				      </div>
-				      <div class="glass">
-				        <div class="progress">
-				        </div>
-				      </div>
-				      <div class="goal-stat">
-				        <span class="goal-number percent">{{percent}}</span>
-				        <span class="goal-label">Funded</span>
-				      </div>
-				      <div class="goal-stat">
-				        <span class="goal-number total">{{total}}</span>
-				        <span class="goal-label">Raised</span>
-				      </div>
-				      <div class="goal-stat">
-				        <span class="goal-number donations">{{donations}}</span>
-				        <span class="goal-label">Donations</span>
-				      </div>
-				    </div>
-				</template>
+				<div>
+					<iframe width="259" height="371" style="display: block; margin: 0 auto;" seamless frameborder="0" scrolling="no"
+						src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScg-Hgi73wOFxJ5yLxoJiOifVaJ7CuW1lSwawsOei2uZEu4sg2I0ZelVzrs1blmTDHBv8rwZbOEyjW/pubchart?oid=2098545654&amp;format=interactive"></iframe>
+				</div>
 			{% endif %}
 		</div>
 	</div>
 </div>
-
-{% if site.data.conf.angel-fund.thermometer %}
-	<script src="{{ "/assets/js/thermometer.js" | relative_url }}"></script>
-	<style>@import url('{{ "/assets/css/thermometer.css" | relative_url }}') screen;</style>
-{% endif %}

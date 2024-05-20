@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Pre-Conference Workshops
-day: day0
+title: Workshops
+day: day4
 ---
 
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>{{ page.title }}</h1>
+            <h1>{% assign day = page.day | slice: -1 %}
+                {% assign index = day | plus: 0 %}
+                {{ page.title }} - {{site.data.conf.days[index].date}}
+            </h1>
+
         </div>
     </div>
     {% if site.data.conf.have-schedule %}
@@ -15,7 +19,7 @@ day: day0
     {% endif %}
     <div class="row">
         <div class="col-12 col-sm-12">
-            <p>Half-day workshops will start at either 9:00 a.m. or 1:30 p.m.</p>
+            <p>All workshops will be in-person only. Half-day workshops will start at either 9:00 a.m. or 1:30 p.m.</p>
         </div>
     </div>
     <div class="row" id="workshop-sorting-div">
@@ -24,7 +28,7 @@ day: day0
                 <button type="button" class="btn btn-light sort-workshop-time page-link active" id="all">All</button>
                 <button type="button" class="btn btn-light sort-workshop-time page-link" id="am">AM</button>
                 <button type="button" class="btn btn-light sort-workshop-time page-link" id="pm">PM</button>
-                <!-- <button type="button" class="btn btn-light sort-workshop-time page-link" id="full">Full Day</button> -->
+                <button type="button" class="btn btn-light sort-workshop-time page-link" id="full">Full Day</button>
             </div>
         </div>
         <!--
@@ -45,7 +49,7 @@ day: day0
                 {% include workshops/card.html workshop=post %}
             {% endfor %}
             {% if posts.size == 0 %}
-                <p class="alert alert-warning">We don't have workshops information yet, but when we do it will appear right here.</p>
+                <p class="alert alert-warning">We don't have workshop details yet, but when we do, they will appear right here.</p>
             {% endif %}
         </div>
     </div>

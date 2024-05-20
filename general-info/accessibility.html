@@ -8,6 +8,8 @@ subnav:
   url: '#contactus'
 - name: 'Captioning'
   url: '#captioning'
+- name: 'Meals and dieatry needs'
+  url: '#dietary'
 - name: 'Quiet Room'
   url: '#quietroom'
 # - name: 'Conference Platform'
@@ -18,10 +20,8 @@ subnav:
   url: '#microphones'
 - name: 'Venues'
   url: '#venue'
-- name: 'Transportation'
-  url: '#transportation'
-- name: 'Parking'
-  url: '#parking'
+# - name: 'Parking'
+#   url: '#parking'
 ---
 
 <section class="general-info">
@@ -41,12 +41,20 @@ subnav:
 		</div>
 	</div>
 
+	<div class="row">
+		<div class="col-12">
+            <h2 id="dietary">Meals and dietary needs</h2>
+            <p>Breakfast and lunch will be served on Tuesday and Wednesday. Meals with dietary information will be added to the <a href="/schedule">schedule</a> as they're finalized.</p>
+            <p>There is also food available for purchase at <a href="https://dining.umich.edu/menus-locations/markets/maizies/">Maizie's Kitchen and Market</a> on floor 1 of the League.</p>
+		</div>
+	</div>
+
     {% if site.data.conf.live-captioning.show %}
 	<div class="row">
 		<div class="col-12">
             <h2 id="captioning">Live Captioning</h2>
             <p>
-				During the general conference, Code4Lib {{site.data.conf.year}} will feature live captioning by {{site.data.conf.live-captioning.service}}. In order to improve the quality of this service, we ask everyone to speak slowly and clearly so the captioning service is able to accurately capture what you say. Any prerecorded sessions or talks will also be live captioned. 
+				During the general conference, Code4Lib {{site.data.conf.year}} will feature live captioning by {{site.data.conf.live-captioning.service}}. In order to improve the quality of this service, we ask everyone to speak slowly and clearly so the captioning service is able to accurately capture what you say. Any prerecorded sessions or talks will also be live captioned.
 				{% if site.data.conf.closed-captioning.show %}
 					Attendees, both local and remote, may view the text stream at:
                		<a href="{{site.data.conf.closed-captioning.url}}">{{site.data.conf.closed-captioning.url}}</a>.
@@ -65,7 +73,7 @@ subnav:
 		<div class="col-12">
             <h2 id="quietroom">Quiet Room</h2>
             <p>
-				For the General Conference days, room {{site.data.conf.quiet-room.location}} will serve as a <em>quiet room</em> at the conference venue. The purpose of this room is to provide a quiet space so that attendees can take a mental or physical break from the many goings on. The room is open to all attendees during the conference hours.
+				For the General Conference days, the {{site.data.conf.quiet-room.location}} will serve as a <em>quiet room</em> at the conference venue. The purpose of this room is to provide a quiet space so that attendees can take a mental or physical break from the many goings on. The room is open to all attendees during the conference hours.
             </p>
             <p>
                If you use the Quiet Room, we ask you to abide by the following rules:
@@ -107,7 +115,7 @@ subnav:
             <p>
 				Code4Lib encourages all of its presenters to produce and deliver accessible talks. A guide to accessible presentations will be available soon. Towards this efforts, we have collected a body of advice and best practices:</p>
 				<p style="text-align:center;font-weight:bold;font-size:larger">
-					<a href="accessible-presenting.html">Code4Lib Accessible Presenting Guide</a> 
+					<a href="accessible-presenting.html">Code4Lib Accessible Presenting Guide</a>
 				</p>
             </p>
 		</div>
@@ -128,29 +136,17 @@ subnav:
 			<h3>Using a Microphone</h3>
 			<p>Generally, the line of the microphone should always point towards your mouth and nose. For a handheld mic, hold it like a candy bar or at a 45 degree angle. Position a podium mic towards you.</p>
 
-			
+
 
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-12">
-			<h2 id="venue">Conference Venues</h3>
-                        <p>More information forthcoming.</p>
+			<h2 id="venue">Conference venues and transportation</h3>
+            <p>The Local Planning Committee is committed to integrating accessibility considerations throughout our information about the conference. You can find details about accessibility of <a href="/general-info/venues/">conference venues</a>, as well as support for <a href="/general-info/lodging-transportation#gettinghere">transportation</a> on the respective pages.</p>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-12">
-			<h2 id="transportation">Transportation</h2>
-			
-			<h3>Public Transportation</h3>
-			{% if site.data.conf.public-transportation.show %}
-				<p>Transportation info here.</p>
-			{% else %}
-			<p>More information forthcoming. </p>
-			{% endif %}
-        </div>
-    </div>
 </div>
 </section>

@@ -2,14 +2,15 @@
     <div class="col-12">
         <h2 id="workshops">Workshops</h2>
         {% if site.data.conf.workshops.show %}
-        {% assign location = site.data.locations | where: 'id', site.data.conf.workshops.location | first %}
-        <p>
-            All Pre-Conference workshops will be held {{ site.data.conf.days[0].weekday }}, {{ site.data.conf.days[0].date-data | date: "%B %-d, %Y" }}{% if location %} in <a href="{{ location.google_maps }}">{{ location.name }}</a>{% endif %}. Please see the <a href="/workshops/">schedule</a> for more information.
-        </p>
-        {% else %}
-        <p>
-            Stay tuned… When the information of the workshops is confirmed, the details will be added here.
-        </p>
+        <p>Workshops will primarily be held in School of Information classrooms in <a href="https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex">North Quad</a>, with one on North Campus in the <a href="https://bentley.umich.edu/">Bentley Historical Library</a>.</p>
+
+        <h3>North Quad</h3>
+        <p>North Quad is about 2-blocks from the League at 105 S. State St and has two, physically separated towers (one with academic offices, the other with a residence hall and classrooms). Use the main entrance to the tallest tower, which is around the corner from the street address in the southeast part of the building near Thayer and E. Washington St. The entrance is on a plaza and there is a ramp up to handicap accessible doors.</p>
+        <p>Workshops will be held in instructional spaces on the <b>ground floor (floor 2) and lower level (floor 1)</b> in rooms: 1265, 1255, 2255, 2245, 2185. Please consult the detailed workshop schedule to identify your room. We’ll have signage at the main entrance to help guide you and there is an elevator on the left after you enter the building. </p>
+
+        <h3>Bentley Historical Library</h3>
+        <p>The Bentley Historical Library is located on North Campus and accessible via multiple U-M Campus Blue Bus routes. See <a href="/general-info/lodging-transportation#publictransportation">public transportation and parking</a> for details.</p>
+        <p>The front entrance is wheelchair accessible and equipped with an automatic door opener, as is the entrance from the lobby into the public area. A gender-inclusive and wheelchair accessible restroom is available. </p>
         {% endif %}
     </div>
 </section>

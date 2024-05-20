@@ -23,8 +23,10 @@
 
             <h1>{{ page.title }}</h1>
 
-            {% if page.full %}
+            {% if page.full == true %}
                 <p class="alert alert-warning">This workshop is at maximum capacity and no longer accepting registrations.</p>
+            {% elsif page.full == "limited" %}
+                <p class="alert alert-warning">This workshop is near capacity.</p>
             {% endif %}
 
             <p>{{ content }}</p>
@@ -67,13 +69,13 @@
                                         {% if speaker.image_alt and speaker.image_src %}
                                             <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="{{ speaker.image_alt }}">
                                         {% elsif speaker.image_src %}
-                                            <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="Profile image for {{ speaker.name }}">
+                                            <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="Profile image for {{ speaker.name |  escape }}">
                                         {% else %}
                                             <script>
                                                 placeholderImage("clip-circle-speaker",
-                                                    " {{ speaker.name }} ",
+                                                    " {{ speaker.name |  escape }} ",
                                                     "/assets/img/nopics/nopic#.jpg",
-                                                    "Random placeholder for {{ speaker.name }}",
+                                                    "Random placeholder for {{ speaker.name | escape }}",
                                                     10);
                                             </script>
                                         {% endif %}
@@ -86,8 +88,8 @@
                 </div>
                 <br>
             {% comment %} poster sessions have no speaker data, only text {% endcomment %}
-            {% elsif page.type == 'poster' and page.speaker-text != '' %}
-                <h2>Presenter(s): {{ page.speaker-text }}</h2>
+            {% elsif page.type == 'poster' and page.speakers-text != '' %}
+                <h2>Presenter(s): {{ page.speakers-text }}</h2>
                 <br>
             {% endif %}
 

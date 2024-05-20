@@ -1,0 +1,72 @@
+Breakfast:
+    Options:
+        "Fresh Fruit and Berry Display": "VGN, DF, GF"
+        "Greek Yogurt": "VGT, GF"
+        "Granola (contains oats and nuts)": ""
+        "Hard-Boiled Eggs": "DF, GF"
+        "Assorted Bagels": ""
+        "Whipped Cream Cheese": ""
+        "Jam": "VGN"
+    Beverages:
+        "Coffee / Decaf / Assorted Hot Teas": ""
+        "Water": ""
+Morning Refreshments:
+    Beverages:
+        "Coffee / Decaf / Assorted Hot Teas": ""
+Lunch:
+    Entrees:
+        "Halal Chicken: Garlic, Curry, and Green Onion": "GF"
+        "Tofu: Coconut Milk, Peppers, Cabbage, Eggplant, Paprika, and Cumin": "VGN, GF"
+    Sides:
+        "Long Grain Rice": "VGN, GF"
+        "Swiss Chard: Red Chili Harissa, Tomato, and Coriander": "VGN, GF"
+        "Fresh Garden Salad and Dressing": ""
+        "Roll": ""
+    Dessert:
+        "Vegan Rasberry Bar": "VGN"
+    Beverages:
+        "Coffee / Decaf / Assorted Hot Teas": ""
+        "Iced Tea": ""
+        "Water": ""
+Afternoon Refreshments:
+    Snacks:
+        "Chips & Salsa": "VGN, GF"
+        "Popcorn": "VGT"
+        "Whole Fruit": "VGN, GF"
+        "Brownies": "VGT"
+    Beverages:
+        "Coffee / Decaf / Assorted Hot Teas": ""
+        "Assorted Sodas": ""
+Reception:
+    Catering:
+        "Pita Pita Mediterranean Grill: ": ""
+        "Falafel Sandwich: Rolled with tomatoes, pickles and lettuce": "VGN"
+        "Majadara Sandwich: Lentils and rice with tabbouleh": "VGN"
+        "Shish Tawook Sandwich: Charbroiled Chicken Breast with tomatoes, garlic & pickles (garlic paste contains egg whites)": "DF"
+        "Beef Shawarma: Marinated beef slices with tomatoes, onions, pickles and Tahini sauce": "DF"
+        "Hummus: Chick Peas dip mixed with Tahini sauce.": "VGN, GF"
+        "Baba Ghannuj: Mashed eggplant with parsley, Tahini and lemon juice.": "VGN, GF"
+        "Cauliflower with Rice: Cauliflower sauteed with onions, tomatoes, seasonings with a sprinkle of parsley": "VGN, GF"
+        "Tray of Veggies: Carrots, Cucumbers and Green Peppers": "VGN"
+        "Fattoush Salad : Lettuce, tomatoes, cucumbers and parsley (with toasted pita mixed in our famous dressing on the side)": "VGN, GF"
+        "&#160;": ""
+        "La Torre Taqueria:": ""
+        "Veggie Tacos: Chile Campana, Roasted Onion, Rice and Pico de Gallo": "VGN"
+        "Meat: Beef, Chicken, Pork": ""
+        "Rice": ""
+        "Beans": ""
+        "Cilantro / Onions mix": ""
+        "Limes": ""
+        "Green Salsa": ""
+        "Red Salsa": ""
+        "Tortillas: Corn, Water, Lime": "VGN,GF"
+        "(we are short on details on dietary features for La Torre Taqueria)": ""
+    Drinks:
+        "See <a style='text-decoration:underline;' href='https://fowlingwarehouse.com/ypsiannarbor/wp-content/uploads/sites/7/2023/10/2023-10-21-Beer-Menu-Printable.pdf' title='PDF of Fowling Draft Beer menu'>The Fowling Warehouse Draft Beer List</a> for a complete list of alcoholic options.": ""
+        "Clever Mocktails:": ""
+        "Mojito, Pink G&Tonic, 	Margarita": ""
+        "": ""
+        "NA Beer:": ""
+        "Heineken 0.0, Heineken IPA, Athletic Brewery Golden Lager, Athletic Brewery Copper (light amber)": ""
+        "&#160;": ""
+        "Soft drinks and multiple flavors of Red Bull": ""

@@ -23,7 +23,32 @@
                                 <p>
                                     <a class="btn ct-btn-light" href="{{ event.link }}">{{ event.button_label }}</a>
                                 </p>
-                            {% else %}
+                              {% comment %}
+                              	-
+                              	- This creaky structure needs to be improved in/by 2025
+                              	-
+                              {% endcomment %}
+                            {% elsif event.sessions %}
+                           	  {% assign title_class = "" %}
+                              {% if event.title contains "Lightning" %}
+                              	{% assign title_class = " class='lightning-title'" %}
+                              {% endif %}
+                              <ol>
+                              {% for session in event.sessions %}
+                                <li>
+                                  {% if session.presenter %}{{ session.presenter }}: {% endif %}
+                                  {% if session.link %}
+                                  <a href="{{session.link}}"{{ title_class }}>{{ session.title }}</a>
+                                  {% else %}
+                                    {% if event.title contains "Lightning" %}
+                                  <span class="lightning-title">{{ session.title }}</span>
+                                    {% else %}
+                                  {{ session.title }}
+                                    {% endif %}
+                                  {% endif %}
+                                </li>
+                              {% endfor %}
+                              </ol>
                             {% endif %}
                             {% if event.menu %}
                                 <a href="/schedule/food/{{ event.menu }}.html#{{ event.submenu }}" class="btn ct-btn-light" >View Menu</a>
@@ -69,9 +94,9 @@
                                                 {% else %}
                                                     <script>
                                                         placeholderImage("clip-circle-speaker",
-                                                            " {{ speaker.name }} ",
+                                                            " {{ speaker.name | escape }} ",
                                                             "/assets/img/nopics/nopic#.jpg",
-                                                            "Random placeholder for {{ speaker.name }}",
+                                                            "Random placeholder for {{ speaker.name |  escape }}",
                                                             10);
                                                     </script>
                                                 {% endif %}

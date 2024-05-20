@@ -4,16 +4,16 @@ title: Scholarships
 nav: general-info
 active: Scholarships
 subnav:
-- name: 'Additional Funding'
-  url: '#additional-funding'
+# - name: 'Additional Funding'
+#   url: '#additional-funding'
 - name: Recipients
   url: '#recipients'
 - name: 'Eligibility, Criteria, & Requirements'
   url: '#criteria'
 - name: 'How to Apply'
   url: '#how-to-apply'
-#- name: 'Individual Giving'
-#  url: '#angel-fund'
+- name: 'Individual Giving'
+  url: '#angel-fund'
 ---
 
 {% assign year = site.data.conf.year %}
@@ -32,11 +32,11 @@ subnav:
                 {% if site.data.conf.diversity-scholarship-applications.show %}
                 <div class="row">
                     <div class="card panel-default">
-                        <div class="card-body">
-                            <div class="col-9">
+                        <div class="card-body row">
+                            <div class="col-8">
                                 Diversity Scholarship applications are being accepted through {{ site.data.conf.diversity-scholarship-applications.end-date | date: '%B %-d'}}{% include date_ordinals.html date=site.data.conf.diversity-scholarship-applications.end-date %}, {{site.data.conf.year}}.
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 pl-0">
                                 <a class="btn ct-btn-light btn-sm btn-block" href="{{ site.data.conf.diversity-scholarship-applications.url }}">
                                     Apply
                                 </a>
@@ -113,10 +113,10 @@ subnav:
        <div class="col-12">
            <h2>{{ year }} Code4Lib Scholarship Application</h2>
            <p>
-            The <a href="{{ site.data.conf.committee-wiki-url }}">{{ site.data.conf.year }}
+            The <a href="{{ site.data.conf.diversity-scholarship-applications.committee-wiki-url }}">{{ site.data.conf.year }}
             Scholarship Committee</a> is pleased to announce that the application for Code4Lib {{ year }}
             conference Diversity Scholarship is open now. The deadline to submit your application
-            is, {{ site.data.conf.diversity-scholarship-applications.end-day}}
+            is {{ site.data.conf.diversity-scholarship-applications.end-day}}
             {{ site.data.conf.diversity-scholarship-applications.end-date | date: '%B %-d, %Y'}}.
            </p>
             <p>
@@ -150,12 +150,12 @@ subnav:
            <a name="criteria"></a>
            <h2>Eligibility, Criteria, And Requirements</h2>
            {% if site.data.conf.criteria.show %}
-           <p>
             <h3>Eligibility Criteria</h3>
+           <p>
                An applicant must be a member of a group not well-represented within the code4lib community, including but not limited to: women, people of color, LGBTQ+, ability/disability, non-binary gender identities, etc. We also invite applications from members of underrepresented and/or marginalized groups that don't fit into the categories listed above.
             </p>
-            <p>
             <h3>Requirements</h3>
+            <p>
                 We expect applicants to be interested in actively engaging with the Code4Lib community. For more information about Code4Lib, see the <a href="/general-info/about-c4l">About Code4Lib Page</a>. The scholarship recipients will be selected based upon their merit and financial needs.
             </p>
             <p>
@@ -213,7 +213,7 @@ subnav:
             <h2>Testimonials by Previous Awardees</h2>
                 <p>
                     "For me, this truly inclusive conference was a wonderful opportunity to connect with like-minded people and learn about their ideas and great work they do for libraries. I enjoyed and appreciated each and every talk. I connected with librarians and educators who like myself are passionate about promoting equity in tech. Those of us who work in public libraries can use as much help as we can get to help close the digital gap in our communities. The Code4Lib conference provided me with information to add a few of those much-needed skills to my librarian toolbox." <b>-Faezeh Jahan Shiri</b></p>
-                <p>    
+                <p>
                     "With the support of the Code4Lib Diversity Scholarship, I attended the Code4Lib 2022 Conference. This is the first in-person conference I have attended since the Pandemic. It is indeed exciting to regain the opportunity to meet colleagues in library technology related areas physically from other institutions in the US and other countries. I enjoyed the presentations and discussions and sensed the passion of the Code4Lib community. Through this conference, I also got the chance to know the City of Buffalo and its surrounding attractions. It is a wonderful experience to be part of the Code4Lib 2022." <b>-Grace Liu</b>
                 </p>
 </section>

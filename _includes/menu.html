@@ -33,10 +33,18 @@
             </li>
             {% endfor %}
         </ul>
+        {% if meal[0] != "Reception" %}
         <p style="text-align:center">
             <img src="/assets/img/persistent/vegetarian.svg" alt="vegetarian" height="35"/> = Vegetarian &nbsp; &nbsp; <img src="/assets/img/persistent/vegan.svg" alt="vegan" height="35"/> = Vegan
             &nbsp; &nbsp; (GF) = Made without Gluten
             &nbsp; &nbsp; (DF) = Dairy Free
         </p>
+        <p style="text-align:center">
+        	Dietary features may be updated as information becomes available.
+        </p>
+        <p>
+        	 As it’s difficult to meet all dietary requirements with every menu item, we encourage you to read the food labeling and ask questions of service staff as needed before consuming, especially if you have one or more food allergies. You may also look to <a href="https://fss.studentlife.umich.edu/NetNutrition/1">Michigan Dining's MyNutrition website</a> (select the Catering to Go option) to filter menu items for allergens.
+        </p>
+       {% endif %}
     </aside>
 </div>

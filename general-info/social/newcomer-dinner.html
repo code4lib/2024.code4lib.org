@@ -1,0 +1,15 @@
+{% if site.data.conf.newcomer-dinner.show %}
+<section class="general-info social-event">
+  <div class="col-12">
+      <h2 id="newcomer-dinner">Newcomer Dinner</h2>
+      {% if site.data.conf.newcomer-dinner.date %}
+        <p><span class="font-weight-bold">When: </span>{{site.data.conf.newcomer-dinner.date | date: '%A, %B %-d, %Y'}}, {{site.data.conf.newcomer-dinner.time}}</p>
+      {% endif %}
+      <p>{{ site.data.conf.newcomer-dinner.description }}</p>
+
+      {% if site.data.conf.newcomer-dinner.signup-url %}
+        <a class="btn ct-btn-light" target="blank" href="{{site.data.conf.newcomer-dinner.signup-url}}">{{site.data.conf.newcomer-dinner.signup-button-text}}</a>
+      {% endif %}
+  </div>
+</section>
+{% endif %}
