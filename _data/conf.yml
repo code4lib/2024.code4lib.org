@@ -130,7 +130,7 @@ anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 # - post:   for after the conference is over
 #
 ####################
-homepage-display: post
+homepage-display: peri
 
 livestream:
   show: false
@@ -155,7 +155,7 @@ workshops:
 
 # Peri display descriptions and titles
 peri:
-  day0:
+  day1:
     am:
       title: 'Conference, Day 1'
       desc: 'Opening Keynote & Talks'
@@ -165,7 +165,7 @@ peri:
       title: 'Newcomer Dinner'
       desc: 'Dine-Around'
       link: '/general-info/social/#newcomer-dinner'
-  day1:
+  day2:
     am:
       title: 'Conference, Day 2'
       desc: 'Awesome Talks'
@@ -176,7 +176,7 @@ peri:
       desc: 'Fowling Warehouse'
       link: '/general-info/venues/#reception'
       menu: 'day2-menus.html#Reception'
-  day2:
+  day3:
     am:
       title: 'Conference, Day 3'
       desc: 'Closing Keynote & Talks'
@@ -186,7 +186,7 @@ peri:
       title: 'Game Night'
       desc: 'Board or Card Games'
       link: '/general-info/social/#game-night'
-  day3:
+  day4:
     am:
       title: 'Workshops'
       desc: 'Workshops'
