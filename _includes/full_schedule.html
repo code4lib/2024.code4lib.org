@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12">
+    {% assign daynum = include.day %}
+    {% assign day = site.data.conf.days[daynum] %}
+    {% capture dayprop %}day{{daynum}}{% endcapture %}
+    {% if include.workshops %}
+      {% assign events = site.posts | where: 'type', 'workshop' %}
+    {% else %}
+      {% assign events = site.data.schedule | where:dayprop, true %}
+    {% endif %}
+    <h2>
+      Day {{daynum}}: {{day.weekday}}, {{day.date}}
+      {% if include.workshops %} (Workshops){% endif %}
+    </h2>
+    {% include presentation_timeline.html events=events %}
+  </div>
+</div>

@@ -4,7 +4,14 @@
     {% for event in sorted_events %}
         <div class="cd-timeline-block">
             <div class="cd-timeline-img">
-                <img src="/assets/img/clockface/{{ event.timeImg }}" alt="">
+                {% if event.timeImg %}
+                  {% assign timeImg = event.timeImg %}
+                {% elsif event.time == "am" || event.time == "full" %}
+                  {% assign timeImg = "9.00.png" %}
+                {% else %}
+                  {% assign timeImg = "1.30.png" %}
+                {% endif %}
+                <img src="/assets/img/clockface/{{ timeImg }}" alt="">
             </div>
 
             <div class="cd-timeline-content">
@@ -57,10 +64,14 @@
                     </div>
                     <div class="col-sm-5 col-12 text-right">
                         <h2 class="cd-timeline-content-title">
-                            {% capture eventTime %}{{ event.time | replace: '-', ' ' }}{% endcapture %}
-                            {% capture beginTime %}{{ eventTime | truncatewords: 1, '' }}{% endcapture %}
-                            {% capture endTime %}{{ eventTime | replace: beginTime, '' }}{% endcapture %}
-                            {{ beginTime | date: "%l:%M%p" | strip }} to {{ endTime | date: "%l:%M%p" | strip }}
+                            {% if event.type == "workshop" %}
+                              {{event.startTime}} to {{event.endTime}}
+                            {% else %}
+                              {% assign eventTime = event.time | replace: '-', ' ' %}
+                              {% assign beginTime = eventTime | truncatewords: 1, ''  %}
+                              {% assign endTime = eventTime | replace: beginTime, '' %}
+                              {{ beginTime | date: "%l:%M%p" | strip }} to {{ endTime | date: "%l:%M%p" | strip }}
+                            {% endif %}
                         </h2>
                         <div class="timezone">{{ site.data.conf.timezone }} Time</div>
                     </div>

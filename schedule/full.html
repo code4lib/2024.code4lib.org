@@ -1,0 +1,25 @@
+---
+layout: default
+title: Full Schedule
+categories: Schedule
+---
+<div class="container" id="main">
+  {% if site.data.conf.have-schedule-details %}
+    <div class="row">
+      <div class="col-12">
+        <h1>Full Schedule</h1>
+      </div>
+    </div>
+    {% include full_schedule.html day=1 %}
+    {% include full_schedule.html day=2 %}
+    {% include full_schedule.html day=3 %}
+    {% include full_schedule.html day=4 workshops=true %}
+
+  {% else %}
+    <div class="row">
+      <div class="col-12">
+        <p>The schedule for Code4Lib {{site.data.conf.year}} has not been finalized yet.</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
