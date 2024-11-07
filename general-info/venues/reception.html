@@ -22,8 +22,8 @@
                     {{site.data.conf.reception.venue}}<br />
                     {{site.data.conf.reception.street}}<br />
                     {{site.data.conf.reception.city-state}} {{site.data.conf.reception.postal-code}}<br />
-                    <a href="tel:{{site.data.conf.reception.phone}}">{{site.data.conf.reception.phone}}</a> or <a
-                        href="{{site.data.conf.reception.contact}}">contact online</a>{% if site.data.conf.reception.floorplan != nil %}
+                    <a href="tel:{{site.data.conf.reception.phone}}">{{site.data.conf.reception.phone}}</a>{% if site.data.conf.reception.contact != nil %} or <a
+                        href="{{site.data.conf.reception.contact}}">contact online</a>{% endif %}{% if site.data.conf.reception.floorplan != nil %}
                     | <a href="{{site.data.conf.reception.floorplan}}">Floor Plan</a> {% endif %}<br />
                 </p>
             </div>
